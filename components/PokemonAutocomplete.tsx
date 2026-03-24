@@ -1,13 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { pokemonList } from "@/lib/pokemon";
+import { pokemonList, Pokemon } from "@/lib/pokemon";
 
-export default function PokemonAutocomplete({ onSelect }) {
-  const [query, setQuery] = useState("");
-  const [results, setResults] = useState([]);
+type Props = {
+  onSelect: (pokemon: Pokemon) => void;
+};
 
-  function handleChange(e) {
+export default function PokemonAutocomplete({ onSelect }: Props) {
+  const [query, setQuery] = useState<string>("");
+  const [results, setResults] = useState<Pokemon[]>([]);
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     const value = e.target.value;
     setQuery(value);
 
@@ -28,13 +32,15 @@ export default function PokemonAutocomplete({ onSelect }) {
       />
 
       {results.length > 0 && (
-        <div style={{
-          position: "absolute",
-          background: "white",
-          border: "1px solid #ccc",
-          width: "100%",
-          zIndex: 10
-        }}>
+        <div
+          style={{
+            position: "absolute",
+            background: "white",
+            border: "1px solid #ccc",
+            width: "100%",
+            zIndex: 10
+          }}
+        >
           {results.map((p, i) => (
             <div
               key={i}

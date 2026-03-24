@@ -1,4 +1,12 @@
-export const pokemonList = [
+export type Pokemon = {
+  name: string;
+  types: string[];
+  sprite: string;
+  fastMoves: string[];
+  chargedMoves: string[];
+};
+
+export const pokemonList: Pokemon[] = [
   {
     name: "Azumarill",
     types: ["Water", "Fairy"],

@@ -2,42 +2,86 @@
 
 import { useState } from "react";
 import PokemonAutocomplete from "@/components/PokemonAutocomplete";
+import { Pokemon } from "@/lib/pokemon";
 
 export default function TorneoPage() {
-  const [team, setTeam] = useState([]);
+  const [team, setTeam] = useState<Pokemon[]>([]);
 
-  function addPokemon(pokemon) {
-    if (team.length >= 6) return alert("Máximo 6 Pokémon");
+  function addPokemon(pokemon: Pokemon) {
+    if (team.length >= 6) {
+      alert("Máximo 6 Pokémon");
+      return;
+    }
 
-    // Validación: tipo permitido
+    // Tipos permitidos (Copa Fantasía)
     const allowedTypes = ["Fairy", "Dragon", "Steel"];
 
-    const isValid = pokemon.types.some(t => allowedTypes.includes(t));
+    const isValid = pokemon.types.some((t: string) =>
+      allowedTypes.includes(t)
+    );
 
     if (!isValid) {
-      return alert("Este Pokémon no está permitido en la Copa Fantasía");
+      alert("Este Pokémon no está permitido en la Copa Fantasía");
+      return;
     }
 
-    // Validación duplicados
-    if (team.find(p => p.name === pokemon.name)) {
-      return alert("No podés repetir Pokémon");
+    // Evitar duplicados
+    if (team.find((p: Pokemon) => p.name === pokemon.name)) {
+      alert("No podés repetir Pokémon");
+      return;
     }
 
-    setTeam([...team, pokemon]);
+    setTeam((prev: Pokemon[]) => [...prev, pokemon]);
+  }
+
+  function removePokemon(index: number) {
+    setTeam((prev: Pokemon[]) =>
+      prev.filter((_, i) => i !== index)
+    );
   }
 
   return (
-    <main style={{ padding: "2rem" }}>
+    <main style={{ padding: "2rem", fontFamily: "sans-serif" }}>
       <h1>Copa Fantasía</h1>
+      <p>Seleccioná tus 6 Pokémon (tipo Hada, Dragón o Acero)</p>
 
-      <h3>Elegí tus 6 Pokémon</h3>
+      <div style={{ maxWidth: "400px" }}>
+        <PokemonAutocomplete onSelect={addPokemon} />
+      </div>
 
-      <PokemonAutocomplete onSelect={addPokemon} />
+      <h3 style={{ marginTop: "2rem" }}>Tu equipo</h3>
+
+      {team.length === 0 && <p>No agregaste Pokémon todavía</p>}
 
       <div style={{ marginTop: "1rem" }}>
-        {team.map((p, i) => (
-          <div key={i}>
-            {p.name} ({p.types.join(", ")})
+        {team.map((p: Pokemon, i: number) => (
+          <div
+            key={i}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "10px",
+              marginBottom: "8px",
+              padding: "6px",
+              border: "1px solid #ccc",
+              borderRadius: "6px"
+            }}
+          >
+            <img src={p.sprite} alt={p.name} width={40} />
+
+            <div>
+              <strong>{p.name}</strong>
+              <div style={{ fontSize: "12px" }}>
+                {p.types.join(", ")}
+              </div>
+            </div>
+
+            <button
+              style={{ marginLeft: "auto" }}
+              onClick={() => removePokemon(i)}
+            >
+              ❌
+            </button>
           </div>
         ))}
       </div>
