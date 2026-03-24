@@ -33,14 +33,16 @@ export default function PokemonAutocomplete({ onSelect }: Props) {
 
       {results.length > 0 && (
         <div
-          style={{
-            position: "absolute",
-            background: "white",
-            border: "1px solid #ccc",
-            width: "100%",
-            zIndex: 10
-          }}
-        >
+  style={{
+    position: "absolute",
+    background: "#1f2937", // gris oscuro
+    border: "1px solid #374151",
+    width: "100%",
+    zIndex: 10,
+    borderRadius: "6px",
+    marginTop: "4px"
+  }}
+>
           {results.map((p, i) => (
             <div
               key={i}
