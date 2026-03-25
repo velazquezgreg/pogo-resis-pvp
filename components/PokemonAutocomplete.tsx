@@ -1,62 +1,70 @@
-"use client";
-
 import { useState } from "react";
+import { Pokemon } from "./types";
 
-type Pokemon = {
-  name: string;
-  types: string[];
-  fastMoves: string[];
-  chargedMoves: string[];
-};
-
-type Props = {
+interface Props {
+  pokemonList: Pokemon[];
   onSelect: (pokemon: Pokemon) => void;
-  data: Pokemon[];
-};
+}
 
-export default function PokemonAutocomplete({ onSelect, data }: Props) {
-  const [query, setQuery] = useState("");
-  const [results, setResults] = useState<Pokemon[]>([]);
+export default function PokemonAutocomplete({ pokemonList, onSelect }: Props) {
+  const [input, setInput] = useState("");
+  const [filtered, setFiltered] = useState<Pokemon[]>([]);
+  const [show, setShow] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
-    setQuery(value);
+    setInput(value);
 
-    const filtered = data.filter(p =>
-      p.name.toLowerCase().includes(value.toLowerCase())
-    );
+    if (!value) {
+      setFiltered([]);
+      return;
+    }
 
-    setResults(filtered.slice(0, 10));
+    const result = pokemonList
+      .filter(p =>
+        p.name.toLowerCase().includes(value.toLowerCase())
+      )
+      .sort((a, b) => {
+        const aStarts = a.name.toLowerCase().startsWith(value.toLowerCase());
+        const bStarts = b.name.toLowerCase().startsWith(value.toLowerCase());
+        return Number(bStarts) - Number(aStarts);
+      });
+
+    setFiltered(result);
+    setShow(true);
+  };
+
+  const handleSelect = (pokemon: Pokemon) => {
+    setInput(pokemon.name);
+    setShow(false);
+    onSelect(pokemon);
   };
 
   return (
     <div className="relative">
       <input
-        value={query}
+        value={input}
         onChange={handleChange}
+        onFocus={() => setShow(true)}
+        className="w-full p-2 bg-zinc-900 text-white border border-zinc-700 rounded"
         placeholder="Buscar Pokémon..."
-        className="w-full p-2 border rounded bg-zinc-900 text-white"
       />
 
-      {results.length > 0 && (
-        <ul className="absolute z-10 w-full bg-zinc-800 border mt-1 rounded max-h-60 overflow-y-auto">
-          {results.map(p => (
-            <li
-              key={p.name}
-              onClick={() => {
-                onSelect(p);
-                setQuery(p.name);
-                setResults([]);
-              }}
+      {show && filtered.length > 0 && (
+        <div className="absolute z-10 w-full bg-zinc-800 border border-zinc-700 rounded mt-1 max-h-60 overflow-y-auto">
+          {filtered.map((p, i) => (
+            <div
+              key={i}
+              onClick={() => handleSelect(p)}
               className="p-2 hover:bg-zinc-700 cursor-pointer"
             >
               <div className="font-semibold">{p.name}</div>
-              <div className="text-sm text-gray-400">
+              <div className="text-sm text-zinc-400">
                 {p.types.join(" / ")}
               </div>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
