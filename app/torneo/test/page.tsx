@@ -2,89 +2,138 @@
 
 import { useState } from "react";
 import PokemonAutocomplete from "@/components/PokemonAutocomplete";
-import { Pokemon } from "@/lib/pokemon";
+import pokemonData from "@/src/data/pokemon-es.json";
 
-export default function TorneoPage() {
-  const [team, setTeam] = useState<Pokemon[]>([]);
+type Pokemon = {
+  name: string;
+  types: string[];
+  fastMoves: string[];
+  chargedMoves: string[];
+};
 
-  function addPokemon(pokemon: Pokemon) {
-    if (team.length >= 6) {
-      alert("Máximo 6 Pokémon");
-      return;
-    }
+type TeamPokemon = {
+  name: string;
+  types: string[];
+  fastMove: string;
+  chargedMove1: string;
+  chargedMove2: string;
+};
 
-    // Tipos permitidos (Copa Fantasía)
-    const allowedTypes = ["Fairy", "Dragon", "Steel"];
+export default function Page() {
+  const [team, setTeam] = useState<TeamPokemon[]>([]);
 
-    const isValid = pokemon.types.some((t: string) =>
-      allowedTypes.includes(t)
-    );
+  const addPokemon = (p: Pokemon) => {
+    if (team.length >= 6) return;
 
-    if (!isValid) {
-      alert("Este Pokémon no está permitido en la Copa Fantasía");
-      return;
-    }
+    // evitar duplicados
+    if (team.some(tp => tp.name === p.name)) return;
 
-    // Evitar duplicados
-    if (team.find((p: Pokemon) => p.name === pokemon.name)) {
-      alert("No podés repetir Pokémon");
-      return;
-    }
+    setTeam([
+      ...team,
+      {
+        name: p.name,
+        types: p.types,
+        fastMove: "",
+        chargedMove1: "",
+        chargedMove2: ""
+      }
+    ]);
+  };
 
-    setTeam((prev: Pokemon[]) => [...prev, pokemon]);
-  }
+  const updateMove = (
+    index: number,
+    field: "fastMove" | "chargedMove1" | "chargedMove2",
+    value: string
+  ) => {
+    const newTeam = [...team];
+    newTeam[index][field] = value;
+    setTeam(newTeam);
+  };
 
-  function removePokemon(index: number) {
-    setTeam((prev: Pokemon[]) =>
-      prev.filter((_, i) => i !== index)
-    );
-  }
+  const removePokemon = (index: number) => {
+    const newTeam = [...team];
+    newTeam.splice(index, 1);
+    setTeam(newTeam);
+  };
 
   return (
-    <main style={{ padding: "2rem", fontFamily: "sans-serif" }}>
-      <h1>Copa Fantasía</h1>
-      <p>Seleccioná tus 6 Pokémon (tipo Hada, Dragón o Acero)</p>
+    <div className="p-6 text-white bg-black min-h-screen">
+      <h1 className="text-2xl mb-4">Registro Copa Fantasía</h1>
 
-      <div style={{ maxWidth: "400px" }}>
-        <PokemonAutocomplete onSelect={addPokemon} />
-      </div>
+      <PokemonAutocomplete
+        data={pokemonData}
+        onSelect={addPokemon}
+      />
 
-      <h3 style={{ marginTop: "2rem" }}>Tu equipo</h3>
-
-      {team.length === 0 && <p>No agregaste Pokémon todavía</p>}
-
-      <div style={{ marginTop: "1rem" }}>
-        {team.map((p: Pokemon, i: number) => (
-          <div
-            key={i}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "10px",
-              marginBottom: "8px",
-              padding: "6px",
-              border: "1px solid #ccc",
-              borderRadius: "6px"
-            }}
-          >
-            <img src={p.sprite} alt={p.name} width={40} />
-
-            <div>
-              <strong>{p.name}</strong>
-              <div style={{ fontSize: "12px" }}>
-                {p.types.join(", ")}
+      <div className="mt-6 space-y-4">
+        {team.map((p, i) => (
+          <div key={i} className="border p-4 rounded bg-zinc-900">
+            <div className="flex justify-between">
+              <div>
+                <h2 className="text-lg">{p.name}</h2>
+                <p className="text-sm text-gray-400">
+                  {p.types.join(" / ")}
+                </p>
               </div>
+              <button onClick={() => removePokemon(i)}>❌</button>
             </div>
 
-            <button
-              style={{ marginLeft: "auto" }}
-              onClick={() => removePokemon(i)}
+            {/* FAST MOVE */}
+            <select
+              value={p.fastMove}
+              onChange={e =>
+                updateMove(i, "fastMove", e.target.value)
+              }
+              className="mt-2 w-full bg-zinc-800 p-2 rounded"
             >
-              ❌
-            </button>
+              <option value="">Ataque rápido</option>
+              {pokemonData
+                .find(pk => pk.name === p.name)
+                ?.fastMoves.map(m => (
+                  <option key={m} value={m}>
+                    {m}
+                  </option>
+                ))}
+            </select>
+
+            {/* CHARGED 1 */}
+            <select
+              value={p.chargedMove1}
+              onChange={e =>
+                updateMove(i, "chargedMove1", e.target.value)
+              }
+              className="mt-2 w-full bg-zinc-800 p-2 rounded"
+            >
+              <option value="">Ataque cargado 1</option>
+              {pokemonData
+                .find(pk => pk.name === p.name)
+                ?.chargedMoves.map(m => (
+                  <option key={m} value={m}>
+                    {m}
+                  </option>
+                ))}
+            </select>
+
+            {/* CHARGED 2 */}
+            <select
+              value={p.chargedMove2}
+              onChange={e =>
+                updateMove(i, "chargedMove2", e.target.value)
+              }
+              className="mt-2 w-full bg-zinc-800 p-2 rounded"
+            >
+              <option value="">Ataque cargado 2</option>
+              {pokemonData
+                .find(pk => pk.name === p.name)
+                ?.chargedMoves.map(m => (
+                  <option key={m} value={m}>
+                    {m}
+                  </option>
+                ))}
+            </select>
           </div>
         ))}
       </div>
-    </main>
+    </div>
   );
 }
