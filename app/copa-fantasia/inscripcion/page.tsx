@@ -150,12 +150,18 @@ export default function Page() {
 
         <div className="max-w-xl w-full text-center space-y-6">
 
-          <h1 className="text-3xl font-bold text-green-400">
-            ✅ Inscripción exitosa
-          </h1>
+          <div className="space-y-3">
+  <img
+    src="https://i.ibb.co/DPSWzghL/fantasy-cup-icon.png"
+    className="w-20 mx-auto"
+  />
 
+  <h1 className="text-3xl font-bold text-green-400">
+    Inscripción exitosa
+  </h1>
+</div>
           <p className="text-zinc-400">
-            Nos vemos el 12 de Abril 🔥
+            ¡Nos vemos el 12 de Abril!
           </p>
 
           <div className="bg-zinc-900 p-4 rounded border border-zinc-700">
@@ -218,9 +224,17 @@ export default function Page() {
 
       <div className="max-w-3xl mx-auto space-y-6">
 
-        <h1 className="text-3xl font-bold text-center">
-          🏆 Copa Fantasía
-        </h1>
+        <div className="text-center space-y-3">
+  <img
+    src="https://i.ibb.co/DPSWzghL/fantasy-cup-icon.png"
+    alt="Copa Fantasía"
+    className="w-24 mx-auto drop-shadow-[0_0_15px_rgba(34,197,94,0.6)]"
+  />
+
+  <h1 className="text-3xl font-bold">
+    Copa Fantasía
+  </h1>
+</div>
 
         {/* DATOS */}
         <div className="space-y-3">
