@@ -206,13 +206,6 @@ export default function Page() {
             </div>
           </div>
 
-          <button
-            onClick={() => setSavedPlayer(null)}
-            className="bg-zinc-700 hover:bg-zinc-600 px-4 py-2 rounded"
-          >
-            Nueva inscripción
-          </button>
-
         </div>
       </div>
     );
