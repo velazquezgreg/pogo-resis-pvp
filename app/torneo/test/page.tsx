@@ -100,52 +100,73 @@ export default function Page() {
   };
 
   const handleSubmit = async () => {
-    // ❌ datos básicos
-    if (!trainerName || !trainerCode) {
-      setErrors(["❌ Completá nombre y código"]);
-      return;
+  const newErrors: string[] = [];
+
+  // 👤 nombre
+  if (!trainerName.trim()) {
+    newErrors.push("❌ Ingresá nombre de entrenador");
+  }
+
+  // 🔢 código
+  if (trainerCode.length !== 12) {
+    newErrors.push("❌ El código debe tener exactamente 12 números");
+  }
+
+  // 🧩 equipo completo
+  team.forEach((p, i) => {
+    if (!p.name) {
+      newErrors.push(`❌ Pokémon ${i + 1} no seleccionado`);
     }
 
-    // ❌ equipo incompleto
-    if (team.some(p => !p.name)) {
-      setErrors(["❌ Tenés que completar los 6 Pokémon"]);
-      return;
+    if (!p.fastMove) {
+      newErrors.push(`❌ Pokémon ${i + 1} sin ataque rápido`);
     }
 
-    try {
-      await addDoc(
-        collection(db, "torneos", "copa-fantasia", "inscripciones"),
-        {
-          trainerName,
-          trainerCode,
-          team,
-          createdAt: new Date()
-        }
-      );
-
-      alert("Inscripción guardada ✅");
-
-      // reset opcional
-      setTrainerName("");
-      setTrainerCode("");
-      setTeam(
-        Array(6).fill(null).map(() => ({
-          name: "",
-          baseName: "",
-          types: [],
-          fastMove: "",
-          chargedMove1: "",
-          chargedMove2: "",
-          isShadow: false
-        }))
-      );
-      setErrors([]);
-
-    } catch (error) {
-      console.error(error);
-      setErrors(["❌ Error al guardar"]);
+    if (!p.chargedMove1) {
+      newErrors.push(`❌ Pokémon ${i + 1} sin ataque cargado`);
     }
-  };
+  });
+
+  // ❌ si hay errores
+  if (newErrors.length > 0) {
+    setErrors(newErrors);
+    return;
+  }
+
+  try {
+    await addDoc(
+      collection(db, "torneos", "copa-fantasia", "inscripciones"),
+      {
+        trainerName,
+        trainerCode,
+        team,
+        createdAt: new Date()
+      }
+    );
+
+    alert("¡Inscripción exitosa! Nos vemos el 12 de Abril");
+
+    // reset
+    setTrainerName("");
+    setTrainerCode("");
+    setTeam(
+      Array(6).fill(null).map(() => ({
+        name: "",
+        baseName: "",
+        types: [],
+        fastMove: "",
+        chargedMove1: "",
+        chargedMove2: "",
+        isShadow: false
+      }))
+    );
+    setErrors([]);
+
+  } catch (error) {
+    console.error(error);
+    setErrors(["Error al guardar"]);
+  }
+};
 
   return (
     <div className="p-6 text-white bg-black min-h-screen">
@@ -164,12 +185,17 @@ export default function Page() {
         />
 
         <input
-          type="text"
-          placeholder="Código de entrenador (ej: 1234 5678 9012)"
-          value={trainerCode}
-          onChange={(e) => setTrainerCode(e.target.value)}
-          className="w-full p-2 bg-zinc-900 border border-zinc-700 rounded"
-        />
+  type="text"
+  placeholder="Código de entrenador (12 dígitos)"
+  value={trainerCode}
+  onChange={(e) => {
+    // solo números
+    const value = e.target.value.replace(/\D/g, "");
+    setTrainerCode(value);
+  }}
+  maxLength={12}
+  className="w-full p-2 bg-zinc-900 border border-zinc-700 rounded"
+/>
       </div>
 
       {/* ❌ errores */}
@@ -277,6 +303,44 @@ export default function Page() {
       >
         Registrar equipo
       </button>
+      {team.some(p => p.name) && (
+  <div className="mt-8 p-4 border border-zinc-700 rounded bg-zinc-900">
+    <h2 className="text-xl mb-4 font-bold">Preview del equipo</h2>
+
+    <div className="grid grid-cols-2 gap-4">
+      {team.map((p, i) => (
+        <div key={i} className="p-3 bg-zinc-800 rounded">
+          <div className="font-semibold">{p.name || "—"}</div>
+
+          {p.name && (
+            <>
+              <div className="text-sm text-zinc-400">
+                {p.types.join(" / ")}
+              </div>
+
+              <div className="text-xs mt-2">
+                ⚡ {p.fastMove || "-"}
+              </div>
+              <div className="text-xs">
+                🔋 {p.chargedMove1 || "-"}
+              </div>
+              <div className="text-xs">
+                🔋 {p.chargedMove2 || "-"}
+              </div>
+
+              {p.isShadow && (
+                <div className="text-xs text-purple-400">
+                  Oscuro
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      ))}
     </div>
+  </div>
+)}
+    </div>
+    
   );
 }
