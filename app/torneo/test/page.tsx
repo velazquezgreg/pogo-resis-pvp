@@ -9,10 +9,10 @@ import { collection, addDoc } from "firebase/firestore";
 
 const allowedTypes = ["Hada", "Dragón", "Acero"];
 
-
 export default function Page() {
   const [trainerName, setTrainerName] = useState("");
   const [trainerCode, setTrainerCode] = useState("");
+
   const [team, setTeam] = useState<TeamPokemon[]>(
     Array(6).fill(null).map(() => ({
       name: "",
@@ -27,9 +27,16 @@ export default function Page() {
 
   const [errors, setErrors] = useState<string[]>([]);
 
-  // 🔥 validar tipo permitido
+  // ✅ validar tipo permitido
   const isValidType = (pokemon: Pokemon) => {
     return pokemon.types.some(t => allowedTypes.includes(t));
+  };
+
+  // ✅ validar especie duplicada
+  const isDuplicateSpecies = (pokemon: Pokemon, index: number) => {
+    return team.some(
+      (p, i) => i !== index && p.baseName === pokemon.baseName
+    );
   };
 
   const updateMove = (
@@ -54,10 +61,18 @@ export default function Page() {
   };
 
   const updatePokemon = (index: number, pokemon: Pokemon) => {
-    // ❌ bloquear si no cumple tipos
+    // ❌ tipo inválido
     if (!isValidType(pokemon)) {
       setErrors([
         `❌ ${pokemon.name} no es válido para Copa Fantasía`
+      ]);
+      return;
+    }
+
+    // ❌ especie duplicada
+    if (isDuplicateSpecies(pokemon, index)) {
+      setErrors([
+        `❌ No podés usar dos ${pokemon.baseName}`
       ]);
       return;
     }
@@ -83,31 +98,54 @@ export default function Page() {
     newTeam[index].isShadow = value;
     setTeam(newTeam);
   };
-const handleSubmit = async () => {
-  try {
-    await addDoc(
-      collection(db, "torneos", "copa-fantasia", "inscripciones"),
-      {
-        trainerName,
-        trainerCode,
-        team,
-        createdAt: new Date()
-      }
-    );
 
-    alert("Inscripción guardada ✅");
+  const handleSubmit = async () => {
+    // ❌ datos básicos
+    if (!trainerName || !trainerCode) {
+      setErrors(["❌ Completá nombre y código"]);
+      return;
+    }
 
-  } catch (error) {
-    console.error(error);
-    alert("Error al guardar ❌");
-  }
-};
-<button
-  onClick={handleSubmit}
-  className="mt-6 w-full bg-green-600 hover:bg-green-700 p-3 rounded font-bold"
->
-  Registrar equipo
-</button>
+    // ❌ equipo incompleto
+    if (team.some(p => !p.name)) {
+      setErrors(["❌ Tenés que completar los 6 Pokémon"]);
+      return;
+    }
+
+    try {
+      await addDoc(
+        collection(db, "torneos", "copa-fantasia", "inscripciones"),
+        {
+          trainerName,
+          trainerCode,
+          team,
+          createdAt: new Date()
+        }
+      );
+
+      alert("Inscripción guardada ✅");
+
+      // reset opcional
+      setTrainerName("");
+      setTrainerCode("");
+      setTeam(
+        Array(6).fill(null).map(() => ({
+          name: "",
+          baseName: "",
+          types: [],
+          fastMove: "",
+          chargedMove1: "",
+          chargedMove2: "",
+          isShadow: false
+        }))
+      );
+      setErrors([]);
+
+    } catch (error) {
+      console.error(error);
+      setErrors(["❌ Error al guardar"]);
+    }
+  };
 
   return (
     <div className="p-6 text-white bg-black min-h-screen">
@@ -173,7 +211,6 @@ const handleSubmit = async () => {
                     {p.types.join(" / ")}
                   </div>
 
-                  {/* Fast Move */}
                   <select
                     value={p.fastMove}
                     onChange={(e) =>
@@ -183,13 +220,10 @@ const handleSubmit = async () => {
                   >
                     <option value="">Ataque rápido</option>
                     {selectedPokemon?.fastMoves.map((m, i) => (
-                      <option key={i} value={m}>
-                        {m}
-                      </option>
+                      <option key={i} value={m}>{m}</option>
                     ))}
                   </select>
 
-                  {/* Charged 1 */}
                   <select
                     value={p.chargedMove1}
                     onChange={(e) =>
@@ -199,13 +233,10 @@ const handleSubmit = async () => {
                   >
                     <option value="">Ataque cargado 1</option>
                     {selectedPokemon?.chargedMoves.map((m, i) => (
-                      <option key={i} value={m}>
-                        {m}
-                      </option>
+                      <option key={i} value={m}>{m}</option>
                     ))}
                   </select>
 
-                  {/* Charged 2 */}
                   <select
                     value={p.chargedMove2}
                     onChange={(e) =>
@@ -217,13 +248,10 @@ const handleSubmit = async () => {
                     {selectedPokemon?.chargedMoves
                       .filter(m => m !== p.chargedMove1)
                       .map((m, i) => (
-                        <option key={i} value={m}>
-                          {m}
-                        </option>
+                        <option key={i} value={m}>{m}</option>
                       ))}
                   </select>
 
-                  {/* Shadow */}
                   <label className="flex items-center gap-2 text-sm">
                     <input
                       type="checkbox"
@@ -241,10 +269,14 @@ const handleSubmit = async () => {
           );
         })}
       </div>
+
+      {/* 🔥 BOTÓN */}
+      <button
+        onClick={handleSubmit}
+        className="mt-6 w-full bg-green-600 hover:bg-green-700 p-3 rounded font-bold"
+      >
+        Registrar equipo
+      </button>
     </div>
-    
   );
-  
 }
-
-
