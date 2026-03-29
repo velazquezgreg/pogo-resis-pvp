@@ -13,6 +13,7 @@ export default function Page() {
   const [trainerName, setTrainerName] = useState("");
   const [trainerCode, setTrainerCode] = useState("");
   const [savedPlayer, setSavedPlayer] = useState<any>(null);
+  const [loading, setLoading] = useState(false);
 
   const [team, setTeam] = useState<TeamPokemon[]>(
     Array(6).fill(null).map(() => ({
@@ -29,12 +30,14 @@ export default function Page() {
 
   const [errors, setErrors] = useState<string[]>([]);
 
+  // ✅ validaciones
   const isValidType = (pokemon: Pokemon) =>
     pokemon.types.some(t => allowedTypes.includes(t));
 
   const isDuplicateSpecies = (pokemon: Pokemon, index: number) =>
     team.some((p, i) => i !== index && p.baseName === pokemon.baseName);
 
+  // 🔄 moves
   const updateMove = (
     index: number,
     field: "fastMove" | "chargedMove1" | "chargedMove2",
@@ -49,6 +52,7 @@ export default function Page() {
     setTeam(newTeam);
   };
 
+  // 🧩 seleccionar pokemon
   const updatePokemon = (index: number, pokemon: Pokemon) => {
     if (!isValidType(pokemon)) {
       setErrors([`❌ ${pokemon.name} no es válido`]);
@@ -63,13 +67,13 @@ export default function Page() {
     const newTeam = [...team];
 
     newTeam[index] = {
-      ...newTeam[index],
       name: pokemon.name,
       baseName: pokemon.baseName,
       types: pokemon.types,
       fastMove: "",
       chargedMove1: "",
       chargedMove2: "",
+      isShadow: false,
       cp: ""
     };
 
@@ -83,6 +87,7 @@ export default function Page() {
     setTeam(newTeam);
   };
 
+  // 🚀 submit
   const handleSubmit = async () => {
     const newErrors: string[] = [];
 
@@ -93,10 +98,13 @@ export default function Page() {
     team.forEach((p, i) => {
       if (!p.name) newErrors.push(`❌ Pokémon ${i + 1} faltante`);
       if (!p.fastMove) newErrors.push(`❌ Pokémon ${i + 1} sin rápido`);
-      if (!p.chargedMove1) newErrors.push(`❌ Pokémon ${i + 1} sin cargado`);
+      if (!p.chargedMove1)
+        newErrors.push(`❌ Pokémon ${i + 1} sin cargado`);
 
       if (p.cp === "" || p.cp <= 0 || p.cp > 1500) {
-        newErrors.push(`❌ Pokémon ${i + 1} debe tener PC entre 1 y 1500`);
+        newErrors.push(
+          `❌ Pokémon ${i + 1} debe tener PC entre 1 y 1500`
+        );
       }
     });
 
@@ -106,6 +114,8 @@ export default function Page() {
     }
 
     try {
+      setLoading(true);
+
       await addDoc(
         collection(db, "torneos", "copa-fantasia", "inscripciones"),
         {
@@ -118,8 +128,6 @@ export default function Page() {
 
       setSavedPlayer({ trainerName, trainerCode, team });
 
-      alert("¡Inscripción exitosa!");
-
       setTrainerName("");
       setTrainerCode("");
       setErrors([]);
@@ -127,82 +135,64 @@ export default function Page() {
     } catch (error) {
       console.error(error);
       setErrors(["Error al guardar"]);
+    } finally {
+      setLoading(false);
     }
   };
 
   const getPokemonData = (name: string) =>
     pokemonData.find(p => p.name === name);
 
-  return (
-    <div className="min-h-screen bg-black text-white flex justify-center items-center p-6">
+  // 🟣 SUCCESS SCREEN
+  if (savedPlayer) {
+    return (
+      <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6">
 
-      {savedPlayer ? (
-        /* 🎉 SUCCESS SCREEN */
-        <div className="w-full max-w-3xl space-y-6 text-center">
+        <div className="max-w-xl w-full text-center space-y-6">
 
-          <div className="space-y-3">
-            <div className="text-6xl">🎉</div>
+          <h1 className="text-3xl font-bold text-green-400">
+            ✅ Inscripción exitosa
+          </h1>
 
-            <h1 className="text-3xl font-bold">
-              ¡Inscripción confirmada!
-            </h1>
+          <p className="text-zinc-400">
+            Nos vemos el 12 de Abril 🔥
+          </p>
 
-            <p className="text-zinc-400">
-              Nos vemos el <span className="text-white font-semibold">12 de Abril</span>
-            </p>
-          </div>
-
-          <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 shadow-xl">
-            <h2 className="text-xl font-bold mb-1">
+          <div className="bg-zinc-900 p-4 rounded border border-zinc-700">
+            <h2 className="font-bold text-lg">
               {savedPlayer.trainerName}
             </h2>
 
-            <p className="text-zinc-400 text-sm mb-4">
+            <div className="text-zinc-400 text-sm mb-4">
               {savedPlayer.trainerCode}
-            </p>
+            </div>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-3">
               {savedPlayer.team.map((p: any, i: number) => {
                 const poke = getPokemonData(p.name);
 
                 return (
-                  <div
-                    key={i}
-                    className="bg-zinc-800 rounded-xl p-3 text-center border border-zinc-700"
-                  >
+                  <div key={i} className="bg-zinc-800 p-2 rounded text-xs">
+
                     {poke?.sprite && (
                       <img
                         src={poke.sprite}
-                        className="w-16 h-16 mx-auto mb-2"
+                        className="w-12 h-12 mx-auto"
                       />
                     )}
 
-                    <div className="font-semibold text-sm">
+                    <div className="font-semibold mt-1">
                       {p.name}
                     </div>
 
-                    <div className="text-xs text-yellow-400">
+                    <div className="text-yellow-400">
                       PC {p.cp}
                     </div>
 
-                    <div className="text-xs mt-1">
-                      ⚡ {p.fastMove}
-                    </div>
-
-                    <div className="text-xs">
-                      🔋 {p.chargedMove1}
-                    </div>
-
+                    <div>⚡ {p.fastMove}</div>
+                    <div>🔋 {p.chargedMove1}</div>
                     {p.chargedMove2 && (
-                      <div className="text-xs">
-                        🔋 {p.chargedMove2}
-                      </div>
-                    )}
-
-                    {p.isShadow && (
-                      <div className="text-xs text-purple-400 mt-1">
-                        Oscuro
-                      </div>
+                      <div>🔋 {p.chargedMove2}</div>
                     )}
                   </div>
                 );
@@ -212,105 +202,170 @@ export default function Page() {
 
           <button
             onClick={() => setSavedPlayer(null)}
-            className="bg-zinc-800 hover:bg-zinc-700 px-6 py-2 rounded-lg"
+            className="bg-zinc-700 hover:bg-zinc-600 px-4 py-2 rounded"
           >
-            Registrar otro equipo
+            Nueva inscripción
           </button>
+
         </div>
-      ) : (
-        /* 🧾 FORM */
-        <div className="w-full max-w-3xl space-y-6">
+      </div>
+    );
+  }
 
-          <div className="text-center space-y-3">
-            <img
-              src="https://i.ibb.co/DPSWzghL/fantasy-cup-icon.png"
-              className="w-20 mx-auto"
-            />
-            <h1 className="text-3xl font-bold">
-              Inscripción Copa Fantasía
-            </h1>
+  // 🧩 FORM
+  return (
+    <div className="min-h-screen bg-black text-white p-6">
+
+      <div className="max-w-3xl mx-auto space-y-6">
+
+        <h1 className="text-3xl font-bold text-center">
+          🏆 Copa Fantasía
+        </h1>
+
+        {/* DATOS */}
+        <div className="space-y-3">
+          <input
+            placeholder="Nombre de entrenador"
+            value={trainerName}
+            onChange={(e) => setTrainerName(e.target.value)}
+            className="w-full p-2 bg-zinc-900 rounded"
+          />
+
+          <input
+            placeholder="Código (12 dígitos)"
+            value={trainerCode}
+            onChange={(e) =>
+              setTrainerCode(e.target.value.replace(/\D/g, ""))
+            }
+            maxLength={12}
+            className="w-full p-2 bg-zinc-900 rounded"
+          />
+        </div>
+
+        {/* ERRORES */}
+        {errors.length > 0 && (
+          <div className="bg-red-900 p-3 rounded">
+            {errors.map((e, i) => (
+              <div key={i}>{e}</div>
+            ))}
           </div>
+        )}
 
-          <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-6 space-y-6">
+        {/* TEAM */}
+        <div className="space-y-4">
+          {team.map((p, index) => {
+            const selectedPokemon = pokemonData.find(
+              pk => pk.name === p.name
+            );
 
-            <div className="space-y-3">
-              <input
-                placeholder="Nombre de entrenador"
-                value={trainerName}
-                onChange={(e) => setTrainerName(e.target.value)}
-                className="w-full p-3 bg-zinc-800 rounded-lg"
-              />
+            return (
+              <div key={index} className="bg-zinc-900 p-4 rounded">
 
-              <input
-                placeholder="Código (12 dígitos)"
-                value={trainerCode}
-                onChange={(e) =>
-                  setTrainerCode(e.target.value.replace(/\D/g, ""))
-                }
-                maxLength={12}
-                className="w-full p-3 bg-zinc-800 rounded-lg"
-              />
-            </div>
+                <h2 className="font-bold mb-2">
+                  Pokémon {index + 1}
+                </h2>
 
-            {errors.length > 0 && (
-              <div className="p-3 bg-red-900 rounded">
-                {errors.map((e, i) => <div key={i}>{e}</div>)}
-              </div>
-            )}
+                <PokemonAutocomplete
+                  pokemonList={pokemonData}
+                  onSelect={(pokemon) =>
+                    updatePokemon(index, pokemon)
+                  }
+                />
 
-            {/* equipo */}
-            <div className="space-y-5">
-              {team.map((p, index) => {
-                const selectedPokemon = pokemonData.find(
-                  pk => pk.name === p.name
-                );
+                {/* 🔥 USAMOS baseName → evita bug */}
+                {p.baseName && selectedPokemon && (
+                  <div className="mt-3 space-y-2">
 
-                return (
-                  <div key={index} className="bg-zinc-800 p-4 rounded-xl space-y-3">
-                    <h2 className="text-sm text-zinc-400">
-                      Pokémon {index + 1}
-                    </h2>
+                    <div className="text-sm text-zinc-400">
+                      {p.types.join(" / ")}
+                    </div>
 
-                    <PokemonAutocomplete
-                      pokemonList={pokemonData}
-                      onSelect={(pokemon) =>
-                        updatePokemon(index, pokemon)
-                      }
+                    {/* CP */}
+                    <input
+                      placeholder="PC (≤1500)"
+                      value={p.cp}
+                      onChange={(e) => {
+                        const value = e.target.value.replace(/\D/g, "");
+                        const num = Number(value);
+                        if (num > 1500) return;
+
+                        const newTeam = [...team];
+                        newTeam[index].cp = value === "" ? "" : num;
+                        setTeam(newTeam);
+                      }}
+                      className="w-full p-2 bg-zinc-800 rounded"
                     />
 
-                    {p.name && (
-                      <>
-                        <input
-                          placeholder="PC (≤1500)"
-                          value={p.cp}
-                          onChange={(e) => {
-                            const value = e.target.value.replace(/\D/g, "");
-                            const num = Number(value);
-                            if (num > 1500) return;
+                    {/* MOVES */}
+                    <select
+                      value={p.fastMove}
+                      onChange={(e) =>
+                        updateMove(index, "fastMove", e.target.value)
+                      }
+                      className="w-full p-2 bg-zinc-800 rounded"
+                    >
+                      <option value="">Ataque rápido</option>
+                      {selectedPokemon.fastMoves.map((m, i) => (
+                        <option key={i}>{m}</option>
+                      ))}
+                    </select>
 
-                            const newTeam = [...team];
-                            newTeam[index].cp = value === "" ? "" : num;
-                            setTeam(newTeam);
-                          }}
-                          className="w-full p-2 bg-zinc-700 rounded"
-                        />
-                      </>
-                    )}
+                    <select
+                      value={p.chargedMove1}
+                      onChange={(e) =>
+                        updateMove(index, "chargedMove1", e.target.value)
+                      }
+                      className="w-full p-2 bg-zinc-800 rounded"
+                    >
+                      <option value="">Ataque cargado</option>
+                      {selectedPokemon.chargedMoves.map((m, i) => (
+                        <option key={i}>{m}</option>
+                      ))}
+                    </select>
+
+                    <select
+                      value={p.chargedMove2}
+                      onChange={(e) =>
+                        updateMove(index, "chargedMove2", e.target.value)
+                      }
+                      className="w-full p-2 bg-zinc-800 rounded"
+                    >
+                      <option value="">Segundo cargado</option>
+                      {selectedPokemon.chargedMoves
+                        .filter(m => m !== p.chargedMove1)
+                        .map((m, i) => (
+                          <option key={i}>{m}</option>
+                        ))}
+                    </select>
+
+                    <label className="text-sm">
+                      <input
+                        type="checkbox"
+                        checked={p.isShadow}
+                        onChange={(e) =>
+                          toggleShadow(index, e.target.checked)
+                        }
+                      />{" "}
+                      Oscuro
+                    </label>
+
                   </div>
-                );
-              })}
-            </div>
-
-            <button
-              onClick={handleSubmit}
-              className="w-full bg-green-600 p-3 rounded-xl font-bold"
-            >
-              Registrar equipo
-            </button>
-
-          </div>
+                )}
+              </div>
+            );
+          })}
         </div>
-      )}
+
+        {/* BOTÓN */}
+        <button
+          onClick={handleSubmit}
+          disabled={loading}
+          className="w-full bg-green-600 hover:bg-green-700 p-3 rounded font-bold disabled:opacity-50"
+        >
+          {loading ? "Guardando..." : "Registrar equipo"}
+        </button>
+
+      </div>
     </div>
   );
 }
