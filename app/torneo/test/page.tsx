@@ -4,8 +4,15 @@ import { useState } from "react";
 import PokemonAutocomplete from "@/components/PokemonAutocomplete";
 import pokemonData from "@/src/data/pokemon-es.json";
 import { Pokemon, TeamPokemon } from "@/components/types";
+import { db } from "@/src/lib/firebase";
+import { collection, addDoc } from "firebase/firestore";
+
+const allowedTypes = ["Hada", "Dragón", "Acero"];
+
 
 export default function Page() {
+  const [trainerName, setTrainerName] = useState("");
+  const [trainerCode, setTrainerCode] = useState("");
   const [team, setTeam] = useState<TeamPokemon[]>(
     Array(6).fill(null).map(() => ({
       name: "",
@@ -18,6 +25,13 @@ export default function Page() {
     }))
   );
 
+  const [errors, setErrors] = useState<string[]>([]);
+
+  // 🔥 validar tipo permitido
+  const isValidType = (pokemon: Pokemon) => {
+    return pokemon.types.some(t => allowedTypes.includes(t));
+  };
+
   const updateMove = (
     index: number,
     field: "fastMove" | "chargedMove1" | "chargedMove2",
@@ -25,7 +39,6 @@ export default function Page() {
   ) => {
     const newTeam = [...team];
 
-    // evitar duplicar charged moves
     if (
       field === "chargedMove2" &&
       value === newTeam[index].chargedMove1
@@ -41,18 +54,27 @@ export default function Page() {
   };
 
   const updatePokemon = (index: number, pokemon: Pokemon) => {
+    // ❌ bloquear si no cumple tipos
+    if (!isValidType(pokemon)) {
+      setErrors([
+        `❌ ${pokemon.name} no es válido para Copa Fantasía`
+      ]);
+      return;
+    }
+
     const newTeam = [...team];
 
     newTeam[index] = {
-  ...newTeam[index],
-  name: pokemon.name,
-  baseName: pokemon.baseName, // 👈 clave
-  types: pokemon.types,
-  fastMove: "",
-  chargedMove1: "",
-  chargedMove2: ""
-};
+      ...newTeam[index],
+      name: pokemon.name,
+      baseName: pokemon.baseName,
+      types: pokemon.types,
+      fastMove: "",
+      chargedMove1: "",
+      chargedMove2: ""
+    };
 
+    setErrors([]);
     setTeam(newTeam);
   };
 
@@ -61,11 +83,67 @@ export default function Page() {
     newTeam[index].isShadow = value;
     setTeam(newTeam);
   };
+const handleSubmit = async () => {
+  try {
+    await addDoc(
+      collection(db, "torneos", "copa-fantasia", "inscripciones"),
+      {
+        trainerName,
+        trainerCode,
+        team,
+        createdAt: new Date()
+      }
+    );
+
+    alert("Inscripción guardada ✅");
+
+  } catch (error) {
+    console.error(error);
+    alert("Error al guardar ❌");
+  }
+};
+<button
+  onClick={handleSubmit}
+  className="mt-6 w-full bg-green-600 hover:bg-green-700 p-3 rounded font-bold"
+>
+  Registrar equipo
+</button>
 
   return (
     <div className="p-6 text-white bg-black min-h-screen">
-      <h1 className="text-2xl mb-6">Registro Copa Fantasía</h1>
+      <h1 className="text-3xl mb-6 font-bold">
+        🏆 Copa Fantasía
+      </h1>
 
+      {/* 👤 Datos del entrenador */}
+      <div className="mb-6 space-y-3">
+        <input
+          type="text"
+          placeholder="Nombre de entrenador"
+          value={trainerName}
+          onChange={(e) => setTrainerName(e.target.value)}
+          className="w-full p-2 bg-zinc-900 border border-zinc-700 rounded"
+        />
+
+        <input
+          type="text"
+          placeholder="Código de entrenador (ej: 1234 5678 9012)"
+          value={trainerCode}
+          onChange={(e) => setTrainerCode(e.target.value)}
+          className="w-full p-2 bg-zinc-900 border border-zinc-700 rounded"
+        />
+      </div>
+
+      {/* ❌ errores */}
+      {errors.length > 0 && (
+        <div className="mb-4 p-3 bg-red-900 border border-red-700 rounded">
+          {errors.map((e, i) => (
+            <div key={i}>{e}</div>
+          ))}
+        </div>
+      )}
+
+      {/* 🧩 Equipo */}
       <div className="space-y-6">
         {team.map((p, index) => {
           const selectedPokemon = pokemonData.find(
@@ -73,16 +151,27 @@ export default function Page() {
           );
 
           return (
-            <div key={index} className="p-4 border border-zinc-700 rounded">
-              <h2 className="mb-2 font-bold">Pokémon {index + 1}</h2>
+            <div
+              key={index}
+              className="p-4 border border-zinc-700 rounded bg-zinc-900"
+            >
+              <h2 className="mb-2 font-bold">
+                Pokémon {index + 1}
+              </h2>
 
               <PokemonAutocomplete
                 pokemonList={pokemonData}
-                onSelect={(pokemon) => updatePokemon(index, pokemon)}
+                onSelect={(pokemon) =>
+                  updatePokemon(index, pokemon)
+                }
               />
 
               {p.name && (
                 <div className="mt-3 space-y-2">
+
+                  <div className="text-sm text-zinc-400">
+                    {p.types.join(" / ")}
+                  </div>
 
                   {/* Fast Move */}
                   <select
@@ -90,7 +179,7 @@ export default function Page() {
                     onChange={(e) =>
                       updateMove(index, "fastMove", e.target.value)
                     }
-                    className="w-full p-2 bg-zinc-900 border border-zinc-700 rounded"
+                    className="w-full p-2 bg-zinc-800 border border-zinc-700 rounded"
                   >
                     <option value="">Ataque rápido</option>
                     {selectedPokemon?.fastMoves.map((m, i) => (
@@ -106,7 +195,7 @@ export default function Page() {
                     onChange={(e) =>
                       updateMove(index, "chargedMove1", e.target.value)
                     }
-                    className="w-full p-2 bg-zinc-900 border border-zinc-700 rounded"
+                    className="w-full p-2 bg-zinc-800 border border-zinc-700 rounded"
                   >
                     <option value="">Ataque cargado 1</option>
                     {selectedPokemon?.chargedMoves.map((m, i) => (
@@ -122,7 +211,7 @@ export default function Page() {
                     onChange={(e) =>
                       updateMove(index, "chargedMove2", e.target.value)
                     }
-                    className="w-full p-2 bg-zinc-900 border border-zinc-700 rounded"
+                    className="w-full p-2 bg-zinc-800 border border-zinc-700 rounded"
                   >
                     <option value="">Ataque cargado 2</option>
                     {selectedPokemon?.chargedMoves
@@ -135,7 +224,7 @@ export default function Page() {
                   </select>
 
                   {/* Shadow */}
-                  <label className="flex items-center gap-2">
+                  <label className="flex items-center gap-2 text-sm">
                     <input
                       type="checkbox"
                       checked={p.isShadow}
@@ -153,5 +242,9 @@ export default function Page() {
         })}
       </div>
     </div>
+    
   );
+  
 }
+
+
