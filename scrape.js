@@ -340,6 +340,7 @@ const moveMap = {
 const translate = (pokemonList) => {
   return pokemonList.map(p => ({
     name: p.name,
+    baseName: p.baseName, 
     types: p.types.map(t => typeMap[t] || t),
     fastMoves: p.fastMoves.map(m => moveMap[m] || m),
     chargedMoves: p.chargedMoves.map(m => moveMap[m] || m),
@@ -359,8 +360,23 @@ async function scrapePokemon() {
 
   $("table tbody tr").each((i, el) => {
     const name = $(el).find("a.ent-name").text();
-    const form = $(el).find("small").text();
+const form = $(el).find("small").text();
 
+// 🔥 limpiar nombre de forma
+const cleanForm = form
+  .replace("Form", "")
+  .replace("Alolan", "Alola")
+  .replace("Galarian", "Galar")
+  .replace("Hisuian", "Hisui")
+  .replace("Paldean", "Paldea")
+  .trim();
+
+
+const fullName = cleanForm ? `${name} (${cleanForm})` : name;
+
+
+
+const baseName = name;
     if (!name) return;
     if (form.toLowerCase().includes("mega")) return;
 
@@ -381,12 +397,13 @@ async function scrapePokemon() {
     const chargedMoves = getMoves($(el).find("td").eq(9));
     const sprite = $(el).find("img").attr("src");
     pokemon.push({
-      name,
-      types,
-      fastMoves,
-      chargedMoves,
-      sprite
-    });
+  name: fullName,
+  baseName,
+  types,
+  fastMoves,
+  chargedMoves,
+  sprite
+});
   });
 
   //  TRADUCCIÓN

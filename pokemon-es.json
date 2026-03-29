@@ -1,6 +1,7 @@
 [
   {
     "name": "Bulbasaur",
+    "baseName": "Bulbasaur",
     "types": [
       "Planta",
       "Veneno"
@@ -20,6 +21,7 @@
   },
   {
     "name": "Ivysaur",
+    "baseName": "Ivysaur",
     "types": [
       "Planta",
       "Veneno"
@@ -39,6 +41,7 @@
   },
   {
     "name": "Venusaur",
+    "baseName": "Venusaur",
     "types": [
       "Planta",
       "Veneno"
@@ -60,6 +63,7 @@
   },
   {
     "name": "Charmander",
+    "baseName": "Charmander",
     "types": [
       "Fuego"
     ],
@@ -78,6 +82,7 @@
   },
   {
     "name": "Charmeleon",
+    "baseName": "Charmeleon",
     "types": [
       "Fuego"
     ],
@@ -97,6 +102,7 @@
   },
   {
     "name": "Charizard",
+    "baseName": "Charizard",
     "types": [
       "Fuego",
       "Volador"
@@ -122,6 +128,7 @@
   },
   {
     "name": "Squirtle",
+    "baseName": "Squirtle",
     "types": [
       "Agua"
     ],
@@ -140,6 +147,7 @@
   },
   {
     "name": "Wartortle",
+    "baseName": "Wartortle",
     "types": [
       "Agua"
     ],
@@ -158,6 +166,7 @@
   },
   {
     "name": "Blastoise",
+    "baseName": "Blastoise",
     "types": [
       "Agua"
     ],
@@ -179,6 +188,7 @@
   },
   {
     "name": "Caterpie",
+    "baseName": "Caterpie",
     "types": [
       "Insecto"
     ],
@@ -195,6 +205,7 @@
   },
   {
     "name": "Metapod",
+    "baseName": "Metapod",
     "types": [
       "Insecto"
     ],
@@ -211,6 +222,7 @@
   },
   {
     "name": "Butterfree",
+    "baseName": "Butterfree",
     "types": [
       "Insecto",
       "Volador"
@@ -231,6 +243,7 @@
   },
   {
     "name": "Weedle",
+    "baseName": "Weedle",
     "types": [
       "Insecto",
       "Veneno"
@@ -248,6 +261,7 @@
   },
   {
     "name": "Kakuna",
+    "baseName": "Kakuna",
     "types": [
       "Insecto",
       "Veneno"
@@ -265,6 +279,7 @@
   },
   {
     "name": "Beedrill",
+    "baseName": "Beedrill",
     "types": [
       "Insecto",
       "Veneno"
@@ -288,6 +303,7 @@
   },
   {
     "name": "Pidgey",
+    "baseName": "Pidgey",
     "types": [
       "Normal",
       "Volador"
@@ -307,6 +323,7 @@
   },
   {
     "name": "Pidgeotto",
+    "baseName": "Pidgeotto",
     "types": [
       "Normal",
       "Volador"
@@ -326,6 +343,7 @@
   },
   {
     "name": "Pidgeot",
+    "baseName": "Pidgeot",
     "types": [
       "Normal",
       "Volador"
@@ -350,6 +368,7 @@
   },
   {
     "name": "Rattata",
+    "baseName": "Rattata",
     "types": [
       "Normal"
     ],
@@ -367,7 +386,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rattata.png"
   },
   {
-    "name": "Rattata",
+    "name": "Rattata (Alola Rattata)",
+    "baseName": "Rattata",
     "types": [
       "Siniestro",
       "Normal"
@@ -387,6 +407,7 @@
   },
   {
     "name": "Raticate",
+    "baseName": "Raticate",
     "types": [
       "Normal"
     ],
@@ -404,7 +425,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/raticate.png"
   },
   {
-    "name": "Raticate",
+    "name": "Raticate (Alola Raticate)",
+    "baseName": "Raticate",
     "types": [
       "Siniestro",
       "Normal"
@@ -424,6 +446,7 @@
   },
   {
     "name": "Spearow",
+    "baseName": "Spearow",
     "types": [
       "Normal",
       "Volador"
@@ -442,6 +465,7 @@
   },
   {
     "name": "Fearow",
+    "baseName": "Fearow",
     "types": [
       "Normal",
       "Volador"
@@ -462,6 +486,7 @@
   },
   {
     "name": "Ekans",
+    "baseName": "Ekans",
     "types": [
       "Veneno"
     ],
@@ -481,6 +506,7 @@
   },
   {
     "name": "Arbok",
+    "baseName": "Arbok",
     "types": [
       "Veneno"
     ],
@@ -502,6 +528,7 @@
   },
   {
     "name": "Pikachu",
+    "baseName": "Pikachu",
     "types": [
       "Eléctrico"
     ],
@@ -520,7 +547,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pikachu.png"
   },
   {
-    "name": "Pikachu",
+    "name": "Pikachu (Pikachu Libre)",
+    "baseName": "Pikachu",
     "types": [
       "Eléctrico"
     ],
@@ -536,7 +564,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pikachu-libre.png"
   },
   {
-    "name": "Pikachu",
+    "name": "Pikachu (Flying)",
+    "baseName": "Pikachu",
     "types": [
       "Eléctrico"
     ],
@@ -554,7 +583,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pikachu-flying.png"
   },
   {
-    "name": "Pikachu",
+    "name": "Pikachu (Pop Star)",
+    "baseName": "Pikachu",
     "types": [
       "Eléctrico"
     ],
@@ -570,7 +600,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pikachu-pop-star.png"
   },
   {
-    "name": "Pikachu",
+    "name": "Pikachu (Rock Star)",
+    "baseName": "Pikachu",
     "types": [
       "Eléctrico"
     ],
@@ -586,7 +617,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pikachu-rock-star.png"
   },
   {
-    "name": "Pikachu",
+    "name": "Pikachu (PhD)",
+    "baseName": "Pikachu",
     "types": [
       "Eléctrico"
     ],
@@ -603,6 +635,7 @@
   },
   {
     "name": "Raichu",
+    "baseName": "Raichu",
     "types": [
       "Eléctrico"
     ],
@@ -624,7 +657,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/raichu.png"
   },
   {
-    "name": "Raichu",
+    "name": "Raichu (Alola Raichu)",
+    "baseName": "Raichu",
     "types": [
       "Eléctrico",
       "Psíquico"
@@ -647,6 +681,7 @@
   },
   {
     "name": "Sandshrew",
+    "baseName": "Sandshrew",
     "types": [
       "Tierra"
     ],
@@ -666,7 +701,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sandshrew.png"
   },
   {
-    "name": "Sandshrew",
+    "name": "Sandshrew (Alola Sandshrew)",
+    "baseName": "Sandshrew",
     "types": [
       "Hielo",
       "Acero"
@@ -686,6 +722,7 @@
   },
   {
     "name": "Sandslash",
+    "baseName": "Sandslash",
     "types": [
       "Tierra"
     ],
@@ -706,7 +743,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sandslash.png"
   },
   {
-    "name": "Sandslash",
+    "name": "Sandslash (Alola Sandslash)",
+    "baseName": "Sandslash",
     "types": [
       "Hielo",
       "Acero"
@@ -730,6 +768,7 @@
   },
   {
     "name": "Nidoran♀",
+    "baseName": "Nidoran♀",
     "types": [
       "Veneno"
     ],
@@ -748,6 +787,7 @@
   },
   {
     "name": "Nidorina",
+    "baseName": "Nidorina",
     "types": [
       "Veneno"
     ],
@@ -767,6 +807,7 @@
   },
   {
     "name": "Nidoqueen",
+    "baseName": "Nidoqueen",
     "types": [
       "Veneno",
       "Tierra"
@@ -790,6 +831,7 @@
   },
   {
     "name": "Nidoran♂",
+    "baseName": "Nidoran♂",
     "types": [
       "Veneno"
     ],
@@ -808,6 +850,7 @@
   },
   {
     "name": "Nidorino",
+    "baseName": "Nidorino",
     "types": [
       "Veneno"
     ],
@@ -827,6 +870,7 @@
   },
   {
     "name": "Nidoking",
+    "baseName": "Nidoking",
     "types": [
       "Veneno",
       "Tierra"
@@ -851,6 +895,7 @@
   },
   {
     "name": "Clefairy",
+    "baseName": "Clefairy",
     "types": [
       "Hada"
     ],
@@ -868,6 +913,7 @@
   },
   {
     "name": "Clefable",
+    "baseName": "Clefable",
     "types": [
       "Hada"
     ],
@@ -890,6 +936,7 @@
   },
   {
     "name": "Vulpix",
+    "baseName": "Vulpix",
     "types": [
       "Fuego"
     ],
@@ -908,7 +955,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vulpix.png"
   },
   {
-    "name": "Vulpix",
+    "name": "Vulpix (Alola Vulpix)",
+    "baseName": "Vulpix",
     "types": [
       "Hielo"
     ],
@@ -928,6 +976,7 @@
   },
   {
     "name": "Ninetales",
+    "baseName": "Ninetales",
     "types": [
       "Fuego"
     ],
@@ -952,7 +1001,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ninetales.png"
   },
   {
-    "name": "Ninetales",
+    "name": "Ninetales (Alola Ninetales)",
+    "baseName": "Ninetales",
     "types": [
       "Hielo",
       "Hada"
@@ -976,6 +1026,7 @@
   },
   {
     "name": "Jigglypuff",
+    "baseName": "Jigglypuff",
     "types": [
       "Normal",
       "Hada"
@@ -996,6 +1047,7 @@
   },
   {
     "name": "Wigglytuff",
+    "baseName": "Wigglytuff",
     "types": [
       "Normal",
       "Hada"
@@ -1018,6 +1070,7 @@
   },
   {
     "name": "Zubat",
+    "baseName": "Zubat",
     "types": [
       "Veneno",
       "Volador"
@@ -1038,6 +1091,7 @@
   },
   {
     "name": "Golbat",
+    "baseName": "Golbat",
     "types": [
       "Veneno",
       "Volador"
@@ -1058,6 +1112,7 @@
   },
   {
     "name": "Oddish",
+    "baseName": "Oddish",
     "types": [
       "Planta",
       "Veneno"
@@ -1077,6 +1132,7 @@
   },
   {
     "name": "Gloom",
+    "baseName": "Gloom",
     "types": [
       "Planta",
       "Veneno"
@@ -1096,6 +1152,7 @@
   },
   {
     "name": "Vileplume",
+    "baseName": "Vileplume",
     "types": [
       "Planta",
       "Veneno"
@@ -1116,6 +1173,7 @@
   },
   {
     "name": "Paras",
+    "baseName": "Paras",
     "types": [
       "Insecto",
       "Planta"
@@ -1133,6 +1191,7 @@
   },
   {
     "name": "Parasect",
+    "baseName": "Parasect",
     "types": [
       "Insecto",
       "Planta"
@@ -1151,6 +1210,7 @@
   },
   {
     "name": "Venonat",
+    "baseName": "Venonat",
     "types": [
       "Insecto",
       "Veneno"
@@ -1170,6 +1230,7 @@
   },
   {
     "name": "Venomoth",
+    "baseName": "Venomoth",
     "types": [
       "Insecto",
       "Veneno"
@@ -1192,6 +1253,7 @@
   },
   {
     "name": "Diglett",
+    "baseName": "Diglett",
     "types": [
       "Tierra"
     ],
@@ -1210,7 +1272,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/diglett.png"
   },
   {
-    "name": "Diglett",
+    "name": "Diglett (Alola Diglett)",
+    "baseName": "Diglett",
     "types": [
       "Tierra",
       "Acero"
@@ -1231,6 +1294,7 @@
   },
   {
     "name": "Dugtrio",
+    "baseName": "Dugtrio",
     "types": [
       "Tierra"
     ],
@@ -1249,7 +1313,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dugtrio.png"
   },
   {
-    "name": "Dugtrio",
+    "name": "Dugtrio (Alola Dugtrio)",
+    "baseName": "Dugtrio",
     "types": [
       "Tierra",
       "Acero"
@@ -1270,6 +1335,7 @@
   },
   {
     "name": "Meowth",
+    "baseName": "Meowth",
     "types": [
       "Normal"
     ],
@@ -1288,7 +1354,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/meowth.png"
   },
   {
-    "name": "Meowth",
+    "name": "Meowth (Alola Meowth)",
+    "baseName": "Meowth",
     "types": [
       "Siniestro"
     ],
@@ -1307,7 +1374,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/meowth-alolan.png"
   },
   {
-    "name": "Meowth",
+    "name": "Meowth (Galar Meowth)",
+    "baseName": "Meowth",
     "types": [
       "Acero"
     ],
@@ -1328,6 +1396,7 @@
   },
   {
     "name": "Persian",
+    "baseName": "Persian",
     "types": [
       "Normal"
     ],
@@ -1347,7 +1416,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/persian.png"
   },
   {
-    "name": "Persian",
+    "name": "Persian (Alola Persian)",
+    "baseName": "Persian",
     "types": [
       "Siniestro"
     ],
@@ -1368,6 +1438,7 @@
   },
   {
     "name": "Psyduck",
+    "baseName": "Psyduck",
     "types": [
       "Agua"
     ],
@@ -1386,6 +1457,7 @@
   },
   {
     "name": "Golduck",
+    "baseName": "Golduck",
     "types": [
       "Agua"
     ],
@@ -1408,6 +1480,7 @@
   },
   {
     "name": "Mankey",
+    "baseName": "Mankey",
     "types": [
       "Pelea"
     ],
@@ -1426,6 +1499,7 @@
   },
   {
     "name": "Primeape",
+    "baseName": "Primeape",
     "types": [
       "Pelea"
     ],
@@ -1448,6 +1522,7 @@
   },
   {
     "name": "Growlithe",
+    "baseName": "Growlithe",
     "types": [
       "Fuego"
     ],
@@ -1465,7 +1540,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/growlithe.png"
   },
   {
-    "name": "Growlithe",
+    "name": "Growlithe (Hisui Growlithe)",
+    "baseName": "Growlithe",
     "types": [
       "Fuego",
       "Roca"
@@ -1485,6 +1561,7 @@
   },
   {
     "name": "Arcanine",
+    "baseName": "Arcanine",
     "types": [
       "Fuego"
     ],
@@ -1508,7 +1585,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/arcanine.png"
   },
   {
-    "name": "Arcanine",
+    "name": "Arcanine (Hisui Arcanine)",
+    "baseName": "Arcanine",
     "types": [
       "Fuego",
       "Roca"
@@ -1530,6 +1608,7 @@
   },
   {
     "name": "Poliwag",
+    "baseName": "Poliwag",
     "types": [
       "Agua"
     ],
@@ -1548,6 +1627,7 @@
   },
   {
     "name": "Poliwhirl",
+    "baseName": "Poliwhirl",
     "types": [
       "Agua"
     ],
@@ -1567,6 +1647,7 @@
   },
   {
     "name": "Poliwrath",
+    "baseName": "Poliwrath",
     "types": [
       "Agua",
       "Pelea"
@@ -1592,6 +1673,7 @@
   },
   {
     "name": "Abra",
+    "baseName": "Abra",
     "types": [
       "Psíquico"
     ],
@@ -1610,6 +1692,7 @@
   },
   {
     "name": "Kadabra",
+    "baseName": "Kadabra",
     "types": [
       "Psíquico"
     ],
@@ -1628,6 +1711,7 @@
   },
   {
     "name": "Alakazam",
+    "baseName": "Alakazam",
     "types": [
       "Psíquico"
     ],
@@ -1650,6 +1734,7 @@
   },
   {
     "name": "Machop",
+    "baseName": "Machop",
     "types": [
       "Pelea"
     ],
@@ -1669,6 +1754,7 @@
   },
   {
     "name": "Machoke",
+    "baseName": "Machoke",
     "types": [
       "Pelea"
     ],
@@ -1688,6 +1774,7 @@
   },
   {
     "name": "Machamp",
+    "baseName": "Machamp",
     "types": [
       "Pelea"
     ],
@@ -1712,6 +1799,7 @@
   },
   {
     "name": "Bellsprout",
+    "baseName": "Bellsprout",
     "types": [
       "Planta",
       "Veneno"
@@ -1731,6 +1819,7 @@
   },
   {
     "name": "Weepinbell",
+    "baseName": "Weepinbell",
     "types": [
       "Planta",
       "Veneno"
@@ -1751,6 +1840,7 @@
   },
   {
     "name": "Victreebel",
+    "baseName": "Victreebel",
     "types": [
       "Planta",
       "Veneno"
@@ -1773,6 +1863,7 @@
   },
   {
     "name": "Tentacool",
+    "baseName": "Tentacool",
     "types": [
       "Agua",
       "Veneno"
@@ -1792,6 +1883,7 @@
   },
   {
     "name": "Tentacruel",
+    "baseName": "Tentacruel",
     "types": [
       "Agua",
       "Veneno"
@@ -1815,6 +1907,7 @@
   },
   {
     "name": "Geodude",
+    "baseName": "Geodude",
     "types": [
       "Roca",
       "Tierra"
@@ -1833,7 +1926,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/geodude.png"
   },
   {
-    "name": "Geodude",
+    "name": "Geodude (Alola Geodude)",
+    "baseName": "Geodude",
     "types": [
       "Roca",
       "Eléctrico"
@@ -1853,6 +1947,7 @@
   },
   {
     "name": "Graveler",
+    "baseName": "Graveler",
     "types": [
       "Roca",
       "Tierra"
@@ -1873,7 +1968,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/graveler.png"
   },
   {
-    "name": "Graveler",
+    "name": "Graveler (Alola Graveler)",
+    "baseName": "Graveler",
     "types": [
       "Roca",
       "Eléctrico"
@@ -1893,6 +1989,7 @@
   },
   {
     "name": "Golem",
+    "baseName": "Golem",
     "types": [
       "Roca",
       "Tierra"
@@ -1913,7 +2010,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/golem.png"
   },
   {
-    "name": "Golem",
+    "name": "Golem (Alola Golem)",
+    "baseName": "Golem",
     "types": [
       "Roca",
       "Eléctrico"
@@ -1934,6 +2032,7 @@
   },
   {
     "name": "Ponyta",
+    "baseName": "Ponyta",
     "types": [
       "Fuego"
     ],
@@ -1952,7 +2051,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ponyta.png"
   },
   {
-    "name": "Ponyta",
+    "name": "Ponyta (Galar Ponyta)",
+    "baseName": "Ponyta",
     "types": [
       "Psíquico"
     ],
@@ -1971,6 +2071,7 @@
   },
   {
     "name": "Rapidash",
+    "baseName": "Rapidash",
     "types": [
       "Fuego"
     ],
@@ -1993,7 +2094,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rapidash.png"
   },
   {
-    "name": "Rapidash",
+    "name": "Rapidash (Galar Rapidash)",
+    "baseName": "Rapidash",
     "types": [
       "Psíquico",
       "Hada"
@@ -2017,6 +2119,7 @@
   },
   {
     "name": "Slowpoke",
+    "baseName": "Slowpoke",
     "types": [
       "Agua",
       "Psíquico"
@@ -2035,7 +2138,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/slowpoke.png"
   },
   {
-    "name": "Slowpoke",
+    "name": "Slowpoke (Galar Slowpoke)",
+    "baseName": "Slowpoke",
     "types": [
       "Psíquico"
     ],
@@ -2054,6 +2158,7 @@
   },
   {
     "name": "Slowbro",
+    "baseName": "Slowbro",
     "types": [
       "Agua",
       "Psíquico"
@@ -2075,7 +2180,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/slowbro.png"
   },
   {
-    "name": "Slowbro",
+    "name": "Slowbro (Galar Slowbro)",
+    "baseName": "Slowbro",
     "types": [
       "Veneno",
       "Psíquico"
@@ -2099,6 +2205,7 @@
   },
   {
     "name": "Magnemite",
+    "baseName": "Magnemite",
     "types": [
       "Eléctrico",
       "Acero"
@@ -2120,6 +2227,7 @@
   },
   {
     "name": "Magneton",
+    "baseName": "Magneton",
     "types": [
       "Eléctrico",
       "Acero"
@@ -2143,6 +2251,7 @@
   },
   {
     "name": "Farfetch'd",
+    "baseName": "Farfetch'd",
     "types": [
       "Normal",
       "Volador"
@@ -2162,7 +2271,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/farfetchd.png"
   },
   {
-    "name": "Farfetch'd",
+    "name": "Farfetch'd (Galar Farfetch'd)",
+    "baseName": "Farfetch'd",
     "types": [
       "Pelea"
     ],
@@ -2181,6 +2291,7 @@
   },
   {
     "name": "Doduo",
+    "baseName": "Doduo",
     "types": [
       "Normal",
       "Volador"
@@ -2199,6 +2310,7 @@
   },
   {
     "name": "Dodrio",
+    "baseName": "Dodrio",
     "types": [
       "Normal",
       "Volador"
@@ -2219,6 +2331,7 @@
   },
   {
     "name": "Seel",
+    "baseName": "Seel",
     "types": [
       "Agua"
     ],
@@ -2237,6 +2350,7 @@
   },
   {
     "name": "Dewgong",
+    "baseName": "Dewgong",
     "types": [
       "Agua",
       "Hielo"
@@ -2259,6 +2373,7 @@
   },
   {
     "name": "Grimer",
+    "baseName": "Grimer",
     "types": [
       "Veneno"
     ],
@@ -2276,7 +2391,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/grimer.png"
   },
   {
-    "name": "Grimer",
+    "name": "Grimer (Alola Grimer)",
+    "baseName": "Grimer",
     "types": [
       "Veneno",
       "Siniestro"
@@ -2296,6 +2412,7 @@
   },
   {
     "name": "Muk",
+    "baseName": "Muk",
     "types": [
       "Veneno"
     ],
@@ -2316,7 +2433,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/muk.png"
   },
   {
-    "name": "Muk",
+    "name": "Muk (Alola Muk)",
+    "baseName": "Muk",
     "types": [
       "Veneno",
       "Siniestro"
@@ -2338,6 +2456,7 @@
   },
   {
     "name": "Shellder",
+    "baseName": "Shellder",
     "types": [
       "Agua"
     ],
@@ -2357,6 +2476,7 @@
   },
   {
     "name": "Cloyster",
+    "baseName": "Cloyster",
     "types": [
       "Agua",
       "Hielo"
@@ -2380,6 +2500,7 @@
   },
   {
     "name": "Gastly",
+    "baseName": "Gastly",
     "types": [
       "Fantasma",
       "Veneno"
@@ -2401,6 +2522,7 @@
   },
   {
     "name": "Haunter",
+    "baseName": "Haunter",
     "types": [
       "Fantasma",
       "Veneno"
@@ -2423,6 +2545,7 @@
   },
   {
     "name": "Gengar",
+    "baseName": "Gengar",
     "types": [
       "Fantasma",
       "Veneno"
@@ -2449,6 +2572,7 @@
   },
   {
     "name": "Onix",
+    "baseName": "Onix",
     "types": [
       "Roca",
       "Tierra"
@@ -2471,6 +2595,7 @@
   },
   {
     "name": "Drowzee",
+    "baseName": "Drowzee",
     "types": [
       "Psíquico"
     ],
@@ -2489,6 +2614,7 @@
   },
   {
     "name": "Hypno",
+    "baseName": "Hypno",
     "types": [
       "Psíquico"
     ],
@@ -2512,6 +2638,7 @@
   },
   {
     "name": "Krabby",
+    "baseName": "Krabby",
     "types": [
       "Agua"
     ],
@@ -2531,6 +2658,7 @@
   },
   {
     "name": "Kingler",
+    "baseName": "Kingler",
     "types": [
       "Agua"
     ],
@@ -2552,6 +2680,7 @@
   },
   {
     "name": "Voltorb",
+    "baseName": "Voltorb",
     "types": [
       "Eléctrico"
     ],
@@ -2570,7 +2699,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/voltorb.png"
   },
   {
-    "name": "Voltorb",
+    "name": "Voltorb (Hisui Voltorb)",
+    "baseName": "Voltorb",
     "types": [
       "Eléctrico",
       "Planta"
@@ -2590,6 +2720,7 @@
   },
   {
     "name": "Electrode",
+    "baseName": "Electrode",
     "types": [
       "Eléctrico"
     ],
@@ -2609,7 +2740,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/electrode.png"
   },
   {
-    "name": "Electrode",
+    "name": "Electrode (Hisui Electrode)",
+    "baseName": "Electrode",
     "types": [
       "Eléctrico",
       "Planta"
@@ -2629,6 +2761,7 @@
   },
   {
     "name": "Exeggcute",
+    "baseName": "Exeggcute",
     "types": [
       "Planta",
       "Psíquico"
@@ -2648,6 +2781,7 @@
   },
   {
     "name": "Exeggutor",
+    "baseName": "Exeggutor",
     "types": [
       "Planta",
       "Psíquico"
@@ -2668,7 +2802,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/exeggutor.png"
   },
   {
-    "name": "Exeggutor",
+    "name": "Exeggutor (Alola Exeggutor)",
+    "baseName": "Exeggutor",
     "types": [
       "Planta",
       "Dragón"
@@ -2689,6 +2824,7 @@
   },
   {
     "name": "Cubone",
+    "baseName": "Cubone",
     "types": [
       "Tierra"
     ],
@@ -2707,6 +2843,7 @@
   },
   {
     "name": "Marowak",
+    "baseName": "Marowak",
     "types": [
       "Tierra"
     ],
@@ -2725,7 +2862,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/marowak.png"
   },
   {
-    "name": "Marowak",
+    "name": "Marowak (Alola Marowak)",
+    "baseName": "Marowak",
     "types": [
       "Fuego",
       "Fantasma"
@@ -2748,6 +2886,7 @@
   },
   {
     "name": "Hitmonlee",
+    "baseName": "Hitmonlee",
     "types": [
       "Pelea"
     ],
@@ -2770,6 +2909,7 @@
   },
   {
     "name": "Hitmonchan",
+    "baseName": "Hitmonchan",
     "types": [
       "Pelea"
     ],
@@ -2792,6 +2932,7 @@
   },
   {
     "name": "Lickitung",
+    "baseName": "Lickitung",
     "types": [
       "Normal"
     ],
@@ -2810,6 +2951,7 @@
   },
   {
     "name": "Koffing",
+    "baseName": "Koffing",
     "types": [
       "Veneno"
     ],
@@ -2828,6 +2970,7 @@
   },
   {
     "name": "Weezing",
+    "baseName": "Weezing",
     "types": [
       "Veneno"
     ],
@@ -2847,7 +2990,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/weezing.png"
   },
   {
-    "name": "Weezing",
+    "name": "Weezing (Galar Weezing)",
+    "baseName": "Weezing",
     "types": [
       "Veneno",
       "Hada"
@@ -2869,6 +3013,7 @@
   },
   {
     "name": "Rhyhorn",
+    "baseName": "Rhyhorn",
     "types": [
       "Tierra",
       "Roca"
@@ -2888,6 +3033,7 @@
   },
   {
     "name": "Rhydon",
+    "baseName": "Rhydon",
     "types": [
       "Tierra",
       "Roca"
@@ -2909,6 +3055,7 @@
   },
   {
     "name": "Chansey",
+    "baseName": "Chansey",
     "types": [
       "Normal"
     ],
@@ -2925,6 +3072,7 @@
   },
   {
     "name": "Tangela",
+    "baseName": "Tangela",
     "types": [
       "Planta"
     ],
@@ -2944,6 +3092,7 @@
   },
   {
     "name": "Kangaskhan",
+    "baseName": "Kangaskhan",
     "types": [
       "Normal"
     ],
@@ -2965,6 +3114,7 @@
   },
   {
     "name": "Horsea",
+    "baseName": "Horsea",
     "types": [
       "Agua"
     ],
@@ -2983,6 +3133,7 @@
   },
   {
     "name": "Seadra",
+    "baseName": "Seadra",
     "types": [
       "Agua"
     ],
@@ -3002,6 +3153,7 @@
   },
   {
     "name": "Goldeen",
+    "baseName": "Goldeen",
     "types": [
       "Agua"
     ],
@@ -3018,6 +3170,7 @@
   },
   {
     "name": "Seaking",
+    "baseName": "Seaking",
     "types": [
       "Agua"
     ],
@@ -3037,6 +3190,7 @@
   },
   {
     "name": "Staryu",
+    "baseName": "Staryu",
     "types": [
       "Agua"
     ],
@@ -3055,6 +3209,7 @@
   },
   {
     "name": "Starmie",
+    "baseName": "Starmie",
     "types": [
       "Agua",
       "Psíquico"
@@ -3080,6 +3235,7 @@
   },
   {
     "name": "Mr. Mime",
+    "baseName": "Mr. Mime",
     "types": [
       "Psíquico",
       "Hada"
@@ -3100,7 +3256,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/mr-mime.png"
   },
   {
-    "name": "Mr. Mime",
+    "name": "Mr. Mime (Galar Mr. Mime)",
+    "baseName": "Mr. Mime",
     "types": [
       "Hielo",
       "Psíquico"
@@ -3121,6 +3278,7 @@
   },
   {
     "name": "Scyther",
+    "baseName": "Scyther",
     "types": [
       "Insecto",
       "Volador"
@@ -3143,6 +3301,7 @@
   },
   {
     "name": "Jynx",
+    "baseName": "Jynx",
     "types": [
       "Hielo",
       "Psíquico"
@@ -3163,6 +3322,7 @@
   },
   {
     "name": "Electabuzz",
+    "baseName": "Electabuzz",
     "types": [
       "Eléctrico"
     ],
@@ -3181,6 +3341,7 @@
   },
   {
     "name": "Magmar",
+    "baseName": "Magmar",
     "types": [
       "Fuego"
     ],
@@ -3200,6 +3361,7 @@
   },
   {
     "name": "Pinsir",
+    "baseName": "Pinsir",
     "types": [
       "Insecto"
     ],
@@ -3221,6 +3383,7 @@
   },
   {
     "name": "Tauros",
+    "baseName": "Tauros",
     "types": [
       "Normal"
     ],
@@ -3237,7 +3400,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tauros.png"
   },
   {
-    "name": "Tauros",
+    "name": "Tauros (Combat Breed)",
+    "baseName": "Tauros",
     "types": [
       "Pelea"
     ],
@@ -3255,7 +3419,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tauros-paldean-combat.png"
   },
   {
-    "name": "Tauros",
+    "name": "Tauros (Blaze Breed)",
+    "baseName": "Tauros",
     "types": [
       "Pelea",
       "Fuego"
@@ -3274,7 +3439,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tauros-paldean-blaze.png"
   },
   {
-    "name": "Tauros",
+    "name": "Tauros (Aqua Breed)",
+    "baseName": "Tauros",
     "types": [
       "Pelea",
       "Agua"
@@ -3294,6 +3460,7 @@
   },
   {
     "name": "Magikarp",
+    "baseName": "Magikarp",
     "types": [
       "Agua"
     ],
@@ -3309,6 +3476,7 @@
   },
   {
     "name": "Gyarados",
+    "baseName": "Gyarados",
     "types": [
       "Agua",
       "Volador"
@@ -3333,6 +3501,7 @@
   },
   {
     "name": "Lapras",
+    "baseName": "Lapras",
     "types": [
       "Agua",
       "Hielo"
@@ -3358,6 +3527,7 @@
   },
   {
     "name": "Ditto",
+    "baseName": "Ditto",
     "types": [
       "Normal"
     ],
@@ -3371,6 +3541,7 @@
   },
   {
     "name": "Eevee",
+    "baseName": "Eevee",
     "types": [
       "Normal"
     ],
@@ -3388,6 +3559,7 @@
   },
   {
     "name": "Vaporeon",
+    "baseName": "Vaporeon",
     "types": [
       "Agua"
     ],
@@ -3406,6 +3578,7 @@
   },
   {
     "name": "Jolteon",
+    "baseName": "Jolteon",
     "types": [
       "Eléctrico"
     ],
@@ -3424,6 +3597,7 @@
   },
   {
     "name": "Flareon",
+    "baseName": "Flareon",
     "types": [
       "Fuego"
     ],
@@ -3443,6 +3617,7 @@
   },
   {
     "name": "Porygon",
+    "baseName": "Porygon",
     "types": [
       "Normal"
     ],
@@ -3466,6 +3641,7 @@
   },
   {
     "name": "Omanyte",
+    "baseName": "Omanyte",
     "types": [
       "Roca",
       "Agua"
@@ -3487,6 +3663,7 @@
   },
   {
     "name": "Omastar",
+    "baseName": "Omastar",
     "types": [
       "Roca",
       "Agua"
@@ -3508,6 +3685,7 @@
   },
   {
     "name": "Kabuto",
+    "baseName": "Kabuto",
     "types": [
       "Roca",
       "Agua"
@@ -3527,6 +3705,7 @@
   },
   {
     "name": "Kabutops",
+    "baseName": "Kabutops",
     "types": [
       "Roca",
       "Agua"
@@ -3548,6 +3727,7 @@
   },
   {
     "name": "Aerodactyl",
+    "baseName": "Aerodactyl",
     "types": [
       "Roca",
       "Volador"
@@ -3571,6 +3751,7 @@
   },
   {
     "name": "Snorlax",
+    "baseName": "Snorlax",
     "types": [
       "Normal"
     ],
@@ -3594,6 +3775,7 @@
   },
   {
     "name": "Articuno",
+    "baseName": "Articuno",
     "types": [
       "Hielo",
       "Volador"
@@ -3616,7 +3798,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/articuno.png"
   },
   {
-    "name": "Articuno",
+    "name": "Articuno (Galar Articuno)",
+    "baseName": "Articuno",
     "types": [
       "Psíquico",
       "Volador"
@@ -3637,6 +3820,7 @@
   },
   {
     "name": "Zapdos",
+    "baseName": "Zapdos",
     "types": [
       "Eléctrico",
       "Volador"
@@ -3658,7 +3842,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zapdos.png"
   },
   {
-    "name": "Zapdos",
+    "name": "Zapdos (Galar Zapdos)",
+    "baseName": "Zapdos",
     "types": [
       "Pelea",
       "Volador"
@@ -3678,6 +3863,7 @@
   },
   {
     "name": "Moltres",
+    "baseName": "Moltres",
     "types": [
       "Fuego",
       "Volador"
@@ -3699,7 +3885,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/moltres.png"
   },
   {
-    "name": "Moltres",
+    "name": "Moltres (Galar Moltres)",
+    "baseName": "Moltres",
     "types": [
       "Siniestro",
       "Volador"
@@ -3720,6 +3907,7 @@
   },
   {
     "name": "Dratini",
+    "baseName": "Dratini",
     "types": [
       "Dragón"
     ],
@@ -3738,6 +3926,7 @@
   },
   {
     "name": "Dragonair",
+    "baseName": "Dragonair",
     "types": [
       "Dragón"
     ],
@@ -3757,6 +3946,7 @@
   },
   {
     "name": "Dragonite",
+    "baseName": "Dragonite",
     "types": [
       "Dragón",
       "Volador"
@@ -3782,6 +3972,7 @@
   },
   {
     "name": "Mewtwo",
+    "baseName": "Mewtwo",
     "types": [
       "Psíquico"
     ],
@@ -3804,7 +3995,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/mewtwo.png"
   },
   {
-    "name": "Mewtwo",
+    "name": "Mewtwo (Armored Mewtwo)",
+    "baseName": "Mewtwo",
     "types": [
       "Psíquico"
     ],
@@ -3825,6 +4017,7 @@
   },
   {
     "name": "Mew",
+    "baseName": "Mew",
     "types": [
       "Psíquico"
     ],
@@ -3875,6 +4068,7 @@
   },
   {
     "name": "Chikorita",
+    "baseName": "Chikorita",
     "types": [
       "Planta"
     ],
@@ -3894,6 +4088,7 @@
   },
   {
     "name": "Bayleef",
+    "baseName": "Bayleef",
     "types": [
       "Planta"
     ],
@@ -3913,6 +4108,7 @@
   },
   {
     "name": "Meganium",
+    "baseName": "Meganium",
     "types": [
       "Planta"
     ],
@@ -3933,6 +4129,7 @@
   },
   {
     "name": "Cyndaquil",
+    "baseName": "Cyndaquil",
     "types": [
       "Fuego"
     ],
@@ -3951,6 +4148,7 @@
   },
   {
     "name": "Quilava",
+    "baseName": "Quilava",
     "types": [
       "Fuego"
     ],
@@ -3969,6 +4167,7 @@
   },
   {
     "name": "Typhlosion",
+    "baseName": "Typhlosion",
     "types": [
       "Fuego"
     ],
@@ -3989,7 +4188,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/typhlosion.png"
   },
   {
-    "name": "Typhlosion",
+    "name": "Typhlosion (Hisui Typhlosion)",
+    "baseName": "Typhlosion",
     "types": [
       "Fuego",
       "Fantasma"
@@ -4011,6 +4211,7 @@
   },
   {
     "name": "Totodile",
+    "baseName": "Totodile",
     "types": [
       "Agua"
     ],
@@ -4029,6 +4230,7 @@
   },
   {
     "name": "Croconaw",
+    "baseName": "Croconaw",
     "types": [
       "Agua"
     ],
@@ -4047,6 +4249,7 @@
   },
   {
     "name": "Feraligatr",
+    "baseName": "Feraligatr",
     "types": [
       "Agua"
     ],
@@ -4069,6 +4272,7 @@
   },
   {
     "name": "Sentret",
+    "baseName": "Sentret",
     "types": [
       "Normal"
     ],
@@ -4085,6 +4289,7 @@
   },
   {
     "name": "Furret",
+    "baseName": "Furret",
     "types": [
       "Normal"
     ],
@@ -4103,6 +4308,7 @@
   },
   {
     "name": "Hoothoot",
+    "baseName": "Hoothoot",
     "types": [
       "Normal",
       "Volador"
@@ -4120,6 +4326,7 @@
   },
   {
     "name": "Noctowl",
+    "baseName": "Noctowl",
     "types": [
       "Normal",
       "Volador"
@@ -4138,6 +4345,7 @@
   },
   {
     "name": "Ledyba",
+    "baseName": "Ledyba",
     "types": [
       "Insecto",
       "Volador"
@@ -4157,6 +4365,7 @@
   },
   {
     "name": "Ledian",
+    "baseName": "Ledian",
     "types": [
       "Insecto",
       "Volador"
@@ -4178,6 +4387,7 @@
   },
   {
     "name": "Spinarak",
+    "baseName": "Spinarak",
     "types": [
       "Insecto",
       "Veneno"
@@ -4195,6 +4405,7 @@
   },
   {
     "name": "Ariados",
+    "baseName": "Ariados",
     "types": [
       "Insecto",
       "Veneno"
@@ -4214,6 +4425,7 @@
   },
   {
     "name": "Crobat",
+    "baseName": "Crobat",
     "types": [
       "Veneno",
       "Volador"
@@ -4235,6 +4447,7 @@
   },
   {
     "name": "Chinchou",
+    "baseName": "Chinchou",
     "types": [
       "Agua",
       "Eléctrico"
@@ -4252,6 +4465,7 @@
   },
   {
     "name": "Lanturn",
+    "baseName": "Lanturn",
     "types": [
       "Agua",
       "Eléctrico"
@@ -4271,6 +4485,7 @@
   },
   {
     "name": "Pichu",
+    "baseName": "Pichu",
     "types": [
       "Eléctrico"
     ],
@@ -4286,6 +4501,7 @@
   },
   {
     "name": "Cleffa",
+    "baseName": "Cleffa",
     "types": [
       "Hada"
     ],
@@ -4305,6 +4521,7 @@
   },
   {
     "name": "Igglybuff",
+    "baseName": "Igglybuff",
     "types": [
       "Normal",
       "Hada"
@@ -4324,6 +4541,7 @@
   },
   {
     "name": "Togepi",
+    "baseName": "Togepi",
     "types": [
       "Hada"
     ],
@@ -4341,6 +4559,7 @@
   },
   {
     "name": "Togetic",
+    "baseName": "Togetic",
     "types": [
       "Hada",
       "Volador"
@@ -4364,6 +4583,7 @@
   },
   {
     "name": "Natu",
+    "baseName": "Natu",
     "types": [
       "Psíquico",
       "Volador"
@@ -4383,6 +4603,7 @@
   },
   {
     "name": "Xatu",
+    "baseName": "Xatu",
     "types": [
       "Psíquico",
       "Volador"
@@ -4404,6 +4625,7 @@
   },
   {
     "name": "Mareep",
+    "baseName": "Mareep",
     "types": [
       "Eléctrico"
     ],
@@ -4423,6 +4645,7 @@
   },
   {
     "name": "Flaaffy",
+    "baseName": "Flaaffy",
     "types": [
       "Eléctrico"
     ],
@@ -4442,6 +4665,7 @@
   },
   {
     "name": "Ampharos",
+    "baseName": "Ampharos",
     "types": [
       "Eléctrico"
     ],
@@ -4465,6 +4689,7 @@
   },
   {
     "name": "Bellossom",
+    "baseName": "Bellossom",
     "types": [
       "Planta"
     ],
@@ -4485,6 +4710,7 @@
   },
   {
     "name": "Marill",
+    "baseName": "Marill",
     "types": [
       "Agua",
       "Hada"
@@ -4502,6 +4728,7 @@
   },
   {
     "name": "Azumarill",
+    "baseName": "Azumarill",
     "types": [
       "Agua",
       "Hada"
@@ -4519,6 +4746,7 @@
   },
   {
     "name": "Sudowoodo",
+    "baseName": "Sudowoodo",
     "types": [
       "Roca"
     ],
@@ -4540,6 +4768,7 @@
   },
   {
     "name": "Politoed",
+    "baseName": "Politoed",
     "types": [
       "Agua"
     ],
@@ -4562,6 +4791,7 @@
   },
   {
     "name": "Hoppip",
+    "baseName": "Hoppip",
     "types": [
       "Planta",
       "Volador"
@@ -4581,6 +4811,7 @@
   },
   {
     "name": "Skiploom",
+    "baseName": "Skiploom",
     "types": [
       "Planta",
       "Volador"
@@ -4600,6 +4831,7 @@
   },
   {
     "name": "Jumpluff",
+    "baseName": "Jumpluff",
     "types": [
       "Planta",
       "Volador"
@@ -4622,6 +4854,7 @@
   },
   {
     "name": "Aipom",
+    "baseName": "Aipom",
     "types": [
       "Normal"
     ],
@@ -4640,6 +4873,7 @@
   },
   {
     "name": "Sunkern",
+    "baseName": "Sunkern",
     "types": [
       "Planta"
     ],
@@ -4656,6 +4890,7 @@
   },
   {
     "name": "Sunflora",
+    "baseName": "Sunflora",
     "types": [
       "Planta"
     ],
@@ -4673,6 +4908,7 @@
   },
   {
     "name": "Yanma",
+    "baseName": "Yanma",
     "types": [
       "Insecto",
       "Volador"
@@ -4690,6 +4926,7 @@
   },
   {
     "name": "Wooper",
+    "baseName": "Wooper",
     "types": [
       "Agua",
       "Tierra"
@@ -4708,7 +4945,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wooper.png"
   },
   {
-    "name": "Wooper",
+    "name": "Wooper (Paldea Wooper)",
+    "baseName": "Wooper",
     "types": [
       "Veneno",
       "Tierra"
@@ -4728,6 +4966,7 @@
   },
   {
     "name": "Quagsire",
+    "baseName": "Quagsire",
     "types": [
       "Agua",
       "Tierra"
@@ -4751,6 +4990,7 @@
   },
   {
     "name": "Espeon",
+    "baseName": "Espeon",
     "types": [
       "Psíquico"
     ],
@@ -4770,6 +5010,7 @@
   },
   {
     "name": "Umbreon",
+    "baseName": "Umbreon",
     "types": [
       "Siniestro"
     ],
@@ -4787,6 +5028,7 @@
   },
   {
     "name": "Murkrow",
+    "baseName": "Murkrow",
     "types": [
       "Siniestro",
       "Volador"
@@ -4806,6 +5048,7 @@
   },
   {
     "name": "Slowking",
+    "baseName": "Slowking",
     "types": [
       "Agua",
       "Psíquico"
@@ -4826,7 +5069,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/slowking.png"
   },
   {
-    "name": "Slowking",
+    "name": "Slowking (Galar Slowking)",
+    "baseName": "Slowking",
     "types": [
       "Veneno",
       "Psíquico"
@@ -4850,6 +5094,7 @@
   },
   {
     "name": "Misdreavus",
+    "baseName": "Misdreavus",
     "types": [
       "Fantasma"
     ],
@@ -4869,6 +5114,7 @@
   },
   {
     "name": "Unown",
+    "baseName": "Unown",
     "types": [
       "Psíquico"
     ],
@@ -4882,6 +5128,7 @@
   },
   {
     "name": "Wobbuffet",
+    "baseName": "Wobbuffet",
     "types": [
       "Psíquico"
     ],
@@ -4899,6 +5146,7 @@
   },
   {
     "name": "Girafarig",
+    "baseName": "Girafarig",
     "types": [
       "Normal",
       "Psíquico"
@@ -4921,6 +5169,7 @@
   },
   {
     "name": "Pineco",
+    "baseName": "Pineco",
     "types": [
       "Insecto"
     ],
@@ -4939,6 +5188,7 @@
   },
   {
     "name": "Forretress",
+    "baseName": "Forretress",
     "types": [
       "Insecto",
       "Acero"
@@ -4961,6 +5211,7 @@
   },
   {
     "name": "Dunsparce",
+    "baseName": "Dunsparce",
     "types": [
       "Normal"
     ],
@@ -4978,6 +5229,7 @@
   },
   {
     "name": "Gligar",
+    "baseName": "Gligar",
     "types": [
       "Tierra",
       "Volador"
@@ -4997,6 +5249,7 @@
   },
   {
     "name": "Steelix",
+    "baseName": "Steelix",
     "types": [
       "Acero",
       "Tierra"
@@ -5019,6 +5272,7 @@
   },
   {
     "name": "Snubbull",
+    "baseName": "Snubbull",
     "types": [
       "Hada"
     ],
@@ -5037,6 +5291,7 @@
   },
   {
     "name": "Granbull",
+    "baseName": "Granbull",
     "types": [
       "Hada"
     ],
@@ -5056,6 +5311,7 @@
   },
   {
     "name": "Qwilfish",
+    "baseName": "Qwilfish",
     "types": [
       "Agua",
       "Veneno"
@@ -5077,7 +5333,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/qwilfish.png"
   },
   {
-    "name": "Qwilfish",
+    "name": "Qwilfish (Hisui Qwilfish)",
+    "baseName": "Qwilfish",
     "types": [
       "Siniestro",
       "Veneno"
@@ -5099,6 +5356,7 @@
   },
   {
     "name": "Scizor",
+    "baseName": "Scizor",
     "types": [
       "Insecto",
       "Acero"
@@ -5119,6 +5377,7 @@
   },
   {
     "name": "Shuckle",
+    "baseName": "Shuckle",
     "types": [
       "Insecto",
       "Roca"
@@ -5138,6 +5397,7 @@
   },
   {
     "name": "Heracross",
+    "baseName": "Heracross",
     "types": [
       "Insecto",
       "Pelea"
@@ -5159,6 +5419,7 @@
   },
   {
     "name": "Sneasel",
+    "baseName": "Sneasel",
     "types": [
       "Siniestro",
       "Hielo"
@@ -5178,7 +5439,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sneasel.png"
   },
   {
-    "name": "Sneasel",
+    "name": "Sneasel (Hisui Sneasel)",
+    "baseName": "Sneasel",
     "types": [
       "Pelea",
       "Veneno"
@@ -5198,6 +5460,7 @@
   },
   {
     "name": "Teddiursa",
+    "baseName": "Teddiursa",
     "types": [
       "Normal"
     ],
@@ -5218,6 +5481,7 @@
   },
   {
     "name": "Ursaring",
+    "baseName": "Ursaring",
     "types": [
       "Normal"
     ],
@@ -5239,6 +5503,7 @@
   },
   {
     "name": "Slugma",
+    "baseName": "Slugma",
     "types": [
       "Fuego"
     ],
@@ -5255,6 +5520,7 @@
   },
   {
     "name": "Magcargo",
+    "baseName": "Magcargo",
     "types": [
       "Fuego",
       "Roca"
@@ -5274,6 +5540,7 @@
   },
   {
     "name": "Swinub",
+    "baseName": "Swinub",
     "types": [
       "Hielo",
       "Tierra"
@@ -5293,6 +5560,7 @@
   },
   {
     "name": "Piloswine",
+    "baseName": "Piloswine",
     "types": [
       "Hielo",
       "Tierra"
@@ -5314,6 +5582,7 @@
   },
   {
     "name": "Corsola",
+    "baseName": "Corsola",
     "types": [
       "Agua",
       "Roca"
@@ -5330,7 +5599,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/corsola.png"
   },
   {
-    "name": "Corsola",
+    "name": "Corsola (Galar Corsola)",
+    "baseName": "Corsola",
     "types": [
       "Fantasma"
     ],
@@ -5347,6 +5617,7 @@
   },
   {
     "name": "Remoraid",
+    "baseName": "Remoraid",
     "types": [
       "Agua"
     ],
@@ -5363,6 +5634,7 @@
   },
   {
     "name": "Octillery",
+    "baseName": "Octillery",
     "types": [
       "Agua"
     ],
@@ -5382,6 +5654,7 @@
   },
   {
     "name": "Delibird",
+    "baseName": "Delibird",
     "types": [
       "Hielo",
       "Volador"
@@ -5402,6 +5675,7 @@
   },
   {
     "name": "Mantine",
+    "baseName": "Mantine",
     "types": [
       "Agua",
       "Volador"
@@ -5421,6 +5695,7 @@
   },
   {
     "name": "Skarmory",
+    "baseName": "Skarmory",
     "types": [
       "Acero",
       "Volador"
@@ -5440,6 +5715,7 @@
   },
   {
     "name": "Houndour",
+    "baseName": "Houndour",
     "types": [
       "Siniestro",
       "Fuego"
@@ -5459,6 +5735,7 @@
   },
   {
     "name": "Houndoom",
+    "baseName": "Houndoom",
     "types": [
       "Siniestro",
       "Fuego"
@@ -5479,6 +5756,7 @@
   },
   {
     "name": "Kingdra",
+    "baseName": "Kingdra",
     "types": [
       "Agua",
       "Dragón"
@@ -5501,6 +5779,7 @@
   },
   {
     "name": "Phanpy",
+    "baseName": "Phanpy",
     "types": [
       "Tierra"
     ],
@@ -5520,6 +5799,7 @@
   },
   {
     "name": "Donphan",
+    "baseName": "Donphan",
     "types": [
       "Tierra"
     ],
@@ -5542,6 +5822,7 @@
   },
   {
     "name": "Porygon2",
+    "baseName": "Porygon2",
     "types": [
       "Normal"
     ],
@@ -5562,6 +5843,7 @@
   },
   {
     "name": "Stantler",
+    "baseName": "Stantler",
     "types": [
       "Normal"
     ],
@@ -5580,6 +5862,7 @@
   },
   {
     "name": "Smeargle",
+    "baseName": "Smeargle",
     "types": [
       "Normal"
     ],
@@ -5589,6 +5872,7 @@
   },
   {
     "name": "Tyrogue",
+    "baseName": "Tyrogue",
     "types": [
       "Pelea"
     ],
@@ -5605,6 +5889,7 @@
   },
   {
     "name": "Hitmontop",
+    "baseName": "Hitmontop",
     "types": [
       "Pelea"
     ],
@@ -5624,6 +5909,7 @@
   },
   {
     "name": "Smoochum",
+    "baseName": "Smoochum",
     "types": [
       "Hielo",
       "Psíquico"
@@ -5642,6 +5928,7 @@
   },
   {
     "name": "Elekid",
+    "baseName": "Elekid",
     "types": [
       "Eléctrico"
     ],
@@ -5659,6 +5946,7 @@
   },
   {
     "name": "Magby",
+    "baseName": "Magby",
     "types": [
       "Fuego"
     ],
@@ -5676,6 +5964,7 @@
   },
   {
     "name": "Miltank",
+    "baseName": "Miltank",
     "types": [
       "Normal"
     ],
@@ -5695,6 +5984,7 @@
   },
   {
     "name": "Blissey",
+    "baseName": "Blissey",
     "types": [
       "Normal"
     ],
@@ -5711,6 +6001,7 @@
   },
   {
     "name": "Raikou",
+    "baseName": "Raikou",
     "types": [
       "Eléctrico"
     ],
@@ -5731,6 +6022,7 @@
   },
   {
     "name": "Entei",
+    "baseName": "Entei",
     "types": [
       "Fuego"
     ],
@@ -5752,6 +6044,7 @@
   },
   {
     "name": "Suicune",
+    "baseName": "Suicune",
     "types": [
       "Agua"
     ],
@@ -5775,6 +6068,7 @@
   },
   {
     "name": "Larvitar",
+    "baseName": "Larvitar",
     "types": [
       "Roca",
       "Tierra"
@@ -5794,6 +6088,7 @@
   },
   {
     "name": "Pupitar",
+    "baseName": "Pupitar",
     "types": [
       "Roca",
       "Tierra"
@@ -5813,6 +6108,7 @@
   },
   {
     "name": "Tyranitar",
+    "baseName": "Tyranitar",
     "types": [
       "Roca",
       "Siniestro"
@@ -5835,6 +6131,7 @@
   },
   {
     "name": "Lugia",
+    "baseName": "Lugia",
     "types": [
       "Psíquico",
       "Volador"
@@ -5855,7 +6152,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lugia.png"
   },
   {
-    "name": "Lugia",
+    "name": "Lugia (Apex Lugia)",
+    "baseName": "Lugia",
     "types": [
       "Psíquico",
       "Volador"
@@ -5879,6 +6177,7 @@
   },
   {
     "name": "Ho-oh",
+    "baseName": "Ho-oh",
     "types": [
       "Fuego",
       "Volador"
@@ -5901,7 +6200,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ho-oh.png"
   },
   {
-    "name": "Ho-oh",
+    "name": "Ho-oh (Apex Ho-Oh)",
+    "baseName": "Ho-oh",
     "types": [
       "Fuego",
       "Volador"
@@ -5927,6 +6227,7 @@
   },
   {
     "name": "Celebi",
+    "baseName": "Celebi",
     "types": [
       "Psíquico",
       "Planta"
@@ -5948,6 +6249,7 @@
   },
   {
     "name": "Treecko",
+    "baseName": "Treecko",
     "types": [
       "Planta"
     ],
@@ -5966,6 +6268,7 @@
   },
   {
     "name": "Grovyle",
+    "baseName": "Grovyle",
     "types": [
       "Planta"
     ],
@@ -5984,6 +6287,7 @@
   },
   {
     "name": "Sceptile",
+    "baseName": "Sceptile",
     "types": [
       "Planta"
     ],
@@ -6005,6 +6309,7 @@
   },
   {
     "name": "Torchic",
+    "baseName": "Torchic",
     "types": [
       "Fuego"
     ],
@@ -6023,6 +6328,7 @@
   },
   {
     "name": "Combusken",
+    "baseName": "Combusken",
     "types": [
       "Fuego",
       "Pelea"
@@ -6042,6 +6348,7 @@
   },
   {
     "name": "Blaziken",
+    "baseName": "Blaziken",
     "types": [
       "Fuego",
       "Pelea"
@@ -6066,6 +6373,7 @@
   },
   {
     "name": "Mudkip",
+    "baseName": "Mudkip",
     "types": [
       "Agua"
     ],
@@ -6084,6 +6392,7 @@
   },
   {
     "name": "Marshtomp",
+    "baseName": "Marshtomp",
     "types": [
       "Agua",
       "Tierra"
@@ -6103,6 +6412,7 @@
   },
   {
     "name": "Swampert",
+    "baseName": "Swampert",
     "types": [
       "Agua",
       "Tierra"
@@ -6125,6 +6435,7 @@
   },
   {
     "name": "Poochyena",
+    "baseName": "Poochyena",
     "types": [
       "Siniestro"
     ],
@@ -6143,6 +6454,7 @@
   },
   {
     "name": "Mightyena",
+    "baseName": "Mightyena",
     "types": [
       "Siniestro"
     ],
@@ -6164,6 +6476,7 @@
   },
   {
     "name": "Zigzagoon",
+    "baseName": "Zigzagoon",
     "types": [
       "Normal"
     ],
@@ -6182,7 +6495,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zigzagoon.png"
   },
   {
-    "name": "Zigzagoon",
+    "name": "Zigzagoon (Galar Zigzagoon)",
+    "baseName": "Zigzagoon",
     "types": [
       "Siniestro",
       "Normal"
@@ -6202,6 +6516,7 @@
   },
   {
     "name": "Linoone",
+    "baseName": "Linoone",
     "types": [
       "Normal"
     ],
@@ -6221,7 +6536,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/linoone.png"
   },
   {
-    "name": "Linoone",
+    "name": "Linoone (Galar Linoone)",
+    "baseName": "Linoone",
     "types": [
       "Siniestro",
       "Normal"
@@ -6241,6 +6557,7 @@
   },
   {
     "name": "Wurmple",
+    "baseName": "Wurmple",
     "types": [
       "Insecto"
     ],
@@ -6255,6 +6572,7 @@
   },
   {
     "name": "Silcoon",
+    "baseName": "Silcoon",
     "types": [
       "Insecto"
     ],
@@ -6269,6 +6587,7 @@
   },
   {
     "name": "Beautifly",
+    "baseName": "Beautifly",
     "types": [
       "Insecto",
       "Volador"
@@ -6286,6 +6605,7 @@
   },
   {
     "name": "Cascoon",
+    "baseName": "Cascoon",
     "types": [
       "Insecto"
     ],
@@ -6300,6 +6620,7 @@
   },
   {
     "name": "Dustox",
+    "baseName": "Dustox",
     "types": [
       "Insecto",
       "Veneno"
@@ -6317,6 +6638,7 @@
   },
   {
     "name": "Lotad",
+    "baseName": "Lotad",
     "types": [
       "Agua",
       "Planta"
@@ -6334,6 +6656,7 @@
   },
   {
     "name": "Lombre",
+    "baseName": "Lombre",
     "types": [
       "Agua",
       "Planta"
@@ -6352,6 +6675,7 @@
   },
   {
     "name": "Ludicolo",
+    "baseName": "Ludicolo",
     "types": [
       "Agua",
       "Planta"
@@ -6375,6 +6699,7 @@
   },
   {
     "name": "Seedot",
+    "baseName": "Seedot",
     "types": [
       "Planta"
     ],
@@ -6393,6 +6718,7 @@
   },
   {
     "name": "Nuzleaf",
+    "baseName": "Nuzleaf",
     "types": [
       "Planta",
       "Siniestro"
@@ -6412,6 +6738,7 @@
   },
   {
     "name": "Shiftry",
+    "baseName": "Shiftry",
     "types": [
       "Planta",
       "Siniestro"
@@ -6434,6 +6761,7 @@
   },
   {
     "name": "Taillow",
+    "baseName": "Taillow",
     "types": [
       "Normal",
       "Volador"
@@ -6451,6 +6779,7 @@
   },
   {
     "name": "Swellow",
+    "baseName": "Swellow",
     "types": [
       "Normal",
       "Volador"
@@ -6470,6 +6799,7 @@
   },
   {
     "name": "Wingull",
+    "baseName": "Wingull",
     "types": [
       "Agua",
       "Volador"
@@ -6487,6 +6817,7 @@
   },
   {
     "name": "Pelipper",
+    "baseName": "Pelipper",
     "types": [
       "Agua",
       "Volador"
@@ -6505,6 +6836,7 @@
   },
   {
     "name": "Ralts",
+    "baseName": "Ralts",
     "types": [
       "Psíquico",
       "Hada"
@@ -6524,6 +6856,7 @@
   },
   {
     "name": "Kirlia",
+    "baseName": "Kirlia",
     "types": [
       "Psíquico",
       "Hada"
@@ -6546,6 +6879,7 @@
   },
   {
     "name": "Gardevoir",
+    "baseName": "Gardevoir",
     "types": [
       "Psíquico",
       "Hada"
@@ -6569,6 +6903,7 @@
   },
   {
     "name": "Surskit",
+    "baseName": "Surskit",
     "types": [
       "Insecto",
       "Agua"
@@ -6586,6 +6921,7 @@
   },
   {
     "name": "Masquerain",
+    "baseName": "Masquerain",
     "types": [
       "Insecto",
       "Volador"
@@ -6605,6 +6941,7 @@
   },
   {
     "name": "Shroomish",
+    "baseName": "Shroomish",
     "types": [
       "Planta"
     ],
@@ -6621,6 +6958,7 @@
   },
   {
     "name": "Breloom",
+    "baseName": "Breloom",
     "types": [
       "Planta",
       "Pelea"
@@ -6640,6 +6978,7 @@
   },
   {
     "name": "Slakoth",
+    "baseName": "Slakoth",
     "types": [
       "Normal"
     ],
@@ -6657,6 +6996,7 @@
   },
   {
     "name": "Vigoroth",
+    "baseName": "Vigoroth",
     "types": [
       "Normal"
     ],
@@ -6676,6 +7016,7 @@
   },
   {
     "name": "Slaking",
+    "baseName": "Slaking",
     "types": [
       "Normal"
     ],
@@ -6694,6 +7035,7 @@
   },
   {
     "name": "Nincada",
+    "baseName": "Nincada",
     "types": [
       "Insecto",
       "Tierra"
@@ -6711,6 +7053,7 @@
   },
   {
     "name": "Ninjask",
+    "baseName": "Ninjask",
     "types": [
       "Insecto",
       "Volador"
@@ -6728,6 +7071,7 @@
   },
   {
     "name": "Shedinja",
+    "baseName": "Shedinja",
     "types": [
       "Insecto",
       "Fantasma"
@@ -6746,6 +7090,7 @@
   },
   {
     "name": "Whismur",
+    "baseName": "Whismur",
     "types": [
       "Normal"
     ],
@@ -6764,6 +7109,7 @@
   },
   {
     "name": "Loudred",
+    "baseName": "Loudred",
     "types": [
       "Normal"
     ],
@@ -6782,6 +7128,7 @@
   },
   {
     "name": "Exploud",
+    "baseName": "Exploud",
     "types": [
       "Normal"
     ],
@@ -6801,6 +7148,7 @@
   },
   {
     "name": "Makuhita",
+    "baseName": "Makuhita",
     "types": [
       "Pelea"
     ],
@@ -6820,6 +7168,7 @@
   },
   {
     "name": "Hariyama",
+    "baseName": "Hariyama",
     "types": [
       "Pelea"
     ],
@@ -6841,6 +7190,7 @@
   },
   {
     "name": "Azurill",
+    "baseName": "Azurill",
     "types": [
       "Normal",
       "Hada"
@@ -6858,6 +7208,7 @@
   },
   {
     "name": "Nosepass",
+    "baseName": "Nosepass",
     "types": [
       "Roca"
     ],
@@ -6876,6 +7227,7 @@
   },
   {
     "name": "Skitty",
+    "baseName": "Skitty",
     "types": [
       "Normal"
     ],
@@ -6892,6 +7244,7 @@
   },
   {
     "name": "Delcatty",
+    "baseName": "Delcatty",
     "types": [
       "Normal"
     ],
@@ -6909,6 +7262,7 @@
   },
   {
     "name": "Sableye",
+    "baseName": "Sableye",
     "types": [
       "Siniestro",
       "Fantasma"
@@ -6930,6 +7284,7 @@
   },
   {
     "name": "Mawile",
+    "baseName": "Mawile",
     "types": [
       "Acero",
       "Hada"
@@ -6953,6 +7308,7 @@
   },
   {
     "name": "Aron",
+    "baseName": "Aron",
     "types": [
       "Acero",
       "Roca"
@@ -6973,6 +7329,7 @@
   },
   {
     "name": "Lairon",
+    "baseName": "Lairon",
     "types": [
       "Acero",
       "Roca"
@@ -6994,6 +7351,7 @@
   },
   {
     "name": "Aggron",
+    "baseName": "Aggron",
     "types": [
       "Acero",
       "Roca"
@@ -7017,6 +7375,7 @@
   },
   {
     "name": "Meditite",
+    "baseName": "Meditite",
     "types": [
       "Pelea",
       "Psíquico"
@@ -7034,6 +7393,7 @@
   },
   {
     "name": "Medicham",
+    "baseName": "Medicham",
     "types": [
       "Pelea",
       "Psíquico"
@@ -7052,6 +7412,7 @@
   },
   {
     "name": "Electrike",
+    "baseName": "Electrike",
     "types": [
       "Eléctrico"
     ],
@@ -7070,6 +7431,7 @@
   },
   {
     "name": "Manectric",
+    "baseName": "Manectric",
     "types": [
       "Eléctrico"
     ],
@@ -7091,6 +7453,7 @@
   },
   {
     "name": "Plusle",
+    "baseName": "Plusle",
     "types": [
       "Eléctrico"
     ],
@@ -7108,6 +7471,7 @@
   },
   {
     "name": "Minun",
+    "baseName": "Minun",
     "types": [
       "Eléctrico"
     ],
@@ -7125,6 +7489,7 @@
   },
   {
     "name": "Volbeat",
+    "baseName": "Volbeat",
     "types": [
       "Insecto"
     ],
@@ -7141,6 +7506,7 @@
   },
   {
     "name": "Illumise",
+    "baseName": "Illumise",
     "types": [
       "Insecto"
     ],
@@ -7157,6 +7523,7 @@
   },
   {
     "name": "Roselia",
+    "baseName": "Roselia",
     "types": [
       "Planta",
       "Veneno"
@@ -7175,6 +7542,7 @@
   },
   {
     "name": "Gulpin",
+    "baseName": "Gulpin",
     "types": [
       "Veneno"
     ],
@@ -7191,6 +7559,7 @@
   },
   {
     "name": "Swalot",
+    "baseName": "Swalot",
     "types": [
       "Veneno"
     ],
@@ -7210,6 +7579,7 @@
   },
   {
     "name": "Carvanha",
+    "baseName": "Carvanha",
     "types": [
       "Agua",
       "Siniestro"
@@ -7229,6 +7599,7 @@
   },
   {
     "name": "Sharpedo",
+    "baseName": "Sharpedo",
     "types": [
       "Agua",
       "Siniestro"
@@ -7248,6 +7619,7 @@
   },
   {
     "name": "Wailmer",
+    "baseName": "Wailmer",
     "types": [
       "Agua"
     ],
@@ -7268,6 +7640,7 @@
   },
   {
     "name": "Wailord",
+    "baseName": "Wailord",
     "types": [
       "Agua"
     ],
@@ -7288,6 +7661,7 @@
   },
   {
     "name": "Numel",
+    "baseName": "Numel",
     "types": [
       "Fuego",
       "Tierra"
@@ -7307,6 +7681,7 @@
   },
   {
     "name": "Camerupt",
+    "baseName": "Camerupt",
     "types": [
       "Fuego",
       "Tierra"
@@ -7330,6 +7705,7 @@
   },
   {
     "name": "Torkoal",
+    "baseName": "Torkoal",
     "types": [
       "Fuego"
     ],
@@ -7347,6 +7723,7 @@
   },
   {
     "name": "Spoink",
+    "baseName": "Spoink",
     "types": [
       "Psíquico"
     ],
@@ -7365,6 +7742,7 @@
   },
   {
     "name": "Grumpig",
+    "baseName": "Grumpig",
     "types": [
       "Psíquico"
     ],
@@ -7385,6 +7763,7 @@
   },
   {
     "name": "Spinda",
+    "baseName": "Spinda",
     "types": [
       "Normal"
     ],
@@ -7401,6 +7780,7 @@
   },
   {
     "name": "Trapinch",
+    "baseName": "Trapinch",
     "types": [
       "Tierra"
     ],
@@ -7421,6 +7801,7 @@
   },
   {
     "name": "Vibrava",
+    "baseName": "Vibrava",
     "types": [
       "Tierra",
       "Dragón"
@@ -7442,6 +7823,7 @@
   },
   {
     "name": "Flygon",
+    "baseName": "Flygon",
     "types": [
       "Tierra",
       "Dragón"
@@ -7467,6 +7849,7 @@
   },
   {
     "name": "Cacnea",
+    "baseName": "Cacnea",
     "types": [
       "Planta"
     ],
@@ -7488,6 +7871,7 @@
   },
   {
     "name": "Cacturne",
+    "baseName": "Cacturne",
     "types": [
       "Planta",
       "Siniestro"
@@ -7510,6 +7894,7 @@
   },
   {
     "name": "Swablu",
+    "baseName": "Swablu",
     "types": [
       "Normal",
       "Volador"
@@ -7529,6 +7914,7 @@
   },
   {
     "name": "Altaria",
+    "baseName": "Altaria",
     "types": [
       "Dragón",
       "Volador"
@@ -7550,6 +7936,7 @@
   },
   {
     "name": "Zangoose",
+    "baseName": "Zangoose",
     "types": [
       "Normal"
     ],
@@ -7566,6 +7953,7 @@
   },
   {
     "name": "Seviper",
+    "baseName": "Seviper",
     "types": [
       "Veneno"
     ],
@@ -7582,6 +7970,7 @@
   },
   {
     "name": "Lunatone",
+    "baseName": "Lunatone",
     "types": [
       "Roca",
       "Psíquico"
@@ -7601,6 +7990,7 @@
   },
   {
     "name": "Solrock",
+    "baseName": "Solrock",
     "types": [
       "Roca",
       "Psíquico"
@@ -7620,6 +8010,7 @@
   },
   {
     "name": "Barboach",
+    "baseName": "Barboach",
     "types": [
       "Agua",
       "Tierra"
@@ -7640,6 +8031,7 @@
   },
   {
     "name": "Whiscash",
+    "baseName": "Whiscash",
     "types": [
       "Agua",
       "Tierra"
@@ -7660,6 +8052,7 @@
   },
   {
     "name": "Corphish",
+    "baseName": "Corphish",
     "types": [
       "Agua"
     ],
@@ -7680,6 +8073,7 @@
   },
   {
     "name": "Crawdaunt",
+    "baseName": "Crawdaunt",
     "types": [
       "Agua",
       "Siniestro"
@@ -7702,6 +8096,7 @@
   },
   {
     "name": "Baltoy",
+    "baseName": "Baltoy",
     "types": [
       "Tierra",
       "Psíquico"
@@ -7721,6 +8116,7 @@
   },
   {
     "name": "Claydol",
+    "baseName": "Claydol",
     "types": [
       "Tierra",
       "Psíquico"
@@ -7746,6 +8142,7 @@
   },
   {
     "name": "Lileep",
+    "baseName": "Lileep",
     "types": [
       "Roca",
       "Planta"
@@ -7766,6 +8163,7 @@
   },
   {
     "name": "Cradily",
+    "baseName": "Cradily",
     "types": [
       "Roca",
       "Planta"
@@ -7788,6 +8186,7 @@
   },
   {
     "name": "Anorith",
+    "baseName": "Anorith",
     "types": [
       "Roca",
       "Insecto"
@@ -7807,6 +8206,7 @@
   },
   {
     "name": "Armaldo",
+    "baseName": "Armaldo",
     "types": [
       "Roca",
       "Insecto"
@@ -7827,6 +8227,7 @@
   },
   {
     "name": "Feebas",
+    "baseName": "Feebas",
     "types": [
       "Agua"
     ],
@@ -7843,6 +8244,7 @@
   },
   {
     "name": "Milotic",
+    "baseName": "Milotic",
     "types": [
       "Agua"
     ],
@@ -7863,6 +8265,7 @@
   },
   {
     "name": "Castform",
+    "baseName": "Castform",
     "types": [
       "Normal"
     ],
@@ -7879,7 +8282,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/castform.png"
   },
   {
-    "name": "Castform",
+    "name": "Castform (Sunny)",
+    "baseName": "Castform",
     "types": [
       "Fuego"
     ],
@@ -7895,7 +8299,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/castform-sunny.png"
   },
   {
-    "name": "Castform",
+    "name": "Castform (Rainy)",
+    "baseName": "Castform",
     "types": [
       "Agua"
     ],
@@ -7911,7 +8316,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/castform-rainy.png"
   },
   {
-    "name": "Castform",
+    "name": "Castform (Snowy)",
+    "baseName": "Castform",
     "types": [
       "Hielo"
     ],
@@ -7928,6 +8334,7 @@
   },
   {
     "name": "Kecleon",
+    "baseName": "Kecleon",
     "types": [
       "Normal"
     ],
@@ -7947,6 +8354,7 @@
   },
   {
     "name": "Shuppet",
+    "baseName": "Shuppet",
     "types": [
       "Fantasma"
     ],
@@ -7965,6 +8373,7 @@
   },
   {
     "name": "Banette",
+    "baseName": "Banette",
     "types": [
       "Fantasma"
     ],
@@ -7983,6 +8392,7 @@
   },
   {
     "name": "Duskull",
+    "baseName": "Duskull",
     "types": [
       "Fantasma"
     ],
@@ -8001,6 +8411,7 @@
   },
   {
     "name": "Dusclops",
+    "baseName": "Dusclops",
     "types": [
       "Fantasma"
     ],
@@ -8020,6 +8431,7 @@
   },
   {
     "name": "Tropius",
+    "baseName": "Tropius",
     "types": [
       "Planta",
       "Volador"
@@ -8038,6 +8450,7 @@
   },
   {
     "name": "Chimecho",
+    "baseName": "Chimecho",
     "types": [
       "Psíquico"
     ],
@@ -8054,6 +8467,7 @@
   },
   {
     "name": "Absol",
+    "baseName": "Absol",
     "types": [
       "Siniestro"
     ],
@@ -8074,6 +8488,7 @@
   },
   {
     "name": "Wynaut",
+    "baseName": "Wynaut",
     "types": [
       "Psíquico"
     ],
@@ -8088,6 +8503,7 @@
   },
   {
     "name": "Snorunt",
+    "baseName": "Snorunt",
     "types": [
       "Hielo"
     ],
@@ -8106,6 +8522,7 @@
   },
   {
     "name": "Glalie",
+    "baseName": "Glalie",
     "types": [
       "Hielo"
     ],
@@ -8126,6 +8543,7 @@
   },
   {
     "name": "Spheal",
+    "baseName": "Spheal",
     "types": [
       "Hielo",
       "Agua"
@@ -8145,6 +8563,7 @@
   },
   {
     "name": "Sealeo",
+    "baseName": "Sealeo",
     "types": [
       "Hielo",
       "Agua"
@@ -8165,6 +8584,7 @@
   },
   {
     "name": "Walrein",
+    "baseName": "Walrein",
     "types": [
       "Hielo",
       "Agua"
@@ -8186,6 +8606,7 @@
   },
   {
     "name": "Clamperl",
+    "baseName": "Clamperl",
     "types": [
       "Agua"
     ],
@@ -8201,6 +8622,7 @@
   },
   {
     "name": "Huntail",
+    "baseName": "Huntail",
     "types": [
       "Agua"
     ],
@@ -8217,6 +8639,7 @@
   },
   {
     "name": "Gorebyss",
+    "baseName": "Gorebyss",
     "types": [
       "Agua"
     ],
@@ -8233,6 +8656,7 @@
   },
   {
     "name": "Relicanth",
+    "baseName": "Relicanth",
     "types": [
       "Agua",
       "Roca"
@@ -8250,6 +8674,7 @@
   },
   {
     "name": "Luvdisc",
+    "baseName": "Luvdisc",
     "types": [
       "Agua"
     ],
@@ -8266,6 +8691,7 @@
   },
   {
     "name": "Bagon",
+    "baseName": "Bagon",
     "types": [
       "Dragón"
     ],
@@ -8284,6 +8710,7 @@
   },
   {
     "name": "Shelgon",
+    "baseName": "Shelgon",
     "types": [
       "Dragón"
     ],
@@ -8303,6 +8730,7 @@
   },
   {
     "name": "Salamence",
+    "baseName": "Salamence",
     "types": [
       "Dragón",
       "Volador"
@@ -8327,6 +8755,7 @@
   },
   {
     "name": "Beldum",
+    "baseName": "Beldum",
     "types": [
       "Acero",
       "Psíquico"
@@ -8343,6 +8772,7 @@
   },
   {
     "name": "Metang",
+    "baseName": "Metang",
     "types": [
       "Acero",
       "Psíquico"
@@ -8363,6 +8793,7 @@
   },
   {
     "name": "Metagross",
+    "baseName": "Metagross",
     "types": [
       "Acero",
       "Psíquico"
@@ -8385,6 +8816,7 @@
   },
   {
     "name": "Regirock",
+    "baseName": "Regirock",
     "types": [
       "Roca"
     ],
@@ -8405,6 +8837,7 @@
   },
   {
     "name": "Regice",
+    "baseName": "Regice",
     "types": [
       "Hielo"
     ],
@@ -8425,6 +8858,7 @@
   },
   {
     "name": "Registeel",
+    "baseName": "Registeel",
     "types": [
       "Acero"
     ],
@@ -8445,6 +8879,7 @@
   },
   {
     "name": "Latias",
+    "baseName": "Latias",
     "types": [
       "Dragón",
       "Psíquico"
@@ -8467,6 +8902,7 @@
   },
   {
     "name": "Latios",
+    "baseName": "Latios",
     "types": [
       "Dragón",
       "Psíquico"
@@ -8488,6 +8924,7 @@
   },
   {
     "name": "Kyogre",
+    "baseName": "Kyogre",
     "types": [
       "Agua"
     ],
@@ -8507,7 +8944,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kyogre.png"
   },
   {
-    "name": "Kyogre",
+    "name": "Kyogre (Primal Kyogre)",
+    "baseName": "Kyogre",
     "types": [
       "Agua"
     ],
@@ -8517,6 +8955,7 @@
   },
   {
     "name": "Groudon",
+    "baseName": "Groudon",
     "types": [
       "Tierra"
     ],
@@ -8536,7 +8975,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/groudon.png"
   },
   {
-    "name": "Groudon",
+    "name": "Groudon (Primal Groudon)",
+    "baseName": "Groudon",
     "types": [
       "Tierra",
       "Fuego"
@@ -8547,6 +8987,7 @@
   },
   {
     "name": "Rayquaza",
+    "baseName": "Rayquaza",
     "types": [
       "Dragón",
       "Volador"
@@ -8567,6 +9008,7 @@
   },
   {
     "name": "Jirachi",
+    "baseName": "Jirachi",
     "types": [
       "Acero",
       "Psíquico"
@@ -8584,7 +9026,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/jirachi.png"
   },
   {
-    "name": "Deoxys",
+    "name": "Deoxys (Normal e)",
+    "baseName": "Deoxys",
     "types": [
       "Psíquico"
     ],
@@ -8600,7 +9043,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/deoxys-normal.png"
   },
   {
-    "name": "Deoxys",
+    "name": "Deoxys (Attack e)",
+    "baseName": "Deoxys",
     "types": [
       "Psíquico"
     ],
@@ -8616,7 +9060,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/deoxys-attack.png"
   },
   {
-    "name": "Deoxys",
+    "name": "Deoxys (Defense e)",
+    "baseName": "Deoxys",
     "types": [
       "Psíquico"
     ],
@@ -8632,7 +9077,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/deoxys-defense.png"
   },
   {
-    "name": "Deoxys",
+    "name": "Deoxys (Speed e)",
+    "baseName": "Deoxys",
     "types": [
       "Psíquico"
     ],
@@ -8649,6 +9095,7 @@
   },
   {
     "name": "Turtwig",
+    "baseName": "Turtwig",
     "types": [
       "Planta"
     ],
@@ -8667,6 +9114,7 @@
   },
   {
     "name": "Grotle",
+    "baseName": "Grotle",
     "types": [
       "Planta"
     ],
@@ -8685,6 +9133,7 @@
   },
   {
     "name": "Torterra",
+    "baseName": "Torterra",
     "types": [
       "Planta",
       "Tierra"
@@ -8707,6 +9156,7 @@
   },
   {
     "name": "Chimchar",
+    "baseName": "Chimchar",
     "types": [
       "Fuego"
     ],
@@ -8725,6 +9175,7 @@
   },
   {
     "name": "Monferno",
+    "baseName": "Monferno",
     "types": [
       "Fuego",
       "Pelea"
@@ -8744,6 +9195,7 @@
   },
   {
     "name": "Infernape",
+    "baseName": "Infernape",
     "types": [
       "Fuego",
       "Pelea"
@@ -8764,6 +9216,7 @@
   },
   {
     "name": "Piplup",
+    "baseName": "Piplup",
     "types": [
       "Agua"
     ],
@@ -8782,6 +9235,7 @@
   },
   {
     "name": "Prinplup",
+    "baseName": "Prinplup",
     "types": [
       "Agua"
     ],
@@ -8800,6 +9254,7 @@
   },
   {
     "name": "Empoleon",
+    "baseName": "Empoleon",
     "types": [
       "Agua",
       "Acero"
@@ -8823,6 +9278,7 @@
   },
   {
     "name": "Starly",
+    "baseName": "Starly",
     "types": [
       "Normal",
       "Volador"
@@ -8843,6 +9299,7 @@
   },
   {
     "name": "Staravia",
+    "baseName": "Staravia",
     "types": [
       "Normal",
       "Volador"
@@ -8864,6 +9321,7 @@
   },
   {
     "name": "Staraptor",
+    "baseName": "Staraptor",
     "types": [
       "Normal",
       "Volador"
@@ -8886,6 +9344,7 @@
   },
   {
     "name": "Bidoof",
+    "baseName": "Bidoof",
     "types": [
       "Normal"
     ],
@@ -8908,6 +9367,7 @@
   },
   {
     "name": "Bibarel",
+    "baseName": "Bibarel",
     "types": [
       "Normal",
       "Agua"
@@ -8928,6 +9388,7 @@
   },
   {
     "name": "Kricketot",
+    "baseName": "Kricketot",
     "types": [
       "Insecto"
     ],
@@ -8942,6 +9403,7 @@
   },
   {
     "name": "Kricketune",
+    "baseName": "Kricketune",
     "types": [
       "Insecto"
     ],
@@ -8958,6 +9420,7 @@
   },
   {
     "name": "Shinx",
+    "baseName": "Shinx",
     "types": [
       "Eléctrico"
     ],
@@ -8976,6 +9439,7 @@
   },
   {
     "name": "Luxio",
+    "baseName": "Luxio",
     "types": [
       "Eléctrico"
     ],
@@ -8994,6 +9458,7 @@
   },
   {
     "name": "Luxray",
+    "baseName": "Luxray",
     "types": [
       "Eléctrico"
     ],
@@ -9014,6 +9479,7 @@
   },
   {
     "name": "Budew",
+    "baseName": "Budew",
     "types": [
       "Planta",
       "Veneno"
@@ -9030,6 +9496,7 @@
   },
   {
     "name": "Roserade",
+    "baseName": "Roserade",
     "types": [
       "Planta",
       "Veneno"
@@ -9053,6 +9520,7 @@
   },
   {
     "name": "Cranidos",
+    "baseName": "Cranidos",
     "types": [
       "Roca"
     ],
@@ -9071,6 +9539,7 @@
   },
   {
     "name": "Rampardos",
+    "baseName": "Rampardos",
     "types": [
       "Roca"
     ],
@@ -9089,6 +9558,7 @@
   },
   {
     "name": "Shieldon",
+    "baseName": "Shieldon",
     "types": [
       "Roca",
       "Acero"
@@ -9108,6 +9578,7 @@
   },
   {
     "name": "Bastiodon",
+    "baseName": "Bastiodon",
     "types": [
       "Roca",
       "Acero"
@@ -9126,7 +9597,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/bastiodon.png"
   },
   {
-    "name": "Burmy",
+    "name": "Burmy (Plant Cloak)",
+    "baseName": "Burmy",
     "types": [
       "Insecto"
     ],
@@ -9140,7 +9612,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/burmy-plant.png"
   },
   {
-    "name": "Burmy",
+    "name": "Burmy (Sandy Cloak)",
+    "baseName": "Burmy",
     "types": [
       "Insecto"
     ],
@@ -9154,7 +9627,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/burmy-sandy.png"
   },
   {
-    "name": "Burmy",
+    "name": "Burmy (Trash Cloak)",
+    "baseName": "Burmy",
     "types": [
       "Insecto"
     ],
@@ -9168,7 +9642,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/burmy-trash.png"
   },
   {
-    "name": "Wormadam",
+    "name": "Wormadam (Plant Cloak)",
+    "baseName": "Wormadam",
     "types": [
       "Insecto",
       "Planta"
@@ -9186,7 +9661,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wormadam-plant.png"
   },
   {
-    "name": "Wormadam",
+    "name": "Wormadam (Sandy Cloak)",
+    "baseName": "Wormadam",
     "types": [
       "Insecto",
       "Tierra"
@@ -9204,7 +9680,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wormadam-sandy.png"
   },
   {
-    "name": "Wormadam",
+    "name": "Wormadam (Trash Cloak)",
+    "baseName": "Wormadam",
     "types": [
       "Insecto",
       "Acero"
@@ -9224,6 +9701,7 @@
   },
   {
     "name": "Mothim",
+    "baseName": "Mothim",
     "types": [
       "Insecto",
       "Volador"
@@ -9241,6 +9719,7 @@
   },
   {
     "name": "Combee",
+    "baseName": "Combee",
     "types": [
       "Insecto",
       "Volador"
@@ -9255,6 +9734,7 @@
   },
   {
     "name": "Vespiquen",
+    "baseName": "Vespiquen",
     "types": [
       "Insecto",
       "Volador"
@@ -9276,6 +9756,7 @@
   },
   {
     "name": "Pachirisu",
+    "baseName": "Pachirisu",
     "types": [
       "Eléctrico"
     ],
@@ -9293,6 +9774,7 @@
   },
   {
     "name": "Buizel",
+    "baseName": "Buizel",
     "types": [
       "Agua"
     ],
@@ -9309,6 +9791,7 @@
   },
   {
     "name": "Floatzel",
+    "baseName": "Floatzel",
     "types": [
       "Agua"
     ],
@@ -9326,6 +9809,7 @@
   },
   {
     "name": "Cherubi",
+    "baseName": "Cherubi",
     "types": [
       "Planta"
     ],
@@ -9341,7 +9825,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cherubi.png"
   },
   {
-    "name": "Cherrim",
+    "name": "Cherrim (Overcast)",
+    "baseName": "Cherrim",
     "types": [
       "Planta"
     ],
@@ -9357,7 +9842,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cherrim-overcast.png"
   },
   {
-    "name": "Cherrim",
+    "name": "Cherrim (Sunshine)",
+    "baseName": "Cherrim",
     "types": [
       "Planta"
     ],
@@ -9374,7 +9860,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cherrim-sunshine.png"
   },
   {
-    "name": "Shellos",
+    "name": "Shellos (East Sea)",
+    "baseName": "Shellos",
     "types": [
       "Agua"
     ],
@@ -9390,7 +9877,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shellos-east.png"
   },
   {
-    "name": "Shellos",
+    "name": "Shellos (West Sea)",
+    "baseName": "Shellos",
     "types": [
       "Agua"
     ],
@@ -9406,7 +9894,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shellos-west.png"
   },
   {
-    "name": "Gastrodon",
+    "name": "Gastrodon (East Sea)",
+    "baseName": "Gastrodon",
     "types": [
       "Agua",
       "Tierra"
@@ -9424,7 +9913,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gastrodon-east.png"
   },
   {
-    "name": "Gastrodon",
+    "name": "Gastrodon (West Sea)",
+    "baseName": "Gastrodon",
     "types": [
       "Agua",
       "Tierra"
@@ -9443,6 +9933,7 @@
   },
   {
     "name": "Ambipom",
+    "baseName": "Ambipom",
     "types": [
       "Normal"
     ],
@@ -9461,6 +9952,7 @@
   },
   {
     "name": "Drifloon",
+    "baseName": "Drifloon",
     "types": [
       "Fantasma",
       "Volador"
@@ -9480,6 +9972,7 @@
   },
   {
     "name": "Drifblim",
+    "baseName": "Drifblim",
     "types": [
       "Fantasma",
       "Volador"
@@ -9500,6 +9993,7 @@
   },
   {
     "name": "Buneary",
+    "baseName": "Buneary",
     "types": [
       "Normal"
     ],
@@ -9515,6 +10009,7 @@
   },
   {
     "name": "Lopunny",
+    "baseName": "Lopunny",
     "types": [
       "Normal"
     ],
@@ -9533,6 +10028,7 @@
   },
   {
     "name": "Mismagius",
+    "baseName": "Mismagius",
     "types": [
       "Fantasma"
     ],
@@ -9553,6 +10049,7 @@
   },
   {
     "name": "Honchkrow",
+    "baseName": "Honchkrow",
     "types": [
       "Siniestro",
       "Volador"
@@ -9573,6 +10070,7 @@
   },
   {
     "name": "Glameow",
+    "baseName": "Glameow",
     "types": [
       "Normal"
     ],
@@ -9591,6 +10089,7 @@
   },
   {
     "name": "Purugly",
+    "baseName": "Purugly",
     "types": [
       "Normal"
     ],
@@ -9609,6 +10108,7 @@
   },
   {
     "name": "Chingling",
+    "baseName": "Chingling",
     "types": [
       "Psíquico"
     ],
@@ -9625,6 +10125,7 @@
   },
   {
     "name": "Stunky",
+    "baseName": "Stunky",
     "types": [
       "Veneno",
       "Siniestro"
@@ -9645,6 +10146,7 @@
   },
   {
     "name": "Skuntank",
+    "baseName": "Skuntank",
     "types": [
       "Veneno",
       "Siniestro"
@@ -9665,6 +10167,7 @@
   },
   {
     "name": "Bronzor",
+    "baseName": "Bronzor",
     "types": [
       "Acero",
       "Psíquico"
@@ -9683,6 +10186,7 @@
   },
   {
     "name": "Bronzong",
+    "baseName": "Bronzong",
     "types": [
       "Acero",
       "Psíquico"
@@ -9705,6 +10209,7 @@
   },
   {
     "name": "Bonsly",
+    "baseName": "Bonsly",
     "types": [
       "Roca"
     ],
@@ -9721,6 +10226,7 @@
   },
   {
     "name": "Mime Jr.",
+    "baseName": "Mime Jr.",
     "types": [
       "Psíquico",
       "Hada"
@@ -9738,6 +10244,7 @@
   },
   {
     "name": "Happiny",
+    "baseName": "Happiny",
     "types": [
       "Normal"
     ],
@@ -9752,6 +10259,7 @@
   },
   {
     "name": "Chatot",
+    "baseName": "Chatot",
     "types": [
       "Normal",
       "Volador"
@@ -9769,6 +10277,7 @@
   },
   {
     "name": "Spiritomb",
+    "baseName": "Spiritomb",
     "types": [
       "Fantasma",
       "Siniestro"
@@ -9787,6 +10296,7 @@
   },
   {
     "name": "Gible",
+    "baseName": "Gible",
     "types": [
       "Dragón",
       "Tierra"
@@ -9806,6 +10316,7 @@
   },
   {
     "name": "Gabite",
+    "baseName": "Gabite",
     "types": [
       "Dragón",
       "Tierra"
@@ -9825,6 +10336,7 @@
   },
   {
     "name": "Garchomp",
+    "baseName": "Garchomp",
     "types": [
       "Dragón",
       "Tierra"
@@ -9848,6 +10360,7 @@
   },
   {
     "name": "Munchlax",
+    "baseName": "Munchlax",
     "types": [
       "Normal"
     ],
@@ -9864,6 +10377,7 @@
   },
   {
     "name": "Riolu",
+    "baseName": "Riolu",
     "types": [
       "Pelea"
     ],
@@ -9882,6 +10396,7 @@
   },
   {
     "name": "Lucario",
+    "baseName": "Lucario",
     "types": [
       "Pelea",
       "Acero"
@@ -9905,6 +10420,7 @@
   },
   {
     "name": "Hippopotas",
+    "baseName": "Hippopotas",
     "types": [
       "Tierra"
     ],
@@ -9924,6 +10440,7 @@
   },
   {
     "name": "Hippowdon",
+    "baseName": "Hippowdon",
     "types": [
       "Tierra"
     ],
@@ -9948,6 +10465,7 @@
   },
   {
     "name": "Skorupi",
+    "baseName": "Skorupi",
     "types": [
       "Veneno",
       "Insecto"
@@ -9967,6 +10485,7 @@
   },
   {
     "name": "Drapion",
+    "baseName": "Drapion",
     "types": [
       "Veneno",
       "Siniestro"
@@ -9989,6 +10508,7 @@
   },
   {
     "name": "Croagunk",
+    "baseName": "Croagunk",
     "types": [
       "Veneno",
       "Pelea"
@@ -10009,6 +10529,7 @@
   },
   {
     "name": "Toxicroak",
+    "baseName": "Toxicroak",
     "types": [
       "Veneno",
       "Pelea"
@@ -10032,6 +10553,7 @@
   },
   {
     "name": "Carnivine",
+    "baseName": "Carnivine",
     "types": [
       "Planta"
     ],
@@ -10048,6 +10570,7 @@
   },
   {
     "name": "Finneon",
+    "baseName": "Finneon",
     "types": [
       "Agua"
     ],
@@ -10064,6 +10587,7 @@
   },
   {
     "name": "Lumineon",
+    "baseName": "Lumineon",
     "types": [
       "Agua"
     ],
@@ -10081,6 +10605,7 @@
   },
   {
     "name": "Mantyke",
+    "baseName": "Mantyke",
     "types": [
       "Agua",
       "Volador"
@@ -10098,6 +10623,7 @@
   },
   {
     "name": "Snover",
+    "baseName": "Snover",
     "types": [
       "Planta",
       "Hielo"
@@ -10118,6 +10644,7 @@
   },
   {
     "name": "Abomasnow",
+    "baseName": "Abomasnow",
     "types": [
       "Planta",
       "Hielo"
@@ -10140,6 +10667,7 @@
   },
   {
     "name": "Weavile",
+    "baseName": "Weavile",
     "types": [
       "Siniestro",
       "Hielo"
@@ -10161,6 +10689,7 @@
   },
   {
     "name": "Magnezone",
+    "baseName": "Magnezone",
     "types": [
       "Eléctrico",
       "Acero"
@@ -10183,6 +10712,7 @@
   },
   {
     "name": "Lickilicky",
+    "baseName": "Lickilicky",
     "types": [
       "Normal"
     ],
@@ -10202,6 +10732,7 @@
   },
   {
     "name": "Rhyperior",
+    "baseName": "Rhyperior",
     "types": [
       "Tierra",
       "Roca"
@@ -10225,6 +10756,7 @@
   },
   {
     "name": "Tangrowth",
+    "baseName": "Tangrowth",
     "types": [
       "Planta"
     ],
@@ -10245,6 +10777,7 @@
   },
   {
     "name": "Electivire",
+    "baseName": "Electivire",
     "types": [
       "Eléctrico"
     ],
@@ -10265,6 +10798,7 @@
   },
   {
     "name": "Magmortar",
+    "baseName": "Magmortar",
     "types": [
       "Fuego"
     ],
@@ -10286,6 +10820,7 @@
   },
   {
     "name": "Togekiss",
+    "baseName": "Togekiss",
     "types": [
       "Hada",
       "Volador"
@@ -10308,6 +10843,7 @@
   },
   {
     "name": "Yanmega",
+    "baseName": "Yanmega",
     "types": [
       "Insecto",
       "Volador"
@@ -10325,6 +10861,7 @@
   },
   {
     "name": "Leafeon",
+    "baseName": "Leafeon",
     "types": [
       "Planta"
     ],
@@ -10343,6 +10880,7 @@
   },
   {
     "name": "Glaceon",
+    "baseName": "Glaceon",
     "types": [
       "Hielo"
     ],
@@ -10361,6 +10899,7 @@
   },
   {
     "name": "Gliscor",
+    "baseName": "Gliscor",
     "types": [
       "Tierra",
       "Volador"
@@ -10383,6 +10922,7 @@
   },
   {
     "name": "Mamoswine",
+    "baseName": "Mamoswine",
     "types": [
       "Hielo",
       "Tierra"
@@ -10405,6 +10945,7 @@
   },
   {
     "name": "Porygon-Z",
+    "baseName": "Porygon-Z",
     "types": [
       "Normal"
     ],
@@ -10426,6 +10967,7 @@
   },
   {
     "name": "Gallade",
+    "baseName": "Gallade",
     "types": [
       "Psíquico",
       "Pelea"
@@ -10448,6 +10990,7 @@
   },
   {
     "name": "Probopass",
+    "baseName": "Probopass",
     "types": [
       "Roca",
       "Acero"
@@ -10468,6 +11011,7 @@
   },
   {
     "name": "Dusknoir",
+    "baseName": "Dusknoir",
     "types": [
       "Fantasma"
     ],
@@ -10490,6 +11034,7 @@
   },
   {
     "name": "Froslass",
+    "baseName": "Froslass",
     "types": [
       "Hielo",
       "Fantasma"
@@ -10510,6 +11055,7 @@
   },
   {
     "name": "Rotom",
+    "baseName": "Rotom",
     "types": [
       "Eléctrico",
       "Fantasma"
@@ -10526,7 +11072,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rotom.png"
   },
   {
-    "name": "Rotom",
+    "name": "Rotom (Heat Rotom)",
+    "baseName": "Rotom",
     "types": [
       "Eléctrico",
       "Fuego"
@@ -10543,7 +11090,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rotom-heat.png"
   },
   {
-    "name": "Rotom",
+    "name": "Rotom (Wash Rotom)",
+    "baseName": "Rotom",
     "types": [
       "Eléctrico",
       "Agua"
@@ -10560,7 +11108,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rotom-wash.png"
   },
   {
-    "name": "Rotom",
+    "name": "Rotom (Frost Rotom)",
+    "baseName": "Rotom",
     "types": [
       "Eléctrico",
       "Hielo"
@@ -10577,7 +11126,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rotom-frost.png"
   },
   {
-    "name": "Rotom",
+    "name": "Rotom (Mow Rotom)",
+    "baseName": "Rotom",
     "types": [
       "Eléctrico",
       "Planta"
@@ -10596,6 +11146,7 @@
   },
   {
     "name": "Uxie",
+    "baseName": "Uxie",
     "types": [
       "Psíquico"
     ],
@@ -10612,6 +11163,7 @@
   },
   {
     "name": "Mesprit",
+    "baseName": "Mesprit",
     "types": [
       "Psíquico"
     ],
@@ -10628,6 +11180,7 @@
   },
   {
     "name": "Azelf",
+    "baseName": "Azelf",
     "types": [
       "Psíquico"
     ],
@@ -10644,6 +11197,7 @@
   },
   {
     "name": "Dialga",
+    "baseName": "Dialga",
     "types": [
       "Acero",
       "Dragón"
@@ -10662,7 +11216,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dialga.png"
   },
   {
-    "name": "Dialga",
+    "name": "Dialga (Origin e)",
+    "baseName": "Dialga",
     "types": [
       "Acero",
       "Dragón"
@@ -10682,6 +11237,7 @@
   },
   {
     "name": "Palkia",
+    "baseName": "Palkia",
     "types": [
       "Agua",
       "Dragón"
@@ -10701,7 +11257,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/palkia.png"
   },
   {
-    "name": "Palkia",
+    "name": "Palkia (Origin e)",
+    "baseName": "Palkia",
     "types": [
       "Agua",
       "Dragón"
@@ -10722,6 +11279,7 @@
   },
   {
     "name": "Heatran",
+    "baseName": "Heatran",
     "types": [
       "Fuego",
       "Acero"
@@ -10744,6 +11302,7 @@
   },
   {
     "name": "Regigigas",
+    "baseName": "Regigigas",
     "types": [
       "Normal"
     ],
@@ -10762,7 +11321,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/regigigas.png"
   },
   {
-    "name": "Giratina",
+    "name": "Giratina (Altered e)",
+    "baseName": "Giratina",
     "types": [
       "Fantasma",
       "Dragón"
@@ -10782,7 +11342,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/giratina-altered.png"
   },
   {
-    "name": "Giratina",
+    "name": "Giratina (Origin e)",
+    "baseName": "Giratina",
     "types": [
       "Fantasma",
       "Dragón"
@@ -10803,6 +11364,7 @@
   },
   {
     "name": "Cresselia",
+    "baseName": "Cresselia",
     "types": [
       "Psíquico"
     ],
@@ -10822,6 +11384,7 @@
   },
   {
     "name": "Darkrai",
+    "baseName": "Darkrai",
     "types": [
       "Siniestro"
     ],
@@ -10840,7 +11403,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/darkrai.png"
   },
   {
-    "name": "Shaymin",
+    "name": "Shaymin (Land e)",
+    "baseName": "Shaymin",
     "types": [
       "Planta"
     ],
@@ -10858,7 +11422,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shaymin-land.png"
   },
   {
-    "name": "Shaymin",
+    "name": "Shaymin (Sky e)",
+    "baseName": "Shaymin",
     "types": [
       "Planta",
       "Volador"
@@ -10878,6 +11443,7 @@
   },
   {
     "name": "Victini",
+    "baseName": "Victini",
     "types": [
       "Psíquico",
       "Fuego"
@@ -10897,6 +11463,7 @@
   },
   {
     "name": "Snivy",
+    "baseName": "Snivy",
     "types": [
       "Planta"
     ],
@@ -10915,6 +11482,7 @@
   },
   {
     "name": "Servine",
+    "baseName": "Servine",
     "types": [
       "Planta"
     ],
@@ -10933,6 +11501,7 @@
   },
   {
     "name": "Serperior",
+    "baseName": "Serperior",
     "types": [
       "Planta"
     ],
@@ -10952,6 +11521,7 @@
   },
   {
     "name": "Tepig",
+    "baseName": "Tepig",
     "types": [
       "Fuego"
     ],
@@ -10970,6 +11540,7 @@
   },
   {
     "name": "Pignite",
+    "baseName": "Pignite",
     "types": [
       "Fuego",
       "Pelea"
@@ -10989,6 +11560,7 @@
   },
   {
     "name": "Emboar",
+    "baseName": "Emboar",
     "types": [
       "Fuego",
       "Pelea"
@@ -11010,6 +11582,7 @@
   },
   {
     "name": "Oshawott",
+    "baseName": "Oshawott",
     "types": [
       "Agua"
     ],
@@ -11028,6 +11601,7 @@
   },
   {
     "name": "Dewott",
+    "baseName": "Dewott",
     "types": [
       "Agua"
     ],
@@ -11046,6 +11620,7 @@
   },
   {
     "name": "Samurott",
+    "baseName": "Samurott",
     "types": [
       "Agua"
     ],
@@ -11066,7 +11641,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/samurott.png"
   },
   {
-    "name": "Samurott",
+    "name": "Samurott (Hisui Samurott)",
+    "baseName": "Samurott",
     "types": [
       "Agua",
       "Siniestro"
@@ -11089,6 +11665,7 @@
   },
   {
     "name": "Patrat",
+    "baseName": "Patrat",
     "types": [
       "Normal"
     ],
@@ -11107,6 +11684,7 @@
   },
   {
     "name": "Watchog",
+    "baseName": "Watchog",
     "types": [
       "Normal"
     ],
@@ -11125,6 +11703,7 @@
   },
   {
     "name": "Lillipup",
+    "baseName": "Lillipup",
     "types": [
       "Normal"
     ],
@@ -11142,6 +11721,7 @@
   },
   {
     "name": "Herdier",
+    "baseName": "Herdier",
     "types": [
       "Normal"
     ],
@@ -11159,6 +11739,7 @@
   },
   {
     "name": "Stoutland",
+    "baseName": "Stoutland",
     "types": [
       "Normal"
     ],
@@ -11177,6 +11758,7 @@
   },
   {
     "name": "Purrloin",
+    "baseName": "Purrloin",
     "types": [
       "Siniestro"
     ],
@@ -11195,6 +11777,7 @@
   },
   {
     "name": "Liepard",
+    "baseName": "Liepard",
     "types": [
       "Siniestro"
     ],
@@ -11214,6 +11797,7 @@
   },
   {
     "name": "Pansage",
+    "baseName": "Pansage",
     "types": [
       "Planta"
     ],
@@ -11230,6 +11814,7 @@
   },
   {
     "name": "Simisage",
+    "baseName": "Simisage",
     "types": [
       "Planta"
     ],
@@ -11246,6 +11831,7 @@
   },
   {
     "name": "Pansear",
+    "baseName": "Pansear",
     "types": [
       "Fuego"
     ],
@@ -11262,6 +11848,7 @@
   },
   {
     "name": "Simisear",
+    "baseName": "Simisear",
     "types": [
       "Fuego"
     ],
@@ -11278,6 +11865,7 @@
   },
   {
     "name": "Panpour",
+    "baseName": "Panpour",
     "types": [
       "Agua"
     ],
@@ -11294,6 +11882,7 @@
   },
   {
     "name": "Simipour",
+    "baseName": "Simipour",
     "types": [
       "Agua"
     ],
@@ -11310,6 +11899,7 @@
   },
   {
     "name": "Munna",
+    "baseName": "Munna",
     "types": [
       "Psíquico"
     ],
@@ -11326,6 +11916,7 @@
   },
   {
     "name": "Musharna",
+    "baseName": "Musharna",
     "types": [
       "Psíquico"
     ],
@@ -11342,6 +11933,7 @@
   },
   {
     "name": "Pidove",
+    "baseName": "Pidove",
     "types": [
       "Normal",
       "Volador"
@@ -11361,6 +11953,7 @@
   },
   {
     "name": "Tranquill",
+    "baseName": "Tranquill",
     "types": [
       "Normal",
       "Volador"
@@ -11380,6 +11973,7 @@
   },
   {
     "name": "Unfezant",
+    "baseName": "Unfezant",
     "types": [
       "Normal",
       "Volador"
@@ -11399,6 +11993,7 @@
   },
   {
     "name": "Blitzle",
+    "baseName": "Blitzle",
     "types": [
       "Eléctrico"
     ],
@@ -11417,6 +12012,7 @@
   },
   {
     "name": "Zebstrika",
+    "baseName": "Zebstrika",
     "types": [
       "Eléctrico"
     ],
@@ -11435,6 +12031,7 @@
   },
   {
     "name": "Roggenrola",
+    "baseName": "Roggenrola",
     "types": [
       "Roca"
     ],
@@ -11453,6 +12050,7 @@
   },
   {
     "name": "Boldore",
+    "baseName": "Boldore",
     "types": [
       "Roca"
     ],
@@ -11471,6 +12069,7 @@
   },
   {
     "name": "Gigalith",
+    "baseName": "Gigalith",
     "types": [
       "Roca"
     ],
@@ -11491,6 +12090,7 @@
   },
   {
     "name": "Woobat",
+    "baseName": "Woobat",
     "types": [
       "Psíquico",
       "Volador"
@@ -11508,6 +12108,7 @@
   },
   {
     "name": "Swoobat",
+    "baseName": "Swoobat",
     "types": [
       "Psíquico",
       "Volador"
@@ -11527,6 +12128,7 @@
   },
   {
     "name": "Drilbur",
+    "baseName": "Drilbur",
     "types": [
       "Tierra"
     ],
@@ -11545,6 +12147,7 @@
   },
   {
     "name": "Excadrill",
+    "baseName": "Excadrill",
     "types": [
       "Tierra",
       "Acero"
@@ -11567,6 +12170,7 @@
   },
   {
     "name": "Audino",
+    "baseName": "Audino",
     "types": [
       "Normal"
     ],
@@ -11584,6 +12188,7 @@
   },
   {
     "name": "Timburr",
+    "baseName": "Timburr",
     "types": [
       "Pelea"
     ],
@@ -11602,6 +12207,7 @@
   },
   {
     "name": "Gurdurr",
+    "baseName": "Gurdurr",
     "types": [
       "Pelea"
     ],
@@ -11620,6 +12226,7 @@
   },
   {
     "name": "Conkeldurr",
+    "baseName": "Conkeldurr",
     "types": [
       "Pelea"
     ],
@@ -11639,6 +12246,7 @@
   },
   {
     "name": "Tympole",
+    "baseName": "Tympole",
     "types": [
       "Agua"
     ],
@@ -11655,6 +12263,7 @@
   },
   {
     "name": "Palpitoad",
+    "baseName": "Palpitoad",
     "types": [
       "Agua",
       "Tierra"
@@ -11672,6 +12281,7 @@
   },
   {
     "name": "Seismitoad",
+    "baseName": "Seismitoad",
     "types": [
       "Agua",
       "Tierra"
@@ -11689,6 +12299,7 @@
   },
   {
     "name": "Throh",
+    "baseName": "Throh",
     "types": [
       "Pelea"
     ],
@@ -11708,6 +12319,7 @@
   },
   {
     "name": "Sawk",
+    "baseName": "Sawk",
     "types": [
       "Pelea"
     ],
@@ -11727,6 +12339,7 @@
   },
   {
     "name": "Sewaddle",
+    "baseName": "Sewaddle",
     "types": [
       "Insecto",
       "Planta"
@@ -11744,6 +12357,7 @@
   },
   {
     "name": "Swadloon",
+    "baseName": "Swadloon",
     "types": [
       "Insecto",
       "Planta"
@@ -11761,6 +12375,7 @@
   },
   {
     "name": "Leavanny",
+    "baseName": "Leavanny",
     "types": [
       "Insecto",
       "Planta"
@@ -11780,6 +12395,7 @@
   },
   {
     "name": "Venipede",
+    "baseName": "Venipede",
     "types": [
       "Insecto",
       "Veneno"
@@ -11799,6 +12415,7 @@
   },
   {
     "name": "Whirlipede",
+    "baseName": "Whirlipede",
     "types": [
       "Insecto",
       "Veneno"
@@ -11818,6 +12435,7 @@
   },
   {
     "name": "Scolipede",
+    "baseName": "Scolipede",
     "types": [
       "Insecto",
       "Veneno"
@@ -11840,6 +12458,7 @@
   },
   {
     "name": "Cottonee",
+    "baseName": "Cottonee",
     "types": [
       "Planta",
       "Hada"
@@ -11857,6 +12476,7 @@
   },
   {
     "name": "Whimsicott",
+    "baseName": "Whimsicott",
     "types": [
       "Planta",
       "Hada"
@@ -11876,6 +12496,7 @@
   },
   {
     "name": "Petilil",
+    "baseName": "Petilil",
     "types": [
       "Planta"
     ],
@@ -11891,6 +12512,7 @@
   },
   {
     "name": "Lilligant",
+    "baseName": "Lilligant",
     "types": [
       "Planta"
     ],
@@ -11907,7 +12529,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lilligant.png"
   },
   {
-    "name": "Lilligant",
+    "name": "Lilligant (Hisui Lilligant)",
+    "baseName": "Lilligant",
     "types": [
       "Planta",
       "Pelea"
@@ -11925,7 +12548,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lilligant-hisuian.png"
   },
   {
-    "name": "Basculin",
+    "name": "Basculin (Red-Striped)",
+    "baseName": "Basculin",
     "types": [
       "Agua"
     ],
@@ -11941,7 +12565,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/basculin-red-striped.png"
   },
   {
-    "name": "Basculin",
+    "name": "Basculin (Blue-Striped)",
+    "baseName": "Basculin",
     "types": [
       "Agua"
     ],
@@ -11957,7 +12582,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/basculin-blue-striped.png"
   },
   {
-    "name": "Basculin",
+    "name": "Basculin (White-Striped)",
+    "baseName": "Basculin",
     "types": [
       "Agua"
     ],
@@ -11974,6 +12600,7 @@
   },
   {
     "name": "Sandile",
+    "baseName": "Sandile",
     "types": [
       "Tierra",
       "Siniestro"
@@ -11991,6 +12618,7 @@
   },
   {
     "name": "Krokorok",
+    "baseName": "Krokorok",
     "types": [
       "Tierra",
       "Siniestro"
@@ -12008,6 +12636,7 @@
   },
   {
     "name": "Krookodile",
+    "baseName": "Krookodile",
     "types": [
       "Tierra",
       "Siniestro"
@@ -12027,6 +12656,7 @@
   },
   {
     "name": "Darumaka",
+    "baseName": "Darumaka",
     "types": [
       "Fuego"
     ],
@@ -12043,7 +12673,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/darumaka.png"
   },
   {
-    "name": "Darumaka",
+    "name": "Darumaka (Galar Darumaka)",
+    "baseName": "Darumaka",
     "types": [
       "Hielo"
     ],
@@ -12060,7 +12691,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/darumaka-galarian.png"
   },
   {
-    "name": "Darmanitan",
+    "name": "Darmanitan (Standard Mode)",
+    "baseName": "Darmanitan",
     "types": [
       "Fuego"
     ],
@@ -12080,7 +12712,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/darmanitan-standard.png"
   },
   {
-    "name": "Darmanitan",
+    "name": "Darmanitan (Galar Standard Mode)",
+    "baseName": "Darmanitan",
     "types": [
       "Hielo"
     ],
@@ -12098,6 +12731,7 @@
   },
   {
     "name": "Maractus",
+    "baseName": "Maractus",
     "types": [
       "Planta"
     ],
@@ -12114,6 +12748,7 @@
   },
   {
     "name": "Dwebble",
+    "baseName": "Dwebble",
     "types": [
       "Insecto",
       "Roca"
@@ -12133,6 +12768,7 @@
   },
   {
     "name": "Crustle",
+    "baseName": "Crustle",
     "types": [
       "Insecto",
       "Roca"
@@ -12153,6 +12789,7 @@
   },
   {
     "name": "Scraggy",
+    "baseName": "Scraggy",
     "types": [
       "Siniestro",
       "Pelea"
@@ -12172,6 +12809,7 @@
   },
   {
     "name": "Scrafty",
+    "baseName": "Scrafty",
     "types": [
       "Siniestro",
       "Pelea"
@@ -12191,6 +12829,7 @@
   },
   {
     "name": "Sigilyph",
+    "baseName": "Sigilyph",
     "types": [
       "Psíquico",
       "Volador"
@@ -12209,6 +12848,7 @@
   },
   {
     "name": "Yamask",
+    "baseName": "Yamask",
     "types": [
       "Fantasma"
     ],
@@ -12226,7 +12866,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/yamask.png"
   },
   {
-    "name": "Yamask",
+    "name": "Yamask (Galar Yamask)",
+    "baseName": "Yamask",
     "types": [
       "Tierra",
       "Fantasma"
@@ -12244,6 +12885,7 @@
   },
   {
     "name": "Cofagrigus",
+    "baseName": "Cofagrigus",
     "types": [
       "Fantasma"
     ],
@@ -12263,6 +12905,7 @@
   },
   {
     "name": "Tirtouga",
+    "baseName": "Tirtouga",
     "types": [
       "Agua",
       "Roca"
@@ -12282,6 +12925,7 @@
   },
   {
     "name": "Carracosta",
+    "baseName": "Carracosta",
     "types": [
       "Agua",
       "Roca"
@@ -12302,6 +12946,7 @@
   },
   {
     "name": "Archen",
+    "baseName": "Archen",
     "types": [
       "Roca",
       "Volador"
@@ -12321,6 +12966,7 @@
   },
   {
     "name": "Archeops",
+    "baseName": "Archeops",
     "types": [
       "Roca",
       "Volador"
@@ -12340,6 +12986,7 @@
   },
   {
     "name": "Trubbish",
+    "baseName": "Trubbish",
     "types": [
       "Veneno"
     ],
@@ -12357,6 +13004,7 @@
   },
   {
     "name": "Garbodor",
+    "baseName": "Garbodor",
     "types": [
       "Veneno"
     ],
@@ -12376,6 +13024,7 @@
   },
   {
     "name": "Zorua",
+    "baseName": "Zorua",
     "types": [
       "Siniestro"
     ],
@@ -12392,7 +13041,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zorua.png"
   },
   {
-    "name": "Zorua",
+    "name": "Zorua (Hisui Zorua)",
+    "baseName": "Zorua",
     "types": [
       "Normal",
       "Fantasma"
@@ -12411,6 +13061,7 @@
   },
   {
     "name": "Zoroark",
+    "baseName": "Zoroark",
     "types": [
       "Siniestro"
     ],
@@ -12427,7 +13078,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zoroark.png"
   },
   {
-    "name": "Zoroark",
+    "name": "Zoroark (Hisui Zoroark)",
+    "baseName": "Zoroark",
     "types": [
       "Normal",
       "Fantasma"
@@ -12446,6 +13098,7 @@
   },
   {
     "name": "Minccino",
+    "baseName": "Minccino",
     "types": [
       "Normal"
     ],
@@ -12462,6 +13115,7 @@
   },
   {
     "name": "Cinccino",
+    "baseName": "Cinccino",
     "types": [
       "Normal"
     ],
@@ -12478,6 +13132,7 @@
   },
   {
     "name": "Gothita",
+    "baseName": "Gothita",
     "types": [
       "Psíquico"
     ],
@@ -12496,6 +13151,7 @@
   },
   {
     "name": "Gothorita",
+    "baseName": "Gothorita",
     "types": [
       "Psíquico"
     ],
@@ -12514,6 +13170,7 @@
   },
   {
     "name": "Gothitelle",
+    "baseName": "Gothitelle",
     "types": [
       "Psíquico"
     ],
@@ -12532,6 +13189,7 @@
   },
   {
     "name": "Solosis",
+    "baseName": "Solosis",
     "types": [
       "Psíquico"
     ],
@@ -12550,6 +13208,7 @@
   },
   {
     "name": "Duosion",
+    "baseName": "Duosion",
     "types": [
       "Psíquico"
     ],
@@ -12568,6 +13227,7 @@
   },
   {
     "name": "Reuniclus",
+    "baseName": "Reuniclus",
     "types": [
       "Psíquico"
     ],
@@ -12588,6 +13248,7 @@
   },
   {
     "name": "Ducklett",
+    "baseName": "Ducklett",
     "types": [
       "Agua",
       "Volador"
@@ -12607,6 +13268,7 @@
   },
   {
     "name": "Swanna",
+    "baseName": "Swanna",
     "types": [
       "Agua",
       "Volador"
@@ -12627,6 +13289,7 @@
   },
   {
     "name": "Vanillite",
+    "baseName": "Vanillite",
     "types": [
       "Hielo"
     ],
@@ -12643,6 +13306,7 @@
   },
   {
     "name": "Vanillish",
+    "baseName": "Vanillish",
     "types": [
       "Hielo"
     ],
@@ -12659,6 +13323,7 @@
   },
   {
     "name": "Vanilluxe",
+    "baseName": "Vanilluxe",
     "types": [
       "Hielo"
     ],
@@ -12675,7 +13340,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vanilluxe.png"
   },
   {
-    "name": "Deerling",
+    "name": "Deerling (Spring)",
+    "baseName": "Deerling",
     "types": [
       "Normal",
       "Planta"
@@ -12693,7 +13359,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/deerling-spring.png"
   },
   {
-    "name": "Deerling",
+    "name": "Deerling (Autumn)",
+    "baseName": "Deerling",
     "types": [
       "Normal",
       "Planta"
@@ -12711,7 +13378,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/deerling-autumn.png"
   },
   {
-    "name": "Deerling",
+    "name": "Deerling (Summer)",
+    "baseName": "Deerling",
     "types": [
       "Normal",
       "Planta"
@@ -12729,7 +13397,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/deerling-summer.png"
   },
   {
-    "name": "Deerling",
+    "name": "Deerling (Winter)",
+    "baseName": "Deerling",
     "types": [
       "Normal",
       "Planta"
@@ -12747,7 +13416,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/deerling-winter.png"
   },
   {
-    "name": "Sawsbuck",
+    "name": "Sawsbuck (Spring)",
+    "baseName": "Sawsbuck",
     "types": [
       "Normal",
       "Planta"
@@ -12766,7 +13436,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sawsbuck-spring.png"
   },
   {
-    "name": "Sawsbuck",
+    "name": "Sawsbuck (Autumn)",
+    "baseName": "Sawsbuck",
     "types": [
       "Normal",
       "Planta"
@@ -12785,7 +13456,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sawsbuck-autumn.png"
   },
   {
-    "name": "Sawsbuck",
+    "name": "Sawsbuck (Summer)",
+    "baseName": "Sawsbuck",
     "types": [
       "Normal",
       "Planta"
@@ -12804,7 +13476,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sawsbuck-summer.png"
   },
   {
-    "name": "Sawsbuck",
+    "name": "Sawsbuck (Winter)",
+    "baseName": "Sawsbuck",
     "types": [
       "Normal",
       "Planta"
@@ -12824,6 +13497,7 @@
   },
   {
     "name": "Emolga",
+    "baseName": "Emolga",
     "types": [
       "Eléctrico",
       "Volador"
@@ -12842,6 +13516,7 @@
   },
   {
     "name": "Karrablast",
+    "baseName": "Karrablast",
     "types": [
       "Insecto"
     ],
@@ -12861,6 +13536,7 @@
   },
   {
     "name": "Escavalier",
+    "baseName": "Escavalier",
     "types": [
       "Insecto",
       "Acero"
@@ -12882,6 +13558,7 @@
   },
   {
     "name": "Foongus",
+    "baseName": "Foongus",
     "types": [
       "Planta",
       "Veneno"
@@ -12901,6 +13578,7 @@
   },
   {
     "name": "Amoonguss",
+    "baseName": "Amoonguss",
     "types": [
       "Planta",
       "Veneno"
@@ -12919,7 +13597,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/amoonguss.png"
   },
   {
-    "name": "Frillish",
+    "name": "Frillish (Male)",
+    "baseName": "Frillish",
     "types": [
       "Agua",
       "Fantasma"
@@ -12936,7 +13615,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/frillish-male.png"
   },
   {
-    "name": "Frillish",
+    "name": "Frillish (Female)",
+    "baseName": "Frillish",
     "types": [
       "Agua",
       "Fantasma"
@@ -12953,7 +13633,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/frillish-female.png"
   },
   {
-    "name": "Jellicent",
+    "name": "Jellicent (Male)",
+    "baseName": "Jellicent",
     "types": [
       "Agua",
       "Fantasma"
@@ -12971,7 +13652,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/jellicent-male.png"
   },
   {
-    "name": "Jellicent",
+    "name": "Jellicent (Female)",
+    "baseName": "Jellicent",
     "types": [
       "Agua",
       "Fantasma"
@@ -12990,6 +13672,7 @@
   },
   {
     "name": "Alomomola",
+    "baseName": "Alomomola",
     "types": [
       "Agua"
     ],
@@ -13006,6 +13689,7 @@
   },
   {
     "name": "Joltik",
+    "baseName": "Joltik",
     "types": [
       "Insecto",
       "Eléctrico"
@@ -13025,6 +13709,7 @@
   },
   {
     "name": "Galvantula",
+    "baseName": "Galvantula",
     "types": [
       "Insecto",
       "Eléctrico"
@@ -13046,6 +13731,7 @@
   },
   {
     "name": "Ferroseed",
+    "baseName": "Ferroseed",
     "types": [
       "Planta",
       "Acero"
@@ -13065,6 +13751,7 @@
   },
   {
     "name": "Ferrothorn",
+    "baseName": "Ferrothorn",
     "types": [
       "Planta",
       "Acero"
@@ -13086,6 +13773,7 @@
   },
   {
     "name": "Klink",
+    "baseName": "Klink",
     "types": [
       "Acero"
     ],
@@ -13103,6 +13791,7 @@
   },
   {
     "name": "Klang",
+    "baseName": "Klang",
     "types": [
       "Acero"
     ],
@@ -13120,6 +13809,7 @@
   },
   {
     "name": "Klinklang",
+    "baseName": "Klinklang",
     "types": [
       "Acero"
     ],
@@ -13138,6 +13828,7 @@
   },
   {
     "name": "Tynamo",
+    "baseName": "Tynamo",
     "types": [
       "Eléctrico"
     ],
@@ -13152,6 +13843,7 @@
   },
   {
     "name": "Eelektrik",
+    "baseName": "Eelektrik",
     "types": [
       "Eléctrico"
     ],
@@ -13168,6 +13860,7 @@
   },
   {
     "name": "Eelektross",
+    "baseName": "Eelektross",
     "types": [
       "Eléctrico"
     ],
@@ -13187,6 +13880,7 @@
   },
   {
     "name": "Elgyem",
+    "baseName": "Elgyem",
     "types": [
       "Psíquico"
     ],
@@ -13203,6 +13897,7 @@
   },
   {
     "name": "Beheeyem",
+    "baseName": "Beheeyem",
     "types": [
       "Psíquico"
     ],
@@ -13219,6 +13914,7 @@
   },
   {
     "name": "Litwick",
+    "baseName": "Litwick",
     "types": [
       "Fantasma",
       "Fuego"
@@ -13239,6 +13935,7 @@
   },
   {
     "name": "Lampent",
+    "baseName": "Lampent",
     "types": [
       "Fantasma",
       "Fuego"
@@ -13258,6 +13955,7 @@
   },
   {
     "name": "Chandelure",
+    "baseName": "Chandelure",
     "types": [
       "Fantasma",
       "Fuego"
@@ -13280,6 +13978,7 @@
   },
   {
     "name": "Axew",
+    "baseName": "Axew",
     "types": [
       "Dragón"
     ],
@@ -13296,6 +13995,7 @@
   },
   {
     "name": "Fraxure",
+    "baseName": "Fraxure",
     "types": [
       "Dragón"
     ],
@@ -13312,6 +14012,7 @@
   },
   {
     "name": "Haxorus",
+    "baseName": "Haxorus",
     "types": [
       "Dragón"
     ],
@@ -13330,6 +14031,7 @@
   },
   {
     "name": "Cubchoo",
+    "baseName": "Cubchoo",
     "types": [
       "Hielo"
     ],
@@ -13346,6 +14048,7 @@
   },
   {
     "name": "Beartic",
+    "baseName": "Beartic",
     "types": [
       "Hielo"
     ],
@@ -13363,6 +14066,7 @@
   },
   {
     "name": "Cryogonal",
+    "baseName": "Cryogonal",
     "types": [
       "Hielo"
     ],
@@ -13381,6 +14085,7 @@
   },
   {
     "name": "Shelmet",
+    "baseName": "Shelmet",
     "types": [
       "Insecto"
     ],
@@ -13399,6 +14104,7 @@
   },
   {
     "name": "Accelgor",
+    "baseName": "Accelgor",
     "types": [
       "Insecto"
     ],
@@ -13420,6 +14126,7 @@
   },
   {
     "name": "Stunfisk",
+    "baseName": "Stunfisk",
     "types": [
       "Tierra",
       "Eléctrico"
@@ -13438,7 +14145,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/stunfisk.png"
   },
   {
-    "name": "Stunfisk",
+    "name": "Stunfisk (Galar Stunfisk)",
+    "baseName": "Stunfisk",
     "types": [
       "Tierra",
       "Acero"
@@ -13459,6 +14167,7 @@
   },
   {
     "name": "Mienfoo",
+    "baseName": "Mienfoo",
     "types": [
       "Pelea"
     ],
@@ -13477,6 +14186,7 @@
   },
   {
     "name": "Mienshao",
+    "baseName": "Mienshao",
     "types": [
       "Pelea"
     ],
@@ -13497,6 +14207,7 @@
   },
   {
     "name": "Druddigon",
+    "baseName": "Druddigon",
     "types": [
       "Dragón"
     ],
@@ -13514,6 +14225,7 @@
   },
   {
     "name": "Golett",
+    "baseName": "Golett",
     "types": [
       "Tierra",
       "Fantasma"
@@ -13533,6 +14245,7 @@
   },
   {
     "name": "Golurk",
+    "baseName": "Golurk",
     "types": [
       "Tierra",
       "Fantasma"
@@ -13553,6 +14266,7 @@
   },
   {
     "name": "Pawniard",
+    "baseName": "Pawniard",
     "types": [
       "Siniestro",
       "Acero"
@@ -13570,6 +14284,7 @@
   },
   {
     "name": "Bisharp",
+    "baseName": "Bisharp",
     "types": [
       "Siniestro",
       "Acero"
@@ -13588,6 +14303,7 @@
   },
   {
     "name": "Bouffalant",
+    "baseName": "Bouffalant",
     "types": [
       "Normal"
     ],
@@ -13605,6 +14321,7 @@
   },
   {
     "name": "Rufflet",
+    "baseName": "Rufflet",
     "types": [
       "Normal",
       "Volador"
@@ -13623,6 +14340,7 @@
   },
   {
     "name": "Braviary",
+    "baseName": "Braviary",
     "types": [
       "Normal",
       "Volador"
@@ -13641,7 +14359,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/braviary.png"
   },
   {
-    "name": "Braviary",
+    "name": "Braviary (Hisui Braviary)",
+    "baseName": "Braviary",
     "types": [
       "Psíquico",
       "Volador"
@@ -13661,6 +14380,7 @@
   },
   {
     "name": "Vullaby",
+    "baseName": "Vullaby",
     "types": [
       "Siniestro",
       "Volador"
@@ -13678,6 +14398,7 @@
   },
   {
     "name": "Mandibuzz",
+    "baseName": "Mandibuzz",
     "types": [
       "Siniestro",
       "Volador"
@@ -13696,6 +14417,7 @@
   },
   {
     "name": "Heatmor",
+    "baseName": "Heatmor",
     "types": [
       "Fuego"
     ],
@@ -13712,6 +14434,7 @@
   },
   {
     "name": "Durant",
+    "baseName": "Durant",
     "types": [
       "Insecto",
       "Acero"
@@ -13729,6 +14452,7 @@
   },
   {
     "name": "Deino",
+    "baseName": "Deino",
     "types": [
       "Siniestro",
       "Dragón"
@@ -13748,6 +14472,7 @@
   },
   {
     "name": "Zweilous",
+    "baseName": "Zweilous",
     "types": [
       "Siniestro",
       "Dragón"
@@ -13767,6 +14492,7 @@
   },
   {
     "name": "Hydreigon",
+    "baseName": "Hydreigon",
     "types": [
       "Siniestro",
       "Dragón"
@@ -13788,6 +14514,7 @@
   },
   {
     "name": "Larvesta",
+    "baseName": "Larvesta",
     "types": [
       "Insecto",
       "Fuego"
@@ -13805,6 +14532,7 @@
   },
   {
     "name": "Volcarona",
+    "baseName": "Volcarona",
     "types": [
       "Insecto",
       "Fuego"
@@ -13823,6 +14551,7 @@
   },
   {
     "name": "Cobalion",
+    "baseName": "Cobalion",
     "types": [
       "Acero",
       "Pelea"
@@ -13842,6 +14571,7 @@
   },
   {
     "name": "Terrakion",
+    "baseName": "Terrakion",
     "types": [
       "Roca",
       "Pelea"
@@ -13861,6 +14591,7 @@
   },
   {
     "name": "Virizion",
+    "baseName": "Virizion",
     "types": [
       "Planta",
       "Pelea"
@@ -13879,7 +14610,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/virizion.png"
   },
   {
-    "name": "Tornadus",
+    "name": "Tornadus (Incarnate e)",
+    "baseName": "Tornadus",
     "types": [
       "Volador"
     ],
@@ -13898,7 +14630,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tornadus-incarnate.png"
   },
   {
-    "name": "Tornadus",
+    "name": "Tornadus (Therian e)",
+    "baseName": "Tornadus",
     "types": [
       "Volador"
     ],
@@ -13918,7 +14651,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tornadus-therian.png"
   },
   {
-    "name": "Thundurus",
+    "name": "Thundurus (Incarnate e)",
+    "baseName": "Thundurus",
     "types": [
       "Eléctrico",
       "Volador"
@@ -13938,7 +14672,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/thundurus-incarnate.png"
   },
   {
-    "name": "Thundurus",
+    "name": "Thundurus (Therian e)",
+    "baseName": "Thundurus",
     "types": [
       "Eléctrico",
       "Volador"
@@ -13960,6 +14695,7 @@
   },
   {
     "name": "Reshiram",
+    "baseName": "Reshiram",
     "types": [
       "Dragón",
       "Fuego"
@@ -13979,6 +14715,7 @@
   },
   {
     "name": "Zekrom",
+    "baseName": "Zekrom",
     "types": [
       "Dragón",
       "Eléctrico"
@@ -13997,7 +14734,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zekrom.png"
   },
   {
-    "name": "Landorus",
+    "name": "Landorus (Incarnate e)",
+    "baseName": "Landorus",
     "types": [
       "Tierra",
       "Volador"
@@ -14015,7 +14753,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/landorus-incarnate.png"
   },
   {
-    "name": "Landorus",
+    "name": "Landorus (Therian e)",
+    "baseName": "Landorus",
     "types": [
       "Tierra",
       "Volador"
@@ -14035,6 +14774,7 @@
   },
   {
     "name": "Kyurem",
+    "baseName": "Kyurem",
     "types": [
       "Dragón",
       "Hielo"
@@ -14052,7 +14792,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kyurem.png"
   },
   {
-    "name": "Kyurem",
+    "name": "Kyurem (White Kyurem)",
+    "baseName": "Kyurem",
     "types": [
       "Dragón",
       "Hielo"
@@ -14073,7 +14814,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kyurem-white.png"
   },
   {
-    "name": "Kyurem",
+    "name": "Kyurem (Black Kyurem)",
+    "baseName": "Kyurem",
     "types": [
       "Dragón",
       "Hielo"
@@ -14093,7 +14835,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kyurem-black.png"
   },
   {
-    "name": "Keldeo",
+    "name": "Keldeo (Ordinary)",
+    "baseName": "Keldeo",
     "types": [
       "Agua",
       "Pelea"
@@ -14112,7 +14855,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/keldeo-ordinary.png"
   },
   {
-    "name": "Keldeo",
+    "name": "Keldeo (Resolute)",
+    "baseName": "Keldeo",
     "types": [
       "Agua",
       "Pelea"
@@ -14131,7 +14875,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/keldeo-resolute.png"
   },
   {
-    "name": "Meloetta",
+    "name": "Meloetta (Aria e)",
+    "baseName": "Meloetta",
     "types": [
       "Normal",
       "Psíquico"
@@ -14150,6 +14895,7 @@
   },
   {
     "name": "Genesect",
+    "baseName": "Genesect",
     "types": [
       "Insecto",
       "Acero"
@@ -14166,7 +14912,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/genesect.png"
   },
   {
-    "name": "Genesect",
+    "name": "Genesect (Burn Drive)",
+    "baseName": "Genesect",
     "types": [
       "Insecto",
       "Acero"
@@ -14184,7 +14931,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/genesect-burn.png"
   },
   {
-    "name": "Genesect",
+    "name": "Genesect (Chill Drive)",
+    "baseName": "Genesect",
     "types": [
       "Insecto",
       "Acero"
@@ -14202,7 +14950,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/genesect-chill.png"
   },
   {
-    "name": "Genesect",
+    "name": "Genesect (Douse Drive)",
+    "baseName": "Genesect",
     "types": [
       "Insecto",
       "Acero"
@@ -14220,7 +14969,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/genesect-douse.png"
   },
   {
-    "name": "Genesect",
+    "name": "Genesect (Shock Drive)",
+    "baseName": "Genesect",
     "types": [
       "Insecto",
       "Acero"
@@ -14239,6 +14989,7 @@
   },
   {
     "name": "Chespin",
+    "baseName": "Chespin",
     "types": [
       "Planta"
     ],
@@ -14257,6 +15008,7 @@
   },
   {
     "name": "Quilladin",
+    "baseName": "Quilladin",
     "types": [
       "Planta"
     ],
@@ -14275,6 +15027,7 @@
   },
   {
     "name": "Chesnaught",
+    "baseName": "Chesnaught",
     "types": [
       "Planta",
       "Pelea"
@@ -14298,6 +15051,7 @@
   },
   {
     "name": "Fennekin",
+    "baseName": "Fennekin",
     "types": [
       "Fuego"
     ],
@@ -14316,6 +15070,7 @@
   },
   {
     "name": "Braixen",
+    "baseName": "Braixen",
     "types": [
       "Fuego"
     ],
@@ -14334,6 +15089,7 @@
   },
   {
     "name": "Delphox",
+    "baseName": "Delphox",
     "types": [
       "Fuego",
       "Psíquico"
@@ -14358,6 +15114,7 @@
   },
   {
     "name": "Froakie",
+    "baseName": "Froakie",
     "types": [
       "Agua"
     ],
@@ -14376,6 +15133,7 @@
   },
   {
     "name": "Frogadier",
+    "baseName": "Frogadier",
     "types": [
       "Agua"
     ],
@@ -14394,6 +15152,7 @@
   },
   {
     "name": "Greninja",
+    "baseName": "Greninja",
     "types": [
       "Agua",
       "Siniestro"
@@ -14416,6 +15175,7 @@
   },
   {
     "name": "Bunnelby",
+    "baseName": "Bunnelby",
     "types": [
       "Normal"
     ],
@@ -14434,6 +15194,7 @@
   },
   {
     "name": "Diggersby",
+    "baseName": "Diggersby",
     "types": [
       "Normal",
       "Tierra"
@@ -14455,6 +15216,7 @@
   },
   {
     "name": "Fletchling",
+    "baseName": "Fletchling",
     "types": [
       "Normal",
       "Volador"
@@ -14475,6 +15237,7 @@
   },
   {
     "name": "Fletchinder",
+    "baseName": "Fletchinder",
     "types": [
       "Fuego",
       "Volador"
@@ -14496,6 +15259,7 @@
   },
   {
     "name": "Talonflame",
+    "baseName": "Talonflame",
     "types": [
       "Fuego",
       "Volador"
@@ -14519,6 +15283,7 @@
   },
   {
     "name": "Scatterbug",
+    "baseName": "Scatterbug",
     "types": [
       "Insecto"
     ],
@@ -14533,6 +15298,7 @@
   },
   {
     "name": "Spewpa",
+    "baseName": "Spewpa",
     "types": [
       "Insecto"
     ],
@@ -14545,7 +15311,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/spewpa.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Meadow Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14563,7 +15330,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-meadow.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Archipelago Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14581,7 +15349,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-archipelago.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Continental Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14599,7 +15368,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-continental.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Elegant Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14617,7 +15387,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-elegant.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Garden Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14635,7 +15406,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-garden.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (High Plains Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14653,7 +15425,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-high-plains.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Icy Snow Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14671,7 +15444,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-icy-snow.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Jungle Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14689,7 +15463,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-jungle.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Marine Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14707,7 +15482,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-marine.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Modern Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14725,7 +15501,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-modern.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Monsoon Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14743,7 +15520,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-monsoon.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Ocean Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14761,7 +15539,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-ocean.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Polar Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14779,7 +15558,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-polar.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (River Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14797,7 +15577,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-river.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Sandstorm Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14815,7 +15596,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-sandstorm.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Savanna Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14833,7 +15615,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-savanna.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Sun Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14851,7 +15634,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/vivillon-sun.png"
   },
   {
-    "name": "Vivillon",
+    "name": "Vivillon (Tundra Pattern)",
+    "baseName": "Vivillon",
     "types": [
       "Insecto",
       "Volador"
@@ -14870,6 +15654,7 @@
   },
   {
     "name": "Litleo",
+    "baseName": "Litleo",
     "types": [
       "Fuego",
       "Normal"
@@ -14888,7 +15673,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/litleo.png"
   },
   {
-    "name": "Pyroar",
+    "name": "Pyroar (Male)",
+    "baseName": "Pyroar",
     "types": [
       "Fuego",
       "Normal"
@@ -14908,7 +15694,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pyroar.png"
   },
   {
-    "name": "Pyroar",
+    "name": "Pyroar (Female)",
+    "baseName": "Pyroar",
     "types": [
       "Fuego",
       "Normal"
@@ -14928,7 +15715,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pyroar-female.png"
   },
   {
-    "name": "Flabébé",
+    "name": "Flabébé (Red Flower)",
+    "baseName": "Flabébé",
     "types": [
       "Hada"
     ],
@@ -14944,7 +15732,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/flabebe-red.png"
   },
   {
-    "name": "Flabébé",
+    "name": "Flabébé (Blue Flower)",
+    "baseName": "Flabébé",
     "types": [
       "Hada"
     ],
@@ -14960,7 +15749,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/flabebe-blue.png"
   },
   {
-    "name": "Flabébé",
+    "name": "Flabébé (Orange Flower)",
+    "baseName": "Flabébé",
     "types": [
       "Hada"
     ],
@@ -14976,7 +15766,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/flabebe-orange.png"
   },
   {
-    "name": "Flabébé",
+    "name": "Flabébé (White Flower)",
+    "baseName": "Flabébé",
     "types": [
       "Hada"
     ],
@@ -14992,7 +15783,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/flabebe-white.png"
   },
   {
-    "name": "Flabébé",
+    "name": "Flabébé (Yellow Flower)",
+    "baseName": "Flabébé",
     "types": [
       "Hada"
     ],
@@ -15008,7 +15800,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/flabebe-yellow.png"
   },
   {
-    "name": "Floette",
+    "name": "Floette (Red Flower)",
+    "baseName": "Floette",
     "types": [
       "Hada"
     ],
@@ -15024,7 +15817,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/floette-red.png"
   },
   {
-    "name": "Floette",
+    "name": "Floette (Blue Flower)",
+    "baseName": "Floette",
     "types": [
       "Hada"
     ],
@@ -15040,7 +15834,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/floette-blue.png"
   },
   {
-    "name": "Floette",
+    "name": "Floette (Orange Flower)",
+    "baseName": "Floette",
     "types": [
       "Hada"
     ],
@@ -15056,7 +15851,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/floette-orange.png"
   },
   {
-    "name": "Floette",
+    "name": "Floette (White Flower)",
+    "baseName": "Floette",
     "types": [
       "Hada"
     ],
@@ -15072,7 +15868,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/floette-white.png"
   },
   {
-    "name": "Floette",
+    "name": "Floette (Yellow Flower)",
+    "baseName": "Floette",
     "types": [
       "Hada"
     ],
@@ -15088,7 +15885,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/floette-yellow.png"
   },
   {
-    "name": "Florges",
+    "name": "Florges (Red Flower)",
+    "baseName": "Florges",
     "types": [
       "Hada"
     ],
@@ -15109,7 +15907,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/florges-red.png"
   },
   {
-    "name": "Florges",
+    "name": "Florges (Blue Flower)",
+    "baseName": "Florges",
     "types": [
       "Hada"
     ],
@@ -15130,7 +15929,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/florges-blue.png"
   },
   {
-    "name": "Florges",
+    "name": "Florges (Orange Flower)",
+    "baseName": "Florges",
     "types": [
       "Hada"
     ],
@@ -15151,7 +15951,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/florges-orange.png"
   },
   {
-    "name": "Florges",
+    "name": "Florges (White Flower)",
+    "baseName": "Florges",
     "types": [
       "Hada"
     ],
@@ -15172,7 +15973,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/florges-white.png"
   },
   {
-    "name": "Florges",
+    "name": "Florges (Yellow Flower)",
+    "baseName": "Florges",
     "types": [
       "Hada"
     ],
@@ -15194,6 +15996,7 @@
   },
   {
     "name": "Skiddo",
+    "baseName": "Skiddo",
     "types": [
       "Planta"
     ],
@@ -15209,6 +16012,7 @@
   },
   {
     "name": "Gogoat",
+    "baseName": "Gogoat",
     "types": [
       "Planta"
     ],
@@ -15227,6 +16031,7 @@
   },
   {
     "name": "Pancham",
+    "baseName": "Pancham",
     "types": [
       "Pelea"
     ],
@@ -15243,6 +16048,7 @@
   },
   {
     "name": "Pangoro",
+    "baseName": "Pangoro",
     "types": [
       "Pelea",
       "Siniestro"
@@ -15262,7 +16068,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pangoro.png"
   },
   {
-    "name": "Furfrou",
+    "name": "Furfrou (Natural Trim)",
+    "baseName": "Furfrou",
     "types": [
       "Normal"
     ],
@@ -15280,7 +16087,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/furfrou-natural.png"
   },
   {
-    "name": "Furfrou",
+    "name": "Furfrou (Heart Trim)",
+    "baseName": "Furfrou",
     "types": [
       "Normal"
     ],
@@ -15298,7 +16106,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/furfrou-heart.png"
   },
   {
-    "name": "Furfrou",
+    "name": "Furfrou (Star Trim)",
+    "baseName": "Furfrou",
     "types": [
       "Normal"
     ],
@@ -15316,7 +16125,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/furfrou-star.png"
   },
   {
-    "name": "Furfrou",
+    "name": "Furfrou (Diamond Trim)",
+    "baseName": "Furfrou",
     "types": [
       "Normal"
     ],
@@ -15334,7 +16144,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/furfrou-diamond.png"
   },
   {
-    "name": "Furfrou",
+    "name": "Furfrou (Debutante Trim)",
+    "baseName": "Furfrou",
     "types": [
       "Normal"
     ],
@@ -15352,7 +16163,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/furfrou-debutante.png"
   },
   {
-    "name": "Furfrou",
+    "name": "Furfrou (Matron Trim)",
+    "baseName": "Furfrou",
     "types": [
       "Normal"
     ],
@@ -15370,7 +16182,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/furfrou-matron.png"
   },
   {
-    "name": "Furfrou",
+    "name": "Furfrou (Dandy Trim)",
+    "baseName": "Furfrou",
     "types": [
       "Normal"
     ],
@@ -15388,7 +16201,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/furfrou-dandy.png"
   },
   {
-    "name": "Furfrou",
+    "name": "Furfrou (La Reine Trim)",
+    "baseName": "Furfrou",
     "types": [
       "Normal"
     ],
@@ -15406,7 +16220,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/furfrou-la-reine.png"
   },
   {
-    "name": "Furfrou",
+    "name": "Furfrou (Kabuki Trim)",
+    "baseName": "Furfrou",
     "types": [
       "Normal"
     ],
@@ -15424,7 +16239,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/furfrou-kabuki.png"
   },
   {
-    "name": "Furfrou",
+    "name": "Furfrou (Pharaoh Trim)",
+    "baseName": "Furfrou",
     "types": [
       "Normal"
     ],
@@ -15443,6 +16259,7 @@
   },
   {
     "name": "Espurr",
+    "baseName": "Espurr",
     "types": [
       "Psíquico"
     ],
@@ -15458,7 +16275,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/espurr.png"
   },
   {
-    "name": "Meowstic",
+    "name": "Meowstic (Male)",
+    "baseName": "Meowstic",
     "types": [
       "Psíquico"
     ],
@@ -15474,7 +16292,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/meowstic-male.png"
   },
   {
-    "name": "Meowstic",
+    "name": "Meowstic (Female)",
+    "baseName": "Meowstic",
     "types": [
       "Psíquico"
     ],
@@ -15492,6 +16311,7 @@
   },
   {
     "name": "Honedge",
+    "baseName": "Honedge",
     "types": [
       "Acero",
       "Fantasma"
@@ -15508,6 +16328,7 @@
   },
   {
     "name": "Doublade",
+    "baseName": "Doublade",
     "types": [
       "Acero",
       "Fantasma"
@@ -15525,7 +16346,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/doublade.png"
   },
   {
-    "name": "Aegislash",
+    "name": "Aegislash (Shield e)",
+    "baseName": "Aegislash",
     "types": [
       "Acero",
       "Fantasma"
@@ -15542,7 +16364,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/aegislash-shield.png"
   },
   {
-    "name": "Aegislash",
+    "name": "Aegislash (Blade e)",
+    "baseName": "Aegislash",
     "types": [
       "Acero",
       "Fantasma"
@@ -15560,6 +16383,7 @@
   },
   {
     "name": "Spritzee",
+    "baseName": "Spritzee",
     "types": [
       "Hada"
     ],
@@ -15575,6 +16399,7 @@
   },
   {
     "name": "Aromatisse",
+    "baseName": "Aromatisse",
     "types": [
       "Hada"
     ],
@@ -15593,6 +16418,7 @@
   },
   {
     "name": "Swirlix",
+    "baseName": "Swirlix",
     "types": [
       "Hada"
     ],
@@ -15607,6 +16433,7 @@
   },
   {
     "name": "Slurpuff",
+    "baseName": "Slurpuff",
     "types": [
       "Hada"
     ],
@@ -15625,6 +16452,7 @@
   },
   {
     "name": "Inkay",
+    "baseName": "Inkay",
     "types": [
       "Siniestro",
       "Psíquico"
@@ -15644,6 +16472,7 @@
   },
   {
     "name": "Malamar",
+    "baseName": "Malamar",
     "types": [
       "Siniestro",
       "Psíquico"
@@ -15665,6 +16494,7 @@
   },
   {
     "name": "Binacle",
+    "baseName": "Binacle",
     "types": [
       "Roca",
       "Agua"
@@ -15682,6 +16512,7 @@
   },
   {
     "name": "Barbaracle",
+    "baseName": "Barbaracle",
     "types": [
       "Roca",
       "Agua"
@@ -15702,6 +16533,7 @@
   },
   {
     "name": "Skrelp",
+    "baseName": "Skrelp",
     "types": [
       "Veneno",
       "Agua"
@@ -15720,6 +16552,7 @@
   },
   {
     "name": "Dragalge",
+    "baseName": "Dragalge",
     "types": [
       "Veneno",
       "Dragón"
@@ -15741,6 +16574,7 @@
   },
   {
     "name": "Clauncher",
+    "baseName": "Clauncher",
     "types": [
       "Agua"
     ],
@@ -15757,6 +16591,7 @@
   },
   {
     "name": "Clawitzer",
+    "baseName": "Clawitzer",
     "types": [
       "Agua"
     ],
@@ -15774,6 +16609,7 @@
   },
   {
     "name": "Helioptile",
+    "baseName": "Helioptile",
     "types": [
       "Eléctrico",
       "Normal"
@@ -15791,6 +16627,7 @@
   },
   {
     "name": "Heliolisk",
+    "baseName": "Heliolisk",
     "types": [
       "Eléctrico",
       "Normal"
@@ -15811,6 +16648,7 @@
   },
   {
     "name": "Tyrunt",
+    "baseName": "Tyrunt",
     "types": [
       "Roca",
       "Dragón"
@@ -15831,6 +16669,7 @@
   },
   {
     "name": "Tyrantrum",
+    "baseName": "Tyrantrum",
     "types": [
       "Roca",
       "Dragón"
@@ -15854,6 +16693,7 @@
   },
   {
     "name": "Amaura",
+    "baseName": "Amaura",
     "types": [
       "Roca",
       "Hielo"
@@ -15874,6 +16714,7 @@
   },
   {
     "name": "Aurorus",
+    "baseName": "Aurorus",
     "types": [
       "Roca",
       "Hielo"
@@ -15897,6 +16738,7 @@
   },
   {
     "name": "Sylveon",
+    "baseName": "Sylveon",
     "types": [
       "Hada"
     ],
@@ -15915,6 +16757,7 @@
   },
   {
     "name": "Hawlucha",
+    "baseName": "Hawlucha",
     "types": [
       "Pelea",
       "Volador"
@@ -15933,6 +16776,7 @@
   },
   {
     "name": "Dedenne",
+    "baseName": "Dedenne",
     "types": [
       "Eléctrico",
       "Hada"
@@ -15950,6 +16794,7 @@
   },
   {
     "name": "Carbink",
+    "baseName": "Carbink",
     "types": [
       "Roca",
       "Hada"
@@ -15967,6 +16812,7 @@
   },
   {
     "name": "Goomy",
+    "baseName": "Goomy",
     "types": [
       "Dragón"
     ],
@@ -15984,6 +16830,7 @@
   },
   {
     "name": "Sliggoo",
+    "baseName": "Sliggoo",
     "types": [
       "Dragón"
     ],
@@ -16001,6 +16848,7 @@
   },
   {
     "name": "Goodra",
+    "baseName": "Goodra",
     "types": [
       "Dragón"
     ],
@@ -16020,6 +16868,7 @@
   },
   {
     "name": "Klefki",
+    "baseName": "Klefki",
     "types": [
       "Acero",
       "Hada"
@@ -16038,6 +16887,7 @@
   },
   {
     "name": "Phantump",
+    "baseName": "Phantump",
     "types": [
       "Fantasma",
       "Planta"
@@ -16057,6 +16907,7 @@
   },
   {
     "name": "Trevenant",
+    "baseName": "Trevenant",
     "types": [
       "Fantasma",
       "Planta"
@@ -16075,7 +16926,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/trevenant.png"
   },
   {
-    "name": "Pumpkaboo",
+    "name": "Pumpkaboo (Average Size)",
+    "baseName": "Pumpkaboo",
     "types": [
       "Fantasma",
       "Planta"
@@ -16092,7 +16944,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pumpkaboo-average.png"
   },
   {
-    "name": "Pumpkaboo",
+    "name": "Pumpkaboo (Small Size)",
+    "baseName": "Pumpkaboo",
     "types": [
       "Fantasma",
       "Planta"
@@ -16109,7 +16962,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pumpkaboo-small.png"
   },
   {
-    "name": "Pumpkaboo",
+    "name": "Pumpkaboo (Large Size)",
+    "baseName": "Pumpkaboo",
     "types": [
       "Fantasma",
       "Planta"
@@ -16126,7 +16980,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pumpkaboo-large.png"
   },
   {
-    "name": "Pumpkaboo",
+    "name": "Pumpkaboo (Super Size)",
+    "baseName": "Pumpkaboo",
     "types": [
       "Fantasma",
       "Planta"
@@ -16143,7 +16998,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pumpkaboo-super.png"
   },
   {
-    "name": "Gourgeist",
+    "name": "Gourgeist (Average Size)",
+    "baseName": "Gourgeist",
     "types": [
       "Fantasma",
       "Planta"
@@ -16163,7 +17019,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gourgeist-average.png"
   },
   {
-    "name": "Gourgeist",
+    "name": "Gourgeist (Small Size)",
+    "baseName": "Gourgeist",
     "types": [
       "Fantasma",
       "Planta"
@@ -16183,7 +17040,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gourgeist-small.png"
   },
   {
-    "name": "Gourgeist",
+    "name": "Gourgeist (Large Size)",
+    "baseName": "Gourgeist",
     "types": [
       "Fantasma",
       "Planta"
@@ -16203,7 +17061,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gourgeist-large.png"
   },
   {
-    "name": "Gourgeist",
+    "name": "Gourgeist (Super Size)",
+    "baseName": "Gourgeist",
     "types": [
       "Fantasma",
       "Planta"
@@ -16224,6 +17083,7 @@
   },
   {
     "name": "Bergmite",
+    "baseName": "Bergmite",
     "types": [
       "Hielo"
     ],
@@ -16240,6 +17100,7 @@
   },
   {
     "name": "Avalugg",
+    "baseName": "Avalugg",
     "types": [
       "Hielo"
     ],
@@ -16258,7 +17119,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/avalugg.png"
   },
   {
-    "name": "Avalugg",
+    "name": "Avalugg (Hisui Avalugg)",
+    "baseName": "Avalugg",
     "types": [
       "Hielo",
       "Roca"
@@ -16278,6 +17140,7 @@
   },
   {
     "name": "Noibat",
+    "baseName": "Noibat",
     "types": [
       "Volador",
       "Dragón"
@@ -16295,6 +17158,7 @@
   },
   {
     "name": "Noivern",
+    "baseName": "Noivern",
     "types": [
       "Volador",
       "Dragón"
@@ -16314,6 +17178,7 @@
   },
   {
     "name": "Xerneas",
+    "baseName": "Xerneas",
     "types": [
       "Hada"
     ],
@@ -16333,6 +17198,7 @@
   },
   {
     "name": "Yveltal",
+    "baseName": "Yveltal",
     "types": [
       "Siniestro",
       "Volador"
@@ -16353,7 +17219,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/yveltal.png"
   },
   {
-    "name": "Zygarde",
+    "name": "Zygarde (50% e)",
+    "baseName": "Zygarde",
     "types": [
       "Dragón",
       "Tierra"
@@ -16373,7 +17240,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zygarde-50.png"
   },
   {
-    "name": "Zygarde",
+    "name": "Zygarde (10% e)",
+    "baseName": "Zygarde",
     "types": [
       "Dragón",
       "Tierra"
@@ -16393,7 +17261,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zygarde-10.png"
   },
   {
-    "name": "Zygarde",
+    "name": "Zygarde (Complete e)",
+    "baseName": "Zygarde",
     "types": [
       "Dragón",
       "Tierra"
@@ -16414,6 +17283,7 @@
   },
   {
     "name": "Diancie",
+    "baseName": "Diancie",
     "types": [
       "Roca",
       "Hada"
@@ -16430,7 +17300,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/diancie.png"
   },
   {
-    "name": "Hoopa",
+    "name": "Hoopa (Hoopa Confined)",
+    "baseName": "Hoopa",
     "types": [
       "Psíquico",
       "Fantasma"
@@ -16447,7 +17318,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/hoopa-confined.png"
   },
   {
-    "name": "Hoopa",
+    "name": "Hoopa (Hoopa Unbound)",
+    "baseName": "Hoopa",
     "types": [
       "Psíquico",
       "Siniestro"
@@ -16465,6 +17337,7 @@
   },
   {
     "name": "Volcanion",
+    "baseName": "Volcanion",
     "types": [
       "Fuego",
       "Agua"
@@ -16485,6 +17358,7 @@
   },
   {
     "name": "Rowlet",
+    "baseName": "Rowlet",
     "types": [
       "Planta",
       "Volador"
@@ -16503,6 +17377,7 @@
   },
   {
     "name": "Dartrix",
+    "baseName": "Dartrix",
     "types": [
       "Planta",
       "Volador"
@@ -16522,6 +17397,7 @@
   },
   {
     "name": "Decidueye",
+    "baseName": "Decidueye",
     "types": [
       "Planta",
       "Fantasma"
@@ -16542,7 +17418,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/decidueye.png"
   },
   {
-    "name": "Decidueye",
+    "name": "Decidueye (Hisui Decidueye)",
+    "baseName": "Decidueye",
     "types": [
       "Planta",
       "Pelea"
@@ -16562,6 +17439,7 @@
   },
   {
     "name": "Litten",
+    "baseName": "Litten",
     "types": [
       "Fuego"
     ],
@@ -16578,6 +17456,7 @@
   },
   {
     "name": "Torracat",
+    "baseName": "Torracat",
     "types": [
       "Fuego"
     ],
@@ -16594,6 +17473,7 @@
   },
   {
     "name": "Incineroar",
+    "baseName": "Incineroar",
     "types": [
       "Fuego",
       "Siniestro"
@@ -16617,6 +17497,7 @@
   },
   {
     "name": "Popplio",
+    "baseName": "Popplio",
     "types": [
       "Agua"
     ],
@@ -16633,6 +17514,7 @@
   },
   {
     "name": "Brionne",
+    "baseName": "Brionne",
     "types": [
       "Agua"
     ],
@@ -16649,6 +17531,7 @@
   },
   {
     "name": "Primarina",
+    "baseName": "Primarina",
     "types": [
       "Agua",
       "Hada"
@@ -16669,6 +17552,7 @@
   },
   {
     "name": "Pikipek",
+    "baseName": "Pikipek",
     "types": [
       "Normal",
       "Volador"
@@ -16688,6 +17572,7 @@
   },
   {
     "name": "Trumbeak",
+    "baseName": "Trumbeak",
     "types": [
       "Normal",
       "Volador"
@@ -16707,6 +17592,7 @@
   },
   {
     "name": "Toucannon",
+    "baseName": "Toucannon",
     "types": [
       "Normal",
       "Volador"
@@ -16728,6 +17614,7 @@
   },
   {
     "name": "Yungoos",
+    "baseName": "Yungoos",
     "types": [
       "Normal"
     ],
@@ -16744,6 +17631,7 @@
   },
   {
     "name": "Gumshoos",
+    "baseName": "Gumshoos",
     "types": [
       "Normal"
     ],
@@ -16760,6 +17648,7 @@
   },
   {
     "name": "Grubbin",
+    "baseName": "Grubbin",
     "types": [
       "Insecto"
     ],
@@ -16778,6 +17667,7 @@
   },
   {
     "name": "Charjabug",
+    "baseName": "Charjabug",
     "types": [
       "Insecto",
       "Eléctrico"
@@ -16798,6 +17688,7 @@
   },
   {
     "name": "Vikavolt",
+    "baseName": "Vikavolt",
     "types": [
       "Insecto",
       "Eléctrico"
@@ -16820,6 +17711,7 @@
   },
   {
     "name": "Crabrawler",
+    "baseName": "Crabrawler",
     "types": [
       "Pelea"
     ],
@@ -16837,6 +17729,7 @@
   },
   {
     "name": "Crabominable",
+    "baseName": "Crabominable",
     "types": [
       "Pelea",
       "Hielo"
@@ -16855,7 +17748,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/crabominable.png"
   },
   {
-    "name": "Oricorio",
+    "name": "Oricorio (Baile Style)",
+    "baseName": "Oricorio",
     "types": [
       "Fuego",
       "Volador"
@@ -16872,7 +17766,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/oricorio-baile.png"
   },
   {
-    "name": "Oricorio",
+    "name": "Oricorio (Pom-Pom Style)",
+    "baseName": "Oricorio",
     "types": [
       "Eléctrico",
       "Volador"
@@ -16889,7 +17784,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/oricorio-pom-pom.png"
   },
   {
-    "name": "Oricorio",
+    "name": "Oricorio (Pa'u Style)",
+    "baseName": "Oricorio",
     "types": [
       "Psíquico",
       "Volador"
@@ -16906,7 +17802,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/oricorio-pau.png"
   },
   {
-    "name": "Oricorio",
+    "name": "Oricorio (Sensu Style)",
+    "baseName": "Oricorio",
     "types": [
       "Fantasma",
       "Volador"
@@ -16924,6 +17821,7 @@
   },
   {
     "name": "Cutiefly",
+    "baseName": "Cutiefly",
     "types": [
       "Insecto",
       "Hada"
@@ -16940,6 +17838,7 @@
   },
   {
     "name": "Ribombee",
+    "baseName": "Ribombee",
     "types": [
       "Insecto",
       "Hada"
@@ -16958,6 +17857,7 @@
   },
   {
     "name": "Rockruff",
+    "baseName": "Rockruff",
     "types": [
       "Roca"
     ],
@@ -16974,7 +17874,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rockruff.png"
   },
   {
-    "name": "Rockruff",
+    "name": "Rockruff (Dusk)",
+    "baseName": "Rockruff",
     "types": [
       "Roca"
     ],
@@ -16991,7 +17892,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rockruff-dusk.png"
   },
   {
-    "name": "Lycanroc",
+    "name": "Lycanroc (Midday)",
+    "baseName": "Lycanroc",
     "types": [
       "Roca"
     ],
@@ -17008,7 +17910,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lycanroc-midday.png"
   },
   {
-    "name": "Lycanroc",
+    "name": "Lycanroc (Midnight)",
+    "baseName": "Lycanroc",
     "types": [
       "Roca"
     ],
@@ -17025,7 +17928,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lycanroc-midnight.png"
   },
   {
-    "name": "Lycanroc",
+    "name": "Lycanroc (Dusk)",
+    "baseName": "Lycanroc",
     "types": [
       "Roca"
     ],
@@ -17044,6 +17948,7 @@
   },
   {
     "name": "Mareanie",
+    "baseName": "Mareanie",
     "types": [
       "Veneno",
       "Agua"
@@ -17061,6 +17966,7 @@
   },
   {
     "name": "Toxapex",
+    "baseName": "Toxapex",
     "types": [
       "Veneno",
       "Agua"
@@ -17078,6 +17984,7 @@
   },
   {
     "name": "Mudbray",
+    "baseName": "Mudbray",
     "types": [
       "Tierra"
     ],
@@ -17094,6 +18001,7 @@
   },
   {
     "name": "Mudsdale",
+    "baseName": "Mudsdale",
     "types": [
       "Tierra"
     ],
@@ -17111,6 +18019,7 @@
   },
   {
     "name": "Dewpider",
+    "baseName": "Dewpider",
     "types": [
       "Agua",
       "Insecto"
@@ -17128,6 +18037,7 @@
   },
   {
     "name": "Araquanid",
+    "baseName": "Araquanid",
     "types": [
       "Agua",
       "Insecto"
@@ -17146,6 +18056,7 @@
   },
   {
     "name": "Fomantis",
+    "baseName": "Fomantis",
     "types": [
       "Planta"
     ],
@@ -17164,6 +18075,7 @@
   },
   {
     "name": "Lurantis",
+    "baseName": "Lurantis",
     "types": [
       "Planta"
     ],
@@ -17183,6 +18095,7 @@
   },
   {
     "name": "Morelull",
+    "baseName": "Morelull",
     "types": [
       "Planta",
       "Hada"
@@ -17198,6 +18111,7 @@
   },
   {
     "name": "Shiinotic",
+    "baseName": "Shiinotic",
     "types": [
       "Planta",
       "Hada"
@@ -17214,6 +18128,7 @@
   },
   {
     "name": "Salandit",
+    "baseName": "Salandit",
     "types": [
       "Veneno",
       "Fuego"
@@ -17231,6 +18146,7 @@
   },
   {
     "name": "Salazzle",
+    "baseName": "Salazzle",
     "types": [
       "Veneno",
       "Fuego"
@@ -17249,6 +18165,7 @@
   },
   {
     "name": "Stufful",
+    "baseName": "Stufful",
     "types": [
       "Normal",
       "Pelea"
@@ -17266,6 +18183,7 @@
   },
   {
     "name": "Bewear",
+    "baseName": "Bewear",
     "types": [
       "Normal",
       "Pelea"
@@ -17285,6 +18203,7 @@
   },
   {
     "name": "Bounsweet",
+    "baseName": "Bounsweet",
     "types": [
       "Planta"
     ],
@@ -17300,6 +18219,7 @@
   },
   {
     "name": "Steenee",
+    "baseName": "Steenee",
     "types": [
       "Planta"
     ],
@@ -17317,6 +18237,7 @@
   },
   {
     "name": "Tsareena",
+    "baseName": "Tsareena",
     "types": [
       "Planta"
     ],
@@ -17337,6 +18258,7 @@
   },
   {
     "name": "Comfey",
+    "baseName": "Comfey",
     "types": [
       "Hada"
     ],
@@ -17353,6 +18275,7 @@
   },
   {
     "name": "Oranguru",
+    "baseName": "Oranguru",
     "types": [
       "Normal",
       "Psíquico"
@@ -17373,6 +18296,7 @@
   },
   {
     "name": "Passimian",
+    "baseName": "Passimian",
     "types": [
       "Pelea"
     ],
@@ -17392,6 +18316,7 @@
   },
   {
     "name": "Wimpod",
+    "baseName": "Wimpod",
     "types": [
       "Insecto",
       "Agua"
@@ -17406,6 +18331,7 @@
   },
   {
     "name": "Golisopod",
+    "baseName": "Golisopod",
     "types": [
       "Insecto",
       "Agua"
@@ -17427,6 +18353,7 @@
   },
   {
     "name": "Sandygast",
+    "baseName": "Sandygast",
     "types": [
       "Fantasma",
       "Tierra"
@@ -17446,6 +18373,7 @@
   },
   {
     "name": "Palossand",
+    "baseName": "Palossand",
     "types": [
       "Fantasma",
       "Tierra"
@@ -17465,6 +18393,7 @@
   },
   {
     "name": "Komala",
+    "baseName": "Komala",
     "types": [
       "Normal"
     ],
@@ -17481,6 +18410,7 @@
   },
   {
     "name": "Turtonator",
+    "baseName": "Turtonator",
     "types": [
       "Fuego",
       "Dragón"
@@ -17502,6 +18432,7 @@
   },
   {
     "name": "Togedemaru",
+    "baseName": "Togedemaru",
     "types": [
       "Eléctrico",
       "Acero"
@@ -17519,6 +18450,7 @@
   },
   {
     "name": "Bruxish",
+    "baseName": "Bruxish",
     "types": [
       "Agua",
       "Psíquico"
@@ -17538,6 +18470,7 @@
   },
   {
     "name": "Drampa",
+    "baseName": "Drampa",
     "types": [
       "Normal",
       "Dragón"
@@ -17556,6 +18489,7 @@
   },
   {
     "name": "Dhelmise",
+    "baseName": "Dhelmise",
     "types": [
       "Fantasma",
       "Planta"
@@ -17576,6 +18510,7 @@
   },
   {
     "name": "Jangmo-o",
+    "baseName": "Jangmo-o",
     "types": [
       "Dragón"
     ],
@@ -17592,6 +18527,7 @@
   },
   {
     "name": "Hakamo-o",
+    "baseName": "Hakamo-o",
     "types": [
       "Dragón",
       "Pelea"
@@ -17610,6 +18546,7 @@
   },
   {
     "name": "Kommo-o",
+    "baseName": "Kommo-o",
     "types": [
       "Dragón",
       "Pelea"
@@ -17632,6 +18569,7 @@
   },
   {
     "name": "Tapu Koko",
+    "baseName": "Tapu Koko",
     "types": [
       "Eléctrico",
       "Hada"
@@ -17651,6 +18589,7 @@
   },
   {
     "name": "Tapu Lele",
+    "baseName": "Tapu Lele",
     "types": [
       "Psíquico",
       "Hada"
@@ -17671,6 +18610,7 @@
   },
   {
     "name": "Tapu Bulu",
+    "baseName": "Tapu Bulu",
     "types": [
       "Planta",
       "Hada"
@@ -17690,6 +18630,7 @@
   },
   {
     "name": "Tapu Fini",
+    "baseName": "Tapu Fini",
     "types": [
       "Agua",
       "Hada"
@@ -17709,6 +18650,7 @@
   },
   {
     "name": "Cosmog",
+    "baseName": "Cosmog",
     "types": [
       "Psíquico"
     ],
@@ -17722,6 +18664,7 @@
   },
   {
     "name": "Cosmoem",
+    "baseName": "Cosmoem",
     "types": [
       "Psíquico"
     ],
@@ -17735,6 +18678,7 @@
   },
   {
     "name": "Solgaleo",
+    "baseName": "Solgaleo",
     "types": [
       "Psíquico",
       "Acero"
@@ -17753,6 +18697,7 @@
   },
   {
     "name": "Lunala",
+    "baseName": "Lunala",
     "types": [
       "Psíquico",
       "Fantasma"
@@ -17772,6 +18717,7 @@
   },
   {
     "name": "Nihilego",
+    "baseName": "Nihilego",
     "types": [
       "Roca",
       "Veneno"
@@ -17791,6 +18737,7 @@
   },
   {
     "name": "Buzzwole",
+    "baseName": "Buzzwole",
     "types": [
       "Insecto",
       "Pelea"
@@ -17809,6 +18756,7 @@
   },
   {
     "name": "Pheromosa",
+    "baseName": "Pheromosa",
     "types": [
       "Insecto",
       "Pelea"
@@ -17827,6 +18775,7 @@
   },
   {
     "name": "Xurkitree",
+    "baseName": "Xurkitree",
     "types": [
       "Eléctrico"
     ],
@@ -17844,6 +18793,7 @@
   },
   {
     "name": "Celesteela",
+    "baseName": "Celesteela",
     "types": [
       "Acero",
       "Volador"
@@ -17862,6 +18812,7 @@
   },
   {
     "name": "Kartana",
+    "baseName": "Kartana",
     "types": [
       "Planta",
       "Acero"
@@ -17882,6 +18833,7 @@
   },
   {
     "name": "Guzzlord",
+    "baseName": "Guzzlord",
     "types": [
       "Siniestro",
       "Dragón"
@@ -17900,6 +18852,7 @@
   },
   {
     "name": "Necrozma",
+    "baseName": "Necrozma",
     "types": [
       "Psíquico"
     ],
@@ -17917,7 +18870,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/necrozma.png"
   },
   {
-    "name": "Necrozma",
+    "name": "Necrozma (Dusk Mane Necrozma)",
+    "baseName": "Necrozma",
     "types": [
       "Psíquico",
       "Acero"
@@ -17936,7 +18890,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/necrozma-dusk-mane.png"
   },
   {
-    "name": "Necrozma",
+    "name": "Necrozma (Dawn Wings Necrozma)",
+    "baseName": "Necrozma",
     "types": [
       "Psíquico",
       "Fantasma"
@@ -17956,6 +18911,7 @@
   },
   {
     "name": "Marshadow",
+    "baseName": "Marshadow",
     "types": [
       "Pelea",
       "Fantasma"
@@ -17977,6 +18933,7 @@
   },
   {
     "name": "Poipole",
+    "baseName": "Poipole",
     "types": [
       "Veneno"
     ],
@@ -17993,6 +18950,7 @@
   },
   {
     "name": "Naganadel",
+    "baseName": "Naganadel",
     "types": [
       "Veneno",
       "Dragón"
@@ -18012,6 +18970,7 @@
   },
   {
     "name": "Stakataka",
+    "baseName": "Stakataka",
     "types": [
       "Roca",
       "Acero"
@@ -18029,6 +18988,7 @@
   },
   {
     "name": "Blacephalon",
+    "baseName": "Blacephalon",
     "types": [
       "Fuego",
       "Fantasma"
@@ -18047,6 +19007,7 @@
   },
   {
     "name": "Meltan",
+    "baseName": "Meltan",
     "types": [
       "Acero"
     ],
@@ -18061,6 +19022,7 @@
   },
   {
     "name": "Melmetal",
+    "baseName": "Melmetal",
     "types": [
       "Acero"
     ],
@@ -18079,6 +19041,7 @@
   },
   {
     "name": "Grookey",
+    "baseName": "Grookey",
     "types": [
       "Planta"
     ],
@@ -18094,6 +19057,7 @@
   },
   {
     "name": "Thwackey",
+    "baseName": "Thwackey",
     "types": [
       "Planta"
     ],
@@ -18109,6 +19073,7 @@
   },
   {
     "name": "Rillaboom",
+    "baseName": "Rillaboom",
     "types": [
       "Planta"
     ],
@@ -18127,6 +19092,7 @@
   },
   {
     "name": "Scorbunny",
+    "baseName": "Scorbunny",
     "types": [
       "Fuego"
     ],
@@ -18142,6 +19108,7 @@
   },
   {
     "name": "Raboot",
+    "baseName": "Raboot",
     "types": [
       "Fuego"
     ],
@@ -18157,6 +19124,7 @@
   },
   {
     "name": "Cinderace",
+    "baseName": "Cinderace",
     "types": [
       "Fuego"
     ],
@@ -18173,6 +19141,7 @@
   },
   {
     "name": "Sobble",
+    "baseName": "Sobble",
     "types": [
       "Agua"
     ],
@@ -18188,6 +19157,7 @@
   },
   {
     "name": "Drizzile",
+    "baseName": "Drizzile",
     "types": [
       "Agua"
     ],
@@ -18203,6 +19173,7 @@
   },
   {
     "name": "Inteleon",
+    "baseName": "Inteleon",
     "types": [
       "Agua"
     ],
@@ -18219,6 +19190,7 @@
   },
   {
     "name": "Skwovet",
+    "baseName": "Skwovet",
     "types": [
       "Normal"
     ],
@@ -18236,6 +19208,7 @@
   },
   {
     "name": "Greedent",
+    "baseName": "Greedent",
     "types": [
       "Normal"
     ],
@@ -18254,6 +19227,7 @@
   },
   {
     "name": "Rookidee",
+    "baseName": "Rookidee",
     "types": [
       "Volador"
     ],
@@ -18270,6 +19244,7 @@
   },
   {
     "name": "Corvisquire",
+    "baseName": "Corvisquire",
     "types": [
       "Volador"
     ],
@@ -18286,6 +19261,7 @@
   },
   {
     "name": "Corviknight",
+    "baseName": "Corviknight",
     "types": [
       "Volador",
       "Acero"
@@ -18305,6 +19281,7 @@
   },
   {
     "name": "Nickit",
+    "baseName": "Nickit",
     "types": [
       "Siniestro"
     ],
@@ -18321,6 +19298,7 @@
   },
   {
     "name": "Thievul",
+    "baseName": "Thievul",
     "types": [
       "Siniestro"
     ],
@@ -18337,6 +19315,7 @@
   },
   {
     "name": "Gossifleur",
+    "baseName": "Gossifleur",
     "types": [
       "Planta"
     ],
@@ -18352,6 +19331,7 @@
   },
   {
     "name": "Eldegoss",
+    "baseName": "Eldegoss",
     "types": [
       "Planta"
     ],
@@ -18367,6 +19347,7 @@
   },
   {
     "name": "Wooloo",
+    "baseName": "Wooloo",
     "types": [
       "Normal"
     ],
@@ -18383,6 +19364,7 @@
   },
   {
     "name": "Dubwool",
+    "baseName": "Dubwool",
     "types": [
       "Normal"
     ],
@@ -18400,6 +19382,7 @@
   },
   {
     "name": "Yamper",
+    "baseName": "Yamper",
     "types": [
       "Eléctrico"
     ],
@@ -18415,6 +19398,7 @@
   },
   {
     "name": "Boltund",
+    "baseName": "Boltund",
     "types": [
       "Eléctrico"
     ],
@@ -18430,6 +19414,7 @@
   },
   {
     "name": "Rolycoly",
+    "baseName": "Rolycoly",
     "types": [
       "Roca"
     ],
@@ -18445,6 +19430,7 @@
   },
   {
     "name": "Carkol",
+    "baseName": "Carkol",
     "types": [
       "Roca",
       "Fuego"
@@ -18462,6 +19448,7 @@
   },
   {
     "name": "Coalossal",
+    "baseName": "Coalossal",
     "types": [
       "Roca",
       "Fuego"
@@ -18479,6 +19466,7 @@
   },
   {
     "name": "Applin",
+    "baseName": "Applin",
     "types": [
       "Planta",
       "Dragón"
@@ -18493,6 +19481,7 @@
   },
   {
     "name": "Flapple",
+    "baseName": "Flapple",
     "types": [
       "Planta",
       "Dragón"
@@ -18511,6 +19500,7 @@
   },
   {
     "name": "Appletun",
+    "baseName": "Appletun",
     "types": [
       "Planta",
       "Dragón"
@@ -18529,6 +19519,7 @@
   },
   {
     "name": "Toxel",
+    "baseName": "Toxel",
     "types": [
       "Eléctrico",
       "Veneno"
@@ -18542,7 +19533,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/toxel.png"
   },
   {
-    "name": "Toxtricity",
+    "name": "Toxtricity (Amped)",
+    "baseName": "Toxtricity",
     "types": [
       "Eléctrico",
       "Veneno"
@@ -18561,7 +19553,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/toxtricity-amped.png"
   },
   {
-    "name": "Toxtricity",
+    "name": "Toxtricity (Low Key)",
+    "baseName": "Toxtricity",
     "types": [
       "Eléctrico",
       "Veneno"
@@ -18581,6 +19574,7 @@
   },
   {
     "name": "Sizzlipede",
+    "baseName": "Sizzlipede",
     "types": [
       "Fuego",
       "Insecto"
@@ -18598,6 +19592,7 @@
   },
   {
     "name": "Centiskorch",
+    "baseName": "Centiskorch",
     "types": [
       "Fuego",
       "Insecto"
@@ -18616,6 +19611,7 @@
   },
   {
     "name": "Clobbopus",
+    "baseName": "Clobbopus",
     "types": [
       "Pelea"
     ],
@@ -18631,6 +19627,7 @@
   },
   {
     "name": "Grapploct",
+    "baseName": "Grapploct",
     "types": [
       "Pelea"
     ],
@@ -18647,7 +19644,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/grapploct.png"
   },
   {
-    "name": "Sinistea",
+    "name": "Sinistea (Phony)",
+    "baseName": "Sinistea",
     "types": [
       "Fantasma"
     ],
@@ -18663,7 +19661,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sinistea-phony.png"
   },
   {
-    "name": "Sinistea",
+    "name": "Sinistea (Antique)",
+    "baseName": "Sinistea",
     "types": [
       "Fantasma"
     ],
@@ -18679,7 +19678,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sinistea-antique.png"
   },
   {
-    "name": "Polteageist",
+    "name": "Polteageist (Phony)",
+    "baseName": "Polteageist",
     "types": [
       "Fantasma"
     ],
@@ -18696,7 +19696,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/polteageist-phony.png"
   },
   {
-    "name": "Polteageist",
+    "name": "Polteageist (Antique)",
+    "baseName": "Polteageist",
     "types": [
       "Fantasma"
     ],
@@ -18714,6 +19715,7 @@
   },
   {
     "name": "Hatenna",
+    "baseName": "Hatenna",
     "types": [
       "Psíquico"
     ],
@@ -18730,6 +19732,7 @@
   },
   {
     "name": "Hattrem",
+    "baseName": "Hattrem",
     "types": [
       "Psíquico"
     ],
@@ -18746,6 +19749,7 @@
   },
   {
     "name": "Hatterene",
+    "baseName": "Hatterene",
     "types": [
       "Psíquico",
       "Hada"
@@ -18765,6 +19769,7 @@
   },
   {
     "name": "Impidimp",
+    "baseName": "Impidimp",
     "types": [
       "Siniestro",
       "Hada"
@@ -18782,6 +19787,7 @@
   },
   {
     "name": "Morgrem",
+    "baseName": "Morgrem",
     "types": [
       "Siniestro",
       "Hada"
@@ -18799,6 +19805,7 @@
   },
   {
     "name": "Grimmsnarl",
+    "baseName": "Grimmsnarl",
     "types": [
       "Siniestro",
       "Hada"
@@ -18818,6 +19825,7 @@
   },
   {
     "name": "Obstagoon",
+    "baseName": "Obstagoon",
     "types": [
       "Siniestro",
       "Normal"
@@ -18839,6 +19847,7 @@
   },
   {
     "name": "Perrserker",
+    "baseName": "Perrserker",
     "types": [
       "Acero"
     ],
@@ -18860,6 +19869,7 @@
   },
   {
     "name": "Cursola",
+    "baseName": "Cursola",
     "types": [
       "Fantasma"
     ],
@@ -18876,6 +19886,7 @@
   },
   {
     "name": "Sirfetch'd",
+    "baseName": "Sirfetch'd",
     "types": [
       "Pelea"
     ],
@@ -18895,6 +19906,7 @@
   },
   {
     "name": "Mr. Rime",
+    "baseName": "Mr. Rime",
     "types": [
       "Hielo",
       "Psíquico"
@@ -18917,6 +19929,7 @@
   },
   {
     "name": "Runerigus",
+    "baseName": "Runerigus",
     "types": [
       "Tierra",
       "Fantasma"
@@ -18937,6 +19950,7 @@
   },
   {
     "name": "Falinks",
+    "baseName": "Falinks",
     "types": [
       "Pelea"
     ],
@@ -18953,6 +19967,7 @@
   },
   {
     "name": "Snom",
+    "baseName": "Snom",
     "types": [
       "Hielo",
       "Insecto"
@@ -18969,6 +19984,7 @@
   },
   {
     "name": "Frosmoth",
+    "baseName": "Frosmoth",
     "types": [
       "Hielo",
       "Insecto"
@@ -18987,6 +20003,7 @@
   },
   {
     "name": "Stonjourner",
+    "baseName": "Stonjourner",
     "types": [
       "Roca"
     ],
@@ -19001,7 +20018,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/stonjourner.png"
   },
   {
-    "name": "Indeedee",
+    "name": "Indeedee (Male)",
+    "baseName": "Indeedee",
     "types": [
       "Psíquico",
       "Normal"
@@ -19017,7 +20035,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/indeedee-male.png"
   },
   {
-    "name": "Indeedee",
+    "name": "Indeedee (Female)",
+    "baseName": "Indeedee",
     "types": [
       "Psíquico",
       "Normal"
@@ -19033,7 +20052,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/indeedee-female.png"
   },
   {
-    "name": "Morpeko",
+    "name": "Morpeko (Full Belly Mode)",
+    "baseName": "Morpeko",
     "types": [
       "Eléctrico",
       "Siniestro"
@@ -19052,7 +20072,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/morpeko-full-belly.png"
   },
   {
-    "name": "Morpeko",
+    "name": "Morpeko (Hangry Mode)",
+    "baseName": "Morpeko",
     "types": [
       "Eléctrico",
       "Siniestro"
@@ -19072,6 +20093,7 @@
   },
   {
     "name": "Duraludon",
+    "baseName": "Duraludon",
     "types": [
       "Acero",
       "Dragón"
@@ -19089,6 +20111,7 @@
   },
   {
     "name": "Dreepy",
+    "baseName": "Dreepy",
     "types": [
       "Dragón",
       "Fantasma"
@@ -19104,6 +20127,7 @@
   },
   {
     "name": "Drakloak",
+    "baseName": "Drakloak",
     "types": [
       "Dragón",
       "Fantasma"
@@ -19121,6 +20145,7 @@
   },
   {
     "name": "Dragapult",
+    "baseName": "Dragapult",
     "types": [
       "Dragón",
       "Fantasma"
@@ -19138,7 +20163,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dragapult.png"
   },
   {
-    "name": "Zacian",
+    "name": "Zacian (Hero of Many Battles)",
+    "baseName": "Zacian",
     "types": [
       "Hada"
     ],
@@ -19157,7 +20183,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zacian-hero.png"
   },
   {
-    "name": "Zacian",
+    "name": "Zacian (Crowned Sword)",
+    "baseName": "Zacian",
     "types": [
       "Hada",
       "Acero"
@@ -19175,7 +20202,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zacian-crowned.png"
   },
   {
-    "name": "Zamazenta",
+    "name": "Zamazenta (Hero of Many Battles)",
+    "baseName": "Zamazenta",
     "types": [
       "Pelea"
     ],
@@ -19194,7 +20222,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/zamazenta-hero.png"
   },
   {
-    "name": "Zamazenta",
+    "name": "Zamazenta (Crowned Shield)",
+    "baseName": "Zamazenta",
     "types": [
       "Pelea",
       "Acero"
@@ -19213,6 +20242,7 @@
   },
   {
     "name": "Eternatus",
+    "baseName": "Eternatus",
     "types": [
       "Veneno",
       "Dragón"
@@ -19231,6 +20261,7 @@
   },
   {
     "name": "Kubfu",
+    "baseName": "Kubfu",
     "types": [
       "Pelea"
     ],
@@ -19246,7 +20277,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kubfu.png"
   },
   {
-    "name": "Urshifu",
+    "name": "Urshifu (Single Strike Style)",
+    "baseName": "Urshifu",
     "types": [
       "Pelea",
       "Siniestro"
@@ -19265,7 +20297,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/urshifu-single-strike.png"
   },
   {
-    "name": "Urshifu",
+    "name": "Urshifu (Rapid Strike Style)",
+    "baseName": "Urshifu",
     "types": [
       "Pelea",
       "Agua"
@@ -19285,6 +20318,7 @@
   },
   {
     "name": "Zarude",
+    "baseName": "Zarude",
     "types": [
       "Siniestro",
       "Planta"
@@ -19302,6 +20336,7 @@
   },
   {
     "name": "Regieleki",
+    "baseName": "Regieleki",
     "types": [
       "Eléctrico"
     ],
@@ -19320,6 +20355,7 @@
   },
   {
     "name": "Regidrago",
+    "baseName": "Regidrago",
     "types": [
       "Dragón"
     ],
@@ -19339,6 +20375,7 @@
   },
   {
     "name": "Wyrdeer",
+    "baseName": "Wyrdeer",
     "types": [
       "Normal",
       "Psíquico"
@@ -19358,6 +20395,7 @@
   },
   {
     "name": "Kleavor",
+    "baseName": "Kleavor",
     "types": [
       "Insecto",
       "Roca"
@@ -19377,6 +20415,7 @@
   },
   {
     "name": "Ursaluna",
+    "baseName": "Ursaluna",
     "types": [
       "Tierra",
       "Normal"
@@ -19402,6 +20441,7 @@
   },
   {
     "name": "Sneasler",
+    "baseName": "Sneasler",
     "types": [
       "Pelea",
       "Veneno"
@@ -19422,6 +20462,7 @@
   },
   {
     "name": "Overqwil",
+    "baseName": "Overqwil",
     "types": [
       "Siniestro",
       "Veneno"
@@ -19442,7 +20483,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/overqwil.png"
   },
   {
-    "name": "Enamorus",
+    "name": "Enamorus (Incarnate e)",
+    "baseName": "Enamorus",
     "types": [
       "Hada",
       "Volador"
@@ -19460,7 +20502,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/enamorus-incarnate.png"
   },
   {
-    "name": "Enamorus",
+    "name": "Enamorus (Therian e)",
+    "baseName": "Enamorus",
     "types": [
       "Hada",
       "Volador"
@@ -19480,6 +20523,7 @@
   },
   {
     "name": "Sprigatito",
+    "baseName": "Sprigatito",
     "types": [
       "Planta"
     ],
@@ -19496,6 +20540,7 @@
   },
   {
     "name": "Floragato",
+    "baseName": "Floragato",
     "types": [
       "Planta"
     ],
@@ -19512,6 +20557,7 @@
   },
   {
     "name": "Meowscarada",
+    "baseName": "Meowscarada",
     "types": [
       "Planta",
       "Siniestro"
@@ -19532,6 +20578,7 @@
   },
   {
     "name": "Fuecoco",
+    "baseName": "Fuecoco",
     "types": [
       "Fuego"
     ],
@@ -19548,6 +20595,7 @@
   },
   {
     "name": "Crocalor",
+    "baseName": "Crocalor",
     "types": [
       "Fuego"
     ],
@@ -19564,6 +20612,7 @@
   },
   {
     "name": "Skeledirge",
+    "baseName": "Skeledirge",
     "types": [
       "Fuego",
       "Fantasma"
@@ -19585,6 +20634,7 @@
   },
   {
     "name": "Quaxly",
+    "baseName": "Quaxly",
     "types": [
       "Agua"
     ],
@@ -19601,6 +20651,7 @@
   },
   {
     "name": "Quaxwell",
+    "baseName": "Quaxwell",
     "types": [
       "Agua"
     ],
@@ -19617,6 +20668,7 @@
   },
   {
     "name": "Quaquaval",
+    "baseName": "Quaquaval",
     "types": [
       "Agua",
       "Pelea"
@@ -19637,6 +20689,7 @@
   },
   {
     "name": "Lechonk",
+    "baseName": "Lechonk",
     "types": [
       "Normal"
     ],
@@ -19652,7 +20705,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lechonk.png"
   },
   {
-    "name": "Oinkologne",
+    "name": "Oinkologne (Male)",
+    "baseName": "Oinkologne",
     "types": [
       "Normal"
     ],
@@ -19668,7 +20722,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/oinkologne-male.png"
   },
   {
-    "name": "Oinkologne",
+    "name": "Oinkologne (Female)",
+    "baseName": "Oinkologne",
     "types": [
       "Normal"
     ],
@@ -19685,6 +20740,7 @@
   },
   {
     "name": "Tarountula",
+    "baseName": "Tarountula",
     "types": [
       "Insecto"
     ],
@@ -19701,6 +20757,7 @@
   },
   {
     "name": "Spidops",
+    "baseName": "Spidops",
     "types": [
       "Insecto"
     ],
@@ -19719,6 +20776,7 @@
   },
   {
     "name": "Nymble",
+    "baseName": "Nymble",
     "types": [
       "Insecto"
     ],
@@ -19735,6 +20793,7 @@
   },
   {
     "name": "Lokix",
+    "baseName": "Lokix",
     "types": [
       "Insecto",
       "Siniestro"
@@ -19754,6 +20813,7 @@
   },
   {
     "name": "Pawmi",
+    "baseName": "Pawmi",
     "types": [
       "Eléctrico"
     ],
@@ -19771,6 +20831,7 @@
   },
   {
     "name": "Pawmo",
+    "baseName": "Pawmo",
     "types": [
       "Eléctrico",
       "Pelea"
@@ -19790,6 +20851,7 @@
   },
   {
     "name": "Pawmot",
+    "baseName": "Pawmot",
     "types": [
       "Eléctrico",
       "Pelea"
@@ -19812,6 +20874,7 @@
   },
   {
     "name": "Tandemaus",
+    "baseName": "Tandemaus",
     "types": [
       "Normal"
     ],
@@ -19828,7 +20891,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tandemaus.png"
   },
   {
-    "name": "Maushold",
+    "name": "Maushold (Family of Four)",
+    "baseName": "Maushold",
     "types": [
       "Normal"
     ],
@@ -19845,7 +20909,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/maushold-family4.png"
   },
   {
-    "name": "Maushold",
+    "name": "Maushold (Family of Three)",
+    "baseName": "Maushold",
     "types": [
       "Normal"
     ],
@@ -19863,6 +20928,7 @@
   },
   {
     "name": "Fidough",
+    "baseName": "Fidough",
     "types": [
       "Hada"
     ],
@@ -19879,6 +20945,7 @@
   },
   {
     "name": "Dachsbun",
+    "baseName": "Dachsbun",
     "types": [
       "Hada"
     ],
@@ -19896,6 +20963,7 @@
   },
   {
     "name": "Smoliv",
+    "baseName": "Smoliv",
     "types": [
       "Planta",
       "Normal"
@@ -19914,6 +20982,7 @@
   },
   {
     "name": "Dolliv",
+    "baseName": "Dolliv",
     "types": [
       "Planta",
       "Normal"
@@ -19933,6 +21002,7 @@
   },
   {
     "name": "Arboliva",
+    "baseName": "Arboliva",
     "types": [
       "Planta",
       "Normal"
@@ -19952,6 +21022,7 @@
   },
   {
     "name": "Nacli",
+    "baseName": "Nacli",
     "types": [
       "Roca"
     ],
@@ -19968,6 +21039,7 @@
   },
   {
     "name": "Naclstack",
+    "baseName": "Naclstack",
     "types": [
       "Roca"
     ],
@@ -19984,6 +21056,7 @@
   },
   {
     "name": "Garganacl",
+    "baseName": "Garganacl",
     "types": [
       "Roca"
     ],
@@ -20000,6 +21073,7 @@
   },
   {
     "name": "Charcadet",
+    "baseName": "Charcadet",
     "types": [
       "Fuego"
     ],
@@ -20016,6 +21090,7 @@
   },
   {
     "name": "Armarouge",
+    "baseName": "Armarouge",
     "types": [
       "Fuego",
       "Psíquico"
@@ -20034,6 +21109,7 @@
   },
   {
     "name": "Ceruledge",
+    "baseName": "Ceruledge",
     "types": [
       "Fuego",
       "Fantasma"
@@ -20052,6 +21128,7 @@
   },
   {
     "name": "Tadbulb",
+    "baseName": "Tadbulb",
     "types": [
       "Eléctrico"
     ],
@@ -20068,6 +21145,7 @@
   },
   {
     "name": "Bellibolt",
+    "baseName": "Bellibolt",
     "types": [
       "Eléctrico"
     ],
@@ -20085,6 +21163,7 @@
   },
   {
     "name": "Wattrel",
+    "baseName": "Wattrel",
     "types": [
       "Eléctrico",
       "Volador"
@@ -20102,6 +21181,7 @@
   },
   {
     "name": "Kilowattrel",
+    "baseName": "Kilowattrel",
     "types": [
       "Eléctrico",
       "Volador"
@@ -20119,6 +21199,7 @@
   },
   {
     "name": "Shroodle",
+    "baseName": "Shroodle",
     "types": [
       "Veneno",
       "Normal"
@@ -20136,6 +21217,7 @@
   },
   {
     "name": "Grafaiai",
+    "baseName": "Grafaiai",
     "types": [
       "Veneno",
       "Normal"
@@ -20153,6 +21235,7 @@
   },
   {
     "name": "Toedscool",
+    "baseName": "Toedscool",
     "types": [
       "Tierra",
       "Planta"
@@ -20170,6 +21253,7 @@
   },
   {
     "name": "Toedscruel",
+    "baseName": "Toedscruel",
     "types": [
       "Tierra",
       "Planta"
@@ -20188,6 +21272,7 @@
   },
   {
     "name": "Klawf",
+    "baseName": "Klawf",
     "types": [
       "Roca"
     ],
@@ -20204,6 +21289,7 @@
   },
   {
     "name": "Tinkatink",
+    "baseName": "Tinkatink",
     "types": [
       "Hada",
       "Acero"
@@ -20220,6 +21306,7 @@
   },
   {
     "name": "Tinkatuff",
+    "baseName": "Tinkatuff",
     "types": [
       "Hada",
       "Acero"
@@ -20236,6 +21323,7 @@
   },
   {
     "name": "Tinkaton",
+    "baseName": "Tinkaton",
     "types": [
       "Hada",
       "Acero"
@@ -20254,6 +21342,7 @@
   },
   {
     "name": "Wiglett",
+    "baseName": "Wiglett",
     "types": [
       "Agua"
     ],
@@ -20270,6 +21359,7 @@
   },
   {
     "name": "Wugtrio",
+    "baseName": "Wugtrio",
     "types": [
       "Agua"
     ],
@@ -20286,6 +21376,7 @@
   },
   {
     "name": "Bombirdier",
+    "baseName": "Bombirdier",
     "types": [
       "Volador",
       "Siniestro"
@@ -20305,6 +21396,7 @@
   },
   {
     "name": "Varoom",
+    "baseName": "Varoom",
     "types": [
       "Acero",
       "Veneno"
@@ -20323,6 +21415,7 @@
   },
   {
     "name": "Revavroom",
+    "baseName": "Revavroom",
     "types": [
       "Acero",
       "Veneno"
@@ -20342,6 +21435,7 @@
   },
   {
     "name": "Glimmet",
+    "baseName": "Glimmet",
     "types": [
       "Roca",
       "Veneno"
@@ -20359,6 +21453,7 @@
   },
   {
     "name": "Glimmora",
+    "baseName": "Glimmora",
     "types": [
       "Roca",
       "Veneno"
@@ -20377,6 +21472,7 @@
   },
   {
     "name": "Greavard",
+    "baseName": "Greavard",
     "types": [
       "Fantasma"
     ],
@@ -20393,6 +21489,7 @@
   },
   {
     "name": "Houndstone",
+    "baseName": "Houndstone",
     "types": [
       "Fantasma"
     ],
@@ -20410,6 +21507,7 @@
   },
   {
     "name": "Flamigo",
+    "baseName": "Flamigo",
     "types": [
       "Volador",
       "Pelea"
@@ -20427,6 +21525,7 @@
   },
   {
     "name": "Cetoddle",
+    "baseName": "Cetoddle",
     "types": [
       "Hielo"
     ],
@@ -20444,6 +21543,7 @@
   },
   {
     "name": "Cetitan",
+    "baseName": "Cetitan",
     "types": [
       "Hielo"
     ],
@@ -20463,6 +21563,7 @@
   },
   {
     "name": "Dondozo",
+    "baseName": "Dondozo",
     "types": [
       "Agua"
     ],
@@ -20479,7 +21580,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dondozo.png"
   },
   {
-    "name": "Tatsugiri",
+    "name": "Tatsugiri (Curly)",
+    "baseName": "Tatsugiri",
     "types": [
       "Dragón",
       "Agua"
@@ -20497,7 +21599,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tatsugiri-curly.png"
   },
   {
-    "name": "Tatsugiri",
+    "name": "Tatsugiri (Droopy)",
+    "baseName": "Tatsugiri",
     "types": [
       "Dragón",
       "Agua"
@@ -20515,7 +21618,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tatsugiri-droopy.png"
   },
   {
-    "name": "Tatsugiri",
+    "name": "Tatsugiri (Stretchy)",
+    "baseName": "Tatsugiri",
     "types": [
       "Dragón",
       "Agua"
@@ -20534,6 +21638,7 @@
   },
   {
     "name": "Annihilape",
+    "baseName": "Annihilape",
     "types": [
       "Pelea",
       "Fantasma"
@@ -20556,6 +21661,7 @@
   },
   {
     "name": "Clodsire",
+    "baseName": "Clodsire",
     "types": [
       "Veneno",
       "Tierra"
@@ -20577,7 +21683,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/clodsire.png"
   },
   {
-    "name": "Dudunsparce",
+    "name": "Dudunsparce (Two-Segment)",
+    "baseName": "Dudunsparce",
     "types": [
       "Normal"
     ],
@@ -20596,7 +21703,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dudunsparce-two-segment.png"
   },
   {
-    "name": "Dudunsparce",
+    "name": "Dudunsparce (Three-Segment)",
+    "baseName": "Dudunsparce",
     "types": [
       "Normal"
     ],
@@ -20616,6 +21724,7 @@
   },
   {
     "name": "Kingambit",
+    "baseName": "Kingambit",
     "types": [
       "Siniestro",
       "Acero"
@@ -20636,6 +21745,7 @@
   },
   {
     "name": "Frigibax",
+    "baseName": "Frigibax",
     "types": [
       "Dragón",
       "Hielo"
@@ -20654,6 +21764,7 @@
   },
   {
     "name": "Arctibax",
+    "baseName": "Arctibax",
     "types": [
       "Dragón",
       "Hielo"
@@ -20672,6 +21783,7 @@
   },
   {
     "name": "Baxcalibur",
+    "baseName": "Baxcalibur",
     "types": [
       "Dragón",
       "Hielo"
@@ -20690,7 +21802,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/baxcalibur.png"
   },
   {
-    "name": "Gimmighoul",
+    "name": "Gimmighoul (Roaming)",
+    "baseName": "Gimmighoul",
     "types": [
       "Fantasma"
     ],
@@ -20704,6 +21817,7 @@
   },
   {
     "name": "Gholdengo",
+    "baseName": "Gholdengo",
     "types": [
       "Acero",
       "Fantasma"
@@ -20722,6 +21836,7 @@
   },
   {
     "name": "Dipplin",
+    "baseName": "Dipplin",
     "types": [
       "Planta",
       "Dragón"
@@ -20739,7 +21854,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dipplin.png"
   },
   {
-    "name": "Poltchageist",
+    "name": "Poltchageist (Counterfeit)",
+    "baseName": "Poltchageist",
     "types": [
       "Planta",
       "Fantasma"
@@ -20756,7 +21872,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/poltchageist-counterfeit.png"
   },
   {
-    "name": "Poltchageist",
+    "name": "Poltchageist (Artisan)",
+    "baseName": "Poltchageist",
     "types": [
       "Planta",
       "Fantasma"
@@ -20773,7 +21890,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/poltchageist-artisan.png"
   },
   {
-    "name": "Sinistcha",
+    "name": "Sinistcha (Unremarkable)",
+    "baseName": "Sinistcha",
     "types": [
       "Planta",
       "Fantasma"
@@ -20790,7 +21908,8 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sinistcha-unremarkable.png"
   },
   {
-    "name": "Sinistcha",
+    "name": "Sinistcha (Masterpiece)",
+    "baseName": "Sinistcha",
     "types": [
       "Planta",
       "Fantasma"
@@ -20808,6 +21927,7 @@
   },
   {
     "name": "Hydrapple",
+    "baseName": "Hydrapple",
     "types": [
       "Planta",
       "Dragón"

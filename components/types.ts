@@ -1,5 +1,6 @@
 export interface Pokemon {
   name: string;
+  baseName: string;
   types: string[];
   fastMoves: string[];
   chargedMoves: string[];
@@ -8,6 +9,7 @@ export interface Pokemon {
 
 export interface TeamPokemon {
   name: string;
+  baseName: string;
   types: string[];
   fastMove: string;
   chargedMove1: string;

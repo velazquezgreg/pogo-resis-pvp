@@ -9,6 +9,7 @@ export default function Page() {
   const [team, setTeam] = useState<TeamPokemon[]>(
     Array(6).fill(null).map(() => ({
       name: "",
+      baseName: "",
       types: [],
       fastMove: "",
       chargedMove1: "",
@@ -43,13 +44,14 @@ export default function Page() {
     const newTeam = [...team];
 
     newTeam[index] = {
-      ...newTeam[index],
-      name: pokemon.name,
-      types: pokemon.types,
-      fastMove: "",
-      chargedMove1: "",
-      chargedMove2: ""
-    };
+  ...newTeam[index],
+  name: pokemon.name,
+  baseName: pokemon.baseName, // 👈 clave
+  types: pokemon.types,
+  fastMove: "",
+  chargedMove1: "",
+  chargedMove2: ""
+};
 
     setTeam(newTeam);
   };
