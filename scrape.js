@@ -321,11 +321,11 @@ const moveMap = {
   "Water Gun": "Pistola de Agua",
   "Water Pulse": "Hidropulso",
   "Water Shuriken": "Shuriken de Agua",
-  "Weather Ball (Fire)": "Meteorobola (Fuego)",
-  "Weather Ball (Ice)": "Meteorobola (Hielo)",
-  "Weather Ball (Normal)": "Meteorobola (Normal)",
-  "Weather Ball (Rock)": "Meteorobola (Roca)",
-  "Weather Ball (Water)": "Meteorobola (Agua)",
+  "Weather Ball - (Fire)": "Meteorobola (Fuego)",
+  "Weather Ball - (Ice)": "Meteorobola (Hielo)",
+  "Weather Ball - (Normal)": "Meteorobola (Normal)",
+  "Weather Ball - (Rock)": "Meteorobola (Roca)",
+  "Weather Ball - (Water)": "Meteorobola (Agua)",
   "Wildbolt Storm": "Electormenta",
   "Wild Charge": "Carga Salvaje",
   "Wing Attack": "Ataque Ala",
@@ -342,9 +342,12 @@ const translate = (pokemonList) => {
     name: p.name,
     types: p.types.map(t => typeMap[t] || t),
     fastMoves: p.fastMoves.map(m => moveMap[m] || m),
-    chargedMoves: p.chargedMoves.map(m => moveMap[m] || m)
+    chargedMoves: p.chargedMoves.map(m => moveMap[m] || m),
+    sprite: p.sprite 
   }));
 };
+
+
 
 async function scrapePokemon() {
   const url = "https://pokemondb.net/go/pokedex";
@@ -376,12 +379,13 @@ async function scrapePokemon() {
 
     const fastMoves = getMoves($(el).find("td").eq(8));
     const chargedMoves = getMoves($(el).find("td").eq(9));
-
+    const sprite = $(el).find("img").attr("src");
     pokemon.push({
       name,
       types,
       fastMoves,
-      chargedMoves
+      chargedMoves,
+      sprite
     });
   });
 

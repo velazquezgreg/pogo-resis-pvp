@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Pokemon } from "./types";
+import Image from "next/image";
 
 interface Props {
   pokemonList: Pokemon[];
@@ -58,10 +59,21 @@ export default function PokemonAutocomplete({ pokemonList, onSelect }: Props) {
               onClick={() => handleSelect(p)}
               className="p-2 hover:bg-zinc-700 cursor-pointer"
             >
-              <div className="font-semibold">{p.name}</div>
-              <div className="text-sm text-zinc-400">
-                {p.types.join(" / ")}
-              </div>
+              <div className="flex items-center gap-3">
+  <Image
+    src={p.sprite}
+    alt={p.name}
+    width={40}
+    height={40}
+  />
+
+  <div>
+    <div className="font-semibold">{p.name}</div>
+    <div className="text-sm text-zinc-400">
+      {p.types.join(" / ")}
+    </div>
+  </div>
+</div>
             </div>
           ))}
         </div>

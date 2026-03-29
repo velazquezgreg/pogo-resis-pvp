@@ -3,6 +3,7 @@ export interface Pokemon {
   types: string[];
   fastMoves: string[];
   chargedMoves: string[];
+  sprite: string; 
 }
 
 export interface TeamPokemon {

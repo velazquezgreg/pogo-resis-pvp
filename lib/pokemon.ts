@@ -1,9 +1,9 @@
 export type Pokemon = {
   name: string;
   types: string[];
-  sprite: string;
   fastMoves: string[];
   chargedMoves: string[];
+  sprite: string; 
 };
 
 export const pokemonList: Pokemon[] = [
