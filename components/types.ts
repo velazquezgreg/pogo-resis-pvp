@@ -15,4 +15,5 @@ export interface TeamPokemon {
   chargedMove1: string;
   chargedMove2: string;
   isShadow: boolean;
+  cp: number | "";
 }
