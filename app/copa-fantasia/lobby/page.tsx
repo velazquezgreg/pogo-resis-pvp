@@ -40,7 +40,29 @@ export default function CopaFantasiaPage() {
       </div>
     );
   }
+  const unlockDate = new Date("2026-04-12T00:00:00-03:00"); // Argentina
 
+const now = new Date();
+
+if (now < unlockDate) {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-black text-white p-6 text-center">
+      <div>
+        <h1 className="text-3xl font-bold mb-4">
+          ¡Volvé más adelante!
+        </h1>
+
+        <p className="text-zinc-400">
+          Los equipos serán revelados el día del torneo.
+        </p>
+
+        <p className="mt-2 text-zinc-500">
+          Disponible el 12 de abril
+        </p>
+      </div>
+    </div>
+  );
+}
   return (
     <div className="p-6 text-white bg-black min-h-screen">
       <h1 className="text-3xl font-bold mb-6">
