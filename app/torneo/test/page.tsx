@@ -143,7 +143,8 @@ export default function Page() {
       setErrors(["Error al guardar"]);
     }
   };
-
+const getPokemonData = (name: string) =>
+  pokemonData.find(p => p.name === name);
   return (
     <div className="p-6 text-white bg-black min-h-screen">
       <h1 className="text-3xl mb-6 font-bold">
@@ -273,48 +274,104 @@ export default function Page() {
       </button>
 
       {/* 👀 PREVIEW */}
-      {team.some(p => p.name) && (
-        <div className="mt-8 p-4 bg-zinc-900 rounded">
-          <h2 className="font-bold mb-4">Preview</h2>
+{team.some(p => p.name) && (
+  <div className="mt-8 p-4 bg-zinc-900 rounded">
+    <h2 className="font-bold mb-4">Preview</h2>
 
-          <div className="grid grid-cols-2 gap-3">
-            {team.map((p, i) => (
-              <div key={i} className="bg-zinc-800 p-2 rounded text-sm">
+    <div className="grid grid-cols-2 gap-3">
+      {team.map((p, i) => {
+        const poke = getPokemonData(p.name);
+
+        return (
+          <div key={i} className="bg-zinc-800 p-2 rounded text-sm flex gap-2 items-center">
+            
+            {poke?.sprite && (
+              <img
+                src={poke.sprite}
+                alt={p.name}
+                className="w-10 h-10"
+              />
+            )}
+
+            <div>
+              <div className="font-semibold">
                 {p.name || "—"}
-                {p.name && (
-                  <>
-                    <div>⚡ {p.fastMove || "-"}</div>
-                    <div>🔋 {p.chargedMove1 || "-"}</div>
-                  </>
-                )}
               </div>
-            ))}
+
+              {p.name && (
+                <>
+                  <div>⚡ {p.fastMove || "-"}</div>
+                  <div>🔋 {p.chargedMove1 || "-"}</div>
+                  <div>🔋 {p.chargedMove2 || "-"}</div>
+                </>
+              )}
+            </div>
+
           </div>
-        </div>
-      )}
+        );
+      })}
+    </div>
+  </div>
+)}
+
 
       {/* 🎴 PLAYER CARD */}
-      {savedPlayer && (
-        <div className="mt-10 p-6 bg-zinc-900 rounded">
-          <h2 className="text-xl font-bold">
-            {savedPlayer.trainerName}
-          </h2>
-          <div className="text-sm text-zinc-400 mb-3">
-            {savedPlayer.trainerCode}
-          </div>
+{savedPlayer && (
+  <div className="mt-10 p-6 bg-zinc-900 rounded border border-zinc-700">
+    <h2 className="text-xl font-bold">
+      {savedPlayer.trainerName}
+    </h2>
 
-          <div className="grid grid-cols-3 gap-3">
-            {savedPlayer.team.map((p: any, i: number) => (
-              <div key={i} className="bg-zinc-800 p-2 rounded text-xs">
-                <div className="font-semibold">{p.name}</div>
-                <div>⚡ {p.fastMove}</div>
-                <div>🔋 {p.chargedMove1}</div>
-                {p.chargedMove2 && <div>🔋 {p.chargedMove2}</div>}
+    <div className="text-sm text-zinc-400 mb-4">
+      {savedPlayer.trainerCode}
+    </div>
+
+    <div className="grid grid-cols-3 gap-4">
+      {savedPlayer.team.map((p: any, i: number) => {
+        const poke = getPokemonData(p.name);
+
+        return (
+          <div
+            key={i}
+            className="bg-zinc-800 p-3 rounded text-center"
+          >
+            {poke?.sprite && (
+              <img
+                src={poke.sprite}
+                alt={p.name}
+                className="w-16 h-16 mx-auto mb-2"
+              />
+            )}
+
+            <div className="font-semibold text-sm">
+              {p.name}
+            </div>
+
+            <div className="text-xs mt-1">
+              ⚡ {p.fastMove}
+            </div>
+
+            <div className="text-xs">
+              🔋 {p.chargedMove1}
+            </div>
+
+            {p.chargedMove2 && (
+              <div className="text-xs">
+                🔋 {p.chargedMove2}
               </div>
-            ))}
+            )}
+
+            {p.isShadow && (
+              <div className="text-xs text-purple-400 mt-1">
+                Oscuro
+              </div>
+            )}
           </div>
-        </div>
-      )}
+        );
+      })}
+    </div>
+  </div>
+)}
     </div>
   );
 }
