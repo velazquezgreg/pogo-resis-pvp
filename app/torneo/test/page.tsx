@@ -22,7 +22,8 @@ export default function Page() {
       fastMove: "",
       chargedMove1: "",
       chargedMove2: "",
-      isShadow: false
+      isShadow: false,
+      cp: ""
     }))
   );
 
@@ -98,7 +99,7 @@ export default function Page() {
     if (!trainerName.trim()) {
       newErrors.push("❌ Ingresá nombre");
     }
-
+    
     if (trainerCode.length !== 12) {
       newErrors.push("❌ Código inválido (12 números)");
     }
@@ -107,8 +108,11 @@ export default function Page() {
       if (!p.name) newErrors.push(`❌ Pokémon ${i + 1} faltante`);
       if (!p.fastMove) newErrors.push(`❌ Pokémon ${i + 1} sin rápido`);
       if (!p.chargedMove1) newErrors.push(`❌ Pokémon ${i + 1} sin cargado`);
+      if (p.cp === "" || p.cp > 1500) {
+  newErrors.push(`❌ Pokémon ${i + 1} debe tener PC ≤ 1500`);
+}
     });
-
+    
     if (newErrors.length > 0) {
       setErrors(newErrors);
       return;
@@ -247,7 +251,18 @@ const getPokemonData = (name: string) =>
                         <option key={i}>{m}</option>
                       ))}
                   </select>
-
+<input
+  type="text"
+  placeholder="PC (≤1500)"
+  value={p.cp}
+  onChange={(e) => {
+    const value = e.target.value.replace(/\D/g, ""); // solo números
+    const newTeam = [...team];
+    newTeam[index].cp = value === "" ? "" : Number(value);
+    setTeam(newTeam);
+  }}
+  className="w-full p-2 bg-zinc-800 rounded"
+/>
                   <label className="text-sm">
                     <input
                       type="checkbox"
@@ -297,12 +312,15 @@ const getPokemonData = (name: string) =>
               <div className="font-semibold">
                 {p.name || "—"}
               </div>
-
+<div className="text-xs text-yellow-400">
+  PC: {p.cp || "-"}
+</div>
               {p.name && (
                 <>
                   <div>⚡ {p.fastMove || "-"}</div>
                   <div>🔋 {p.chargedMove1 || "-"}</div>
                   <div>🔋 {p.chargedMove2 || "-"}</div>
+                  
                 </>
               )}
             </div>
@@ -346,6 +364,9 @@ const getPokemonData = (name: string) =>
             <div className="font-semibold text-sm">
               {p.name}
             </div>
+            <div className="text-xs text-yellow-400">
+  PC {p.cp}
+</div>
 
             <div className="text-xs mt-1">
               ⚡ {p.fastMove}
