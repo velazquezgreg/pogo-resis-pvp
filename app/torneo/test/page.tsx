@@ -29,15 +29,11 @@ export default function Page() {
 
   const [errors, setErrors] = useState<string[]>([]);
 
-  const isValidType = (pokemon: Pokemon) => {
-    return pokemon.types.some(t => allowedTypes.includes(t));
-  };
+  const isValidType = (pokemon: Pokemon) =>
+    pokemon.types.some(t => allowedTypes.includes(t));
 
-  const isDuplicateSpecies = (pokemon: Pokemon, index: number) => {
-    return team.some(
-      (p, i) => i !== index && p.baseName === pokemon.baseName
-    );
-  };
+  const isDuplicateSpecies = (pokemon: Pokemon, index: number) =>
+    team.some((p, i) => i !== index && p.baseName === pokemon.baseName);
 
   const updateMove = (
     index: number,
@@ -46,15 +42,8 @@ export default function Page() {
   ) => {
     const newTeam = [...team];
 
-    if (
-      field === "chargedMove2" &&
-      value === newTeam[index].chargedMove1
-    ) return;
-
-    if (
-      field === "chargedMove1" &&
-      value === newTeam[index].chargedMove2
-    ) return;
+    if (field === "chargedMove2" && value === newTeam[index].chargedMove1) return;
+    if (field === "chargedMove1" && value === newTeam[index].chargedMove2) return;
 
     newTeam[index][field] = value;
     setTeam(newTeam);
@@ -80,7 +69,8 @@ export default function Page() {
       types: pokemon.types,
       fastMove: "",
       chargedMove1: "",
-      chargedMove2: ""
+      chargedMove2: "",
+      cp: "" // 🔥 reset CP
     };
 
     setErrors([]);
@@ -99,7 +89,7 @@ export default function Page() {
     if (!trainerName.trim()) {
       newErrors.push("❌ Ingresá nombre");
     }
-    
+
     if (trainerCode.length !== 12) {
       newErrors.push("❌ Código inválido (12 números)");
     }
@@ -108,11 +98,12 @@ export default function Page() {
       if (!p.name) newErrors.push(`❌ Pokémon ${i + 1} faltante`);
       if (!p.fastMove) newErrors.push(`❌ Pokémon ${i + 1} sin rápido`);
       if (!p.chargedMove1) newErrors.push(`❌ Pokémon ${i + 1} sin cargado`);
-      if (p.cp === "" || p.cp > 1500) {
-  newErrors.push(`❌ Pokémon ${i + 1} debe tener PC ≤ 1500`);
-}
+
+      if (p.cp === "" || p.cp <= 0 || p.cp > 1500) {
+        newErrors.push(`❌ Pokémon ${i + 1} debe tener PC entre 1 y 1500`);
+      }
     });
-    
+
     if (newErrors.length > 0) {
       setErrors(newErrors);
       return;
@@ -129,14 +120,9 @@ export default function Page() {
         }
       );
 
-      // 🔥 guardar para mostrar card
-      setSavedPlayer({
-        trainerName,
-        trainerCode,
-        team
-      });
+      setSavedPlayer({ trainerName, trainerCode, team });
 
-      alert("¡Inscripción exitosa! Nos vemos el 12 de Abril.");
+      alert("¡Inscripción exitosa!");
 
       setTrainerName("");
       setTrainerCode("");
@@ -147,15 +133,15 @@ export default function Page() {
       setErrors(["Error al guardar"]);
     }
   };
-const getPokemonData = (name: string) =>
-  pokemonData.find(p => p.name === name);
+
+  const getPokemonData = (name: string) =>
+    pokemonData.find(p => p.name === name);
+
   return (
     <div className="p-6 text-white bg-black min-h-screen">
-      <h1 className="text-3xl mb-6 font-bold">
-        🏆 Copa Fantasía
-      </h1>
+      <h1 className="text-3xl mb-6 font-bold">🏆 Copa Fantasía</h1>
 
-      {/* 👤 Datos */}
+      {/* Datos */}
       <div className="mb-6 space-y-3">
         <input
           placeholder="Nombre de entrenador"
@@ -175,16 +161,14 @@ const getPokemonData = (name: string) =>
         />
       </div>
 
-      {/* ❌ errores */}
+      {/* errores */}
       {errors.length > 0 && (
         <div className="mb-4 p-3 bg-red-900 rounded">
-          {errors.map((e, i) => (
-            <div key={i}>{e}</div>
-          ))}
+          {errors.map((e, i) => <div key={i}>{e}</div>)}
         </div>
       )}
 
-      {/* 🧩 Equipo */}
+      {/* equipo */}
       <div className="space-y-6">
         {team.map((p, index) => {
           const selectedPokemon = pokemonData.find(
@@ -193,9 +177,7 @@ const getPokemonData = (name: string) =>
 
           return (
             <div key={index} className="p-4 bg-zinc-900 rounded">
-              <h2 className="font-bold mb-2">
-                Pokémon {index + 1}
-              </h2>
+              <h2 className="font-bold mb-2">Pokémon {index + 1}</h2>
 
               <PokemonAutocomplete
                 pokemonList={pokemonData}
@@ -211,6 +193,26 @@ const getPokemonData = (name: string) =>
                     {p.types.join(" / ")}
                   </div>
 
+                  {/* CP */}
+                  <input
+                    type="text"
+                    placeholder="PC (≤1500)"
+                    value={p.cp}
+                    onChange={(e) => {
+                      const value = e.target.value.replace(/\D/g, "");
+                      const num = Number(value);
+                      if (num > 1500) return;
+
+                      const newTeam = [...team];
+                      newTeam[index].cp = value === "" ? "" : num;
+                      setTeam(newTeam);
+                    }}
+                    className={`w-full p-2 rounded ${
+                      p.cp && p.cp > 1500 ? "bg-red-900" : "bg-zinc-800"
+                    }`}
+                  />
+
+                  {/* Moves */}
                   <select
                     value={p.fastMove}
                     onChange={(e) =>
@@ -251,18 +253,7 @@ const getPokemonData = (name: string) =>
                         <option key={i}>{m}</option>
                       ))}
                   </select>
-<input
-  type="text"
-  placeholder="PC (≤1500)"
-  value={p.cp}
-  onChange={(e) => {
-    const value = e.target.value.replace(/\D/g, ""); // solo números
-    const newTeam = [...team];
-    newTeam[index].cp = value === "" ? "" : Number(value);
-    setTeam(newTeam);
-  }}
-  className="w-full p-2 bg-zinc-800 rounded"
-/>
+
                   <label className="text-sm">
                     <input
                       type="checkbox"
@@ -270,8 +261,7 @@ const getPokemonData = (name: string) =>
                       onChange={(e) =>
                         toggleShadow(index, e.target.checked)
                       }
-                    />{" "}
-                    Oscuro
+                    /> Oscuro
                   </label>
                 </div>
               )}
@@ -280,7 +270,7 @@ const getPokemonData = (name: string) =>
         })}
       </div>
 
-      {/* BOTÓN */}
+      {/* botón */}
       <button
         onClick={handleSubmit}
         className="mt-6 w-full bg-green-600 p-3 rounded font-bold"
@@ -288,111 +278,33 @@ const getPokemonData = (name: string) =>
         Registrar equipo
       </button>
 
-      {/* 👀 PREVIEW */}
-{team.some(p => p.name) && (
-  <div className="mt-8 p-4 bg-zinc-900 rounded">
-    <h2 className="font-bold mb-4">Preview</h2>
+      {/* preview */}
+      {team.some(p => p.name) && (
+        <div className="mt-8 p-4 bg-zinc-900 rounded">
+          <h2 className="font-bold mb-4">Preview</h2>
 
-    <div className="grid grid-cols-2 gap-3">
-      {team.map((p, i) => {
-        const poke = getPokemonData(p.name);
+          <div className="grid grid-cols-2 gap-3">
+            {team.map((p, i) => {
+              const poke = getPokemonData(p.name);
 
-        return (
-          <div key={i} className="bg-zinc-800 p-2 rounded text-sm flex gap-2 items-center">
-            
-            {poke?.sprite && (
-              <img
-                src={poke.sprite}
-                alt={p.name}
-                className="w-10 h-10"
-              />
-            )}
+              return (
+                <div key={i} className="bg-zinc-800 p-2 rounded flex gap-2">
+                  {poke?.sprite && (
+                    <img src={poke.sprite} className="w-10 h-10" />
+                  )}
 
-            <div>
-              <div className="font-semibold">
-                {p.name || "—"}
-              </div>
-<div className="text-xs text-yellow-400">
-  PC: {p.cp || "-"}
-</div>
-              {p.name && (
-                <>
-                  <div>⚡ {p.fastMove || "-"}</div>
-                  <div>🔋 {p.chargedMove1 || "-"}</div>
-                  <div>🔋 {p.chargedMove2 || "-"}</div>
-                  
-                </>
-              )}
-            </div>
-
+                  <div>
+                    <div>{p.name || "—"}</div>
+                    <div className="text-yellow-400 text-xs">
+                      PC: {p.cp || "-"}
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-        );
-      })}
-    </div>
-  </div>
-)}
-
-
-      {/* 🎴 PLAYER CARD */}
-{savedPlayer && (
-  <div className="mt-10 p-6 bg-zinc-900 rounded border border-zinc-700">
-    <h2 className="text-xl font-bold">
-      {savedPlayer.trainerName}
-    </h2>
-
-    <div className="text-sm text-zinc-400 mb-4">
-      {savedPlayer.trainerCode}
-    </div>
-
-    <div className="grid grid-cols-3 gap-4">
-      {savedPlayer.team.map((p: any, i: number) => {
-        const poke = getPokemonData(p.name);
-
-        return (
-          <div
-            key={i}
-            className="bg-zinc-800 p-3 rounded text-center"
-          >
-            {poke?.sprite && (
-              <img
-                src={poke.sprite}
-                alt={p.name}
-                className="w-16 h-16 mx-auto mb-2"
-              />
-            )}
-
-            <div className="font-semibold text-sm">
-              {p.name}
-            </div>
-            <div className="text-xs text-yellow-400">
-  PC {p.cp}
-</div>
-
-            <div className="text-xs mt-1">
-              ⚡ {p.fastMove}
-            </div>
-
-            <div className="text-xs">
-              🔋 {p.chargedMove1}
-            </div>
-
-            {p.chargedMove2 && (
-              <div className="text-xs">
-                🔋 {p.chargedMove2}
-              </div>
-            )}
-
-            {p.isShadow && (
-              <div className="text-xs text-purple-400 mt-1">
-                Oscuro
-              </div>
-            )}
-          </div>
-        );
-      })}
-    </div>
-  </div>
-)}
+        </div>
+      )}
     </div>
   );
 }
