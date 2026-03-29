@@ -1,156 +1,65 @@
 "use client";
 
-import { useState } from "react";
-import PokemonAutocomplete from "@/components/PokemonAutocomplete";
-import pokemonData from "@/src/data/pokemon-es.json";
-import { Pokemon, TeamPokemon } from "@/components/types";
+import Link from "next/link";
 
 export default function Page() {
-  const [team, setTeam] = useState<TeamPokemon[]>(
-    Array(6).fill(null).map(() => ({
-      name: "",
-      baseName: "",
-      types: [],
-      fastMove: "",
-      chargedMove1: "",
-      chargedMove2: "",
-      isShadow: false
-    }))
-  );
-
-  const updateMove = (
-    index: number,
-    field: "fastMove" | "chargedMove1" | "chargedMove2",
-    value: string
-  ) => {
-    const newTeam = [...team];
-
-    // evitar duplicar charged moves
-    if (
-      field === "chargedMove2" &&
-      value === newTeam[index].chargedMove1
-    ) return;
-
-    if (
-      field === "chargedMove1" &&
-      value === newTeam[index].chargedMove2
-    ) return;
-
-    newTeam[index][field] = value;
-    setTeam(newTeam);
-  };
-
-  const updatePokemon = (index: number, pokemon: Pokemon) => {
-    const newTeam = [...team];
-
-    newTeam[index] = {
-  ...newTeam[index],
-  name: pokemon.name,
-  baseName: pokemon.baseName, // 👈 clave
-  types: pokemon.types,
-  fastMove: "",
-  chargedMove1: "",
-  chargedMove2: ""
-};
-
-    setTeam(newTeam);
-  };
-
-  const toggleShadow = (index: number, value: boolean) => {
-    const newTeam = [...team];
-    newTeam[index].isShadow = value;
-    setTeam(newTeam);
-  };
-
   return (
-    <div className="p-6 text-white bg-black min-h-screen">
-      <h1 className="text-2xl mb-6">Registro Copa Fantasía</h1>
+    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6">
 
-      <div className="space-y-6">
-        {team.map((p, index) => {
-          const selectedPokemon = pokemonData.find(
-            pk => pk.name === p.name
-          );
+      {/* 🎯 Contenedor */}
+      <div className="max-w-2xl w-full text-center space-y-6">
 
-          return (
-            <div key={index} className="p-4 border border-zinc-700 rounded">
-              <h2 className="mb-2 font-bold">Pokémon {index + 1}</h2>
+        {/* 🏆 Título */}
+        <h1 className="text-4xl md:text-5xl font-bold">
+          🏆 Copa Fantasía
+        </h1>
 
-              <PokemonAutocomplete
-                pokemonList={pokemonData}
-                onSelect={(pokemon) => updatePokemon(index, pokemon)}
-              />
+        {/* 📅 Info */}
+        <p className="text-zinc-400 text-lg">
+          Torneo PvP - Formato Show 6 Pick 3
+        </p>
 
-              {p.name && (
-                <div className="mt-3 space-y-2">
+        <p className="text-zinc-500">
+          📍 Resistencia, Chaco <br />
+          📅 12 de Abril
+        </p>
 
-                  {/* Fast Move */}
-                  <select
-                    value={p.fastMove}
-                    onChange={(e) =>
-                      updateMove(index, "fastMove", e.target.value)
-                    }
-                    className="w-full p-2 bg-zinc-900 border border-zinc-700 rounded"
-                  >
-                    <option value="">Ataque rápido</option>
-                    {selectedPokemon?.fastMoves.map((m, i) => (
-                      <option key={i} value={m}>
-                        {m}
-                      </option>
-                    ))}
-                  </select>
+        {/* 📜 Reglas */}
+        <div className="bg-zinc-900 border border-zinc-700 rounded p-4 text-left space-y-2">
+          <h2 className="font-bold text-lg mb-2">Reglas</h2>
 
-                  {/* Charged 1 */}
-                  <select
-                    value={p.chargedMove1}
-                    onChange={(e) =>
-                      updateMove(index, "chargedMove1", e.target.value)
-                    }
-                    className="w-full p-2 bg-zinc-900 border border-zinc-700 rounded"
-                  >
-                    <option value="">Ataque cargado 1</option>
-                    {selectedPokemon?.chargedMoves.map((m, i) => (
-                      <option key={i} value={m}>
-                        {m}
-                      </option>
-                    ))}
-                  </select>
+          <ul className="list-disc list-inside text-sm text-zinc-300 space-y-1">
+            <li>Solo tipos: Hada, Dragón y Acero</li>
+            <li>Máximo 1500 PC</li>
+            <li>Sin Pokémon repetidos</li>
+            <li>Formato Show 6 - Pick 3</li>
+          </ul>
+        </div>
 
-                  {/* Charged 2 */}
-                  <select
-                    value={p.chargedMove2}
-                    onChange={(e) =>
-                      updateMove(index, "chargedMove2", e.target.value)
-                    }
-                    className="w-full p-2 bg-zinc-900 border border-zinc-700 rounded"
-                  >
-                    <option value="">Ataque cargado 2</option>
-                    {selectedPokemon?.chargedMoves
-                      .filter(m => m !== p.chargedMove1)
-                      .map((m, i) => (
-                        <option key={i} value={m}>
-                          {m}
-                        </option>
-                      ))}
-                  </select>
+        {/* 🚀 Botones */}
+        <div className="flex flex-col md:flex-row gap-4 justify-center">
 
-                  {/* Shadow */}
-                  <label className="flex items-center gap-2">
-                    <input
-                      type="checkbox"
-                      checked={p.isShadow}
-                      onChange={(e) =>
-                        toggleShadow(index, e.target.checked)
-                      }
-                    />
-                    Oscuro
-                  </label>
+          <Link
+            href="/copa-fantasia/inscripcion"
+            className="bg-green-600 hover:bg-green-700 px-6 py-3 rounded font-bold text-center"
+          >
+            Inscribirse
+          </Link>
 
-                </div>
-              )}
-            </div>
-          );
-        })}
+          <Link
+            href="/copa-fantasia/lobby"
+            className="bg-zinc-800 hover:bg-zinc-700 px-6 py-3 rounded font-bold text-center"
+          >
+            Ver participantes
+          </Link>
+
+        </div>
+
+        {/* 👇 Footer */}
+        <p className="text-xs text-zinc-600 mt-6">
+          Comunidad PoGo Resis
+        </p>
+
       </div>
     </div>
   );
