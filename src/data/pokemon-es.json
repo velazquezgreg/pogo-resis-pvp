@@ -12,7 +12,7 @@
     ],
     "chargedMoves": [
       "Latigazo",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Bomba Lodo",
       "Frustración",
       "Retribución"
@@ -1123,7 +1123,7 @@
     ],
     "chargedMoves": [
       "Fuerza Lunar",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Bomba Lodo",
       "Frustración",
       "Retribución"
@@ -1184,7 +1184,7 @@
     ],
     "chargedMoves": [
       "Veneno X",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Tijera X"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/paras.png"
@@ -1575,7 +1575,7 @@
       "Triturar",
       "Llamarada",
       "Lanzallamas",
-      "Colmillo Psíquico",
+      "Psicocolmillo",
       "Arenas Ardientes",
       "Carga Salvaje",
       "Terratemblor",
@@ -1831,7 +1831,7 @@
     ],
     "chargedMoves": [
       "Latigazo",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Bomba Lodo",
       "Frustración",
       "Retribución"
@@ -2773,7 +2773,7 @@
     "chargedMoves": [
       "Poder Antiguo",
       "Fuerza Psíquica",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Frustración",
       "Retribución"
     ],
@@ -2794,7 +2794,7 @@
     ],
     "chargedMoves": [
       "Fuerza Psíquica",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Rayo Solar",
       "Frustración",
       "Retribución"
@@ -2814,7 +2814,7 @@
     ],
     "chargedMoves": [
       "Pulso Dragón",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Rayo Solar",
       "Meteoro Dragón",
       "Frustración",
@@ -4803,7 +4803,7 @@
     "chargedMoves": [
       "Brillo Mágico",
       "Hierba Lazo",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Frustración",
       "Retribución"
     ],
@@ -4884,7 +4884,7 @@
     "chargedMoves": [
       "Bola de Energía",
       "Hierba Lazo",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sunkern.png"
   },
@@ -5002,7 +5002,7 @@
       "Premonición",
       "Psicorrayo",
       "Fuerza Psíquica",
-      "Colmillo Psíquico",
+      "Psicocolmillo",
       "Última Baza",
       "Bola Sombra"
     ],
@@ -5159,7 +5159,7 @@
     "chargedMoves": [
       "Manto Espejo",
       "Fuerza Psíquica",
-      "Colmillo Psíquico",
+      "Psicocolmillo",
       "Rayo",
       "Abrecaminos",
       "Frustración",
@@ -5264,7 +5264,7 @@
       "Triturar",
       "Terremoto",
       "Cuerpo Pesado",
-      "Colmillo Psíquico",
+      "Psicocolmillo",
       "Frustración",
       "Retribución"
     ],
@@ -6243,7 +6243,7 @@
       "Hiperrayo",
       "Lluevehojas",
       "Fuerza Psíquica",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/celebi.png"
   },
@@ -6952,7 +6952,7 @@
     "chargedMoves": [
       "Bola de Energía",
       "Hierba Lazo",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shroomish.png"
   },
@@ -6970,7 +6970,7 @@
     ],
     "chargedMoves": [
       "Puño Dinámico",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Bomba Lodo",
       "Hierba Lazo"
     ],
@@ -7443,7 +7443,7 @@
     "chargedMoves": [
       "Golpe de Fuego",
       "Supercalor",
-      "Colmillo Psíquico",
+      "Psicocolmillo",
       "Trueno",
       "Carga Salvaje",
       "Frustración",
@@ -7862,7 +7862,7 @@
       "Karatazo",
       "Hierba Lazo",
       "Revancha",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Abrecaminos",
       "Frustración",
       "Retribución"
@@ -9106,7 +9106,7 @@
     "chargedMoves": [
       "Golpe de Cuerpo",
       "Bola de Energía",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Frustración",
       "Retribución"
     ],
@@ -9471,7 +9471,7 @@
       "Triturar",
       "Hiperrayo",
       "Carga Salvaje",
-      "Colmillo Psíquico",
+      "Psicocolmillo",
       "Frustración",
       "Retribución"
     ],
@@ -9820,7 +9820,7 @@
     "chargedMoves": [
       "Brillo Mágico",
       "Tormenta Floral",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cherubi.png"
   },
@@ -11321,7 +11321,7 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/regigigas.png"
   },
   {
-    "name": "Giratina (Altered e)",
+    "name": "Giratina (Alterado)",
     "baseName": "Giratina",
     "types": [
       "Fantasma",
@@ -11342,7 +11342,7 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/giratina-altered.png"
   },
   {
-    "name": "Giratina (Origin e)",
+    "name": "Giratina (Origen)",
     "baseName": "Giratina",
     "types": [
       "Fantasma",
@@ -11473,7 +11473,7 @@
     ],
     "chargedMoves": [
       "Bola de Energía",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Constricción",
       "Frustración",
       "Retribución"
@@ -11808,7 +11808,7 @@
     "chargedMoves": [
       "Triturar",
       "Bola de Energía",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pansage.png"
   },
@@ -12122,7 +12122,7 @@
       "Vuelo",
       "Premonición",
       "Fuerza Psíquica",
-      "Colmillo Psíquico"
+      "Psicocolmillo"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/swoobat.png"
   },
@@ -12350,7 +12350,7 @@
     ],
     "chargedMoves": [
       "Bola de Energía",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Viento Plata"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sewaddle.png"
@@ -12470,7 +12470,7 @@
     "chargedMoves": [
       "Bola de Energía",
       "Hierba Lazo",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cottonee.png"
   },
@@ -12490,7 +12490,7 @@
       "Hierba Lazo",
       "Huracán",
       "Fuerza Lunar",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/whimsicott.png"
   },
@@ -12506,7 +12506,7 @@
     ],
     "chargedMoves": [
       "Bola de Energía",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/petilil.png"
   },
@@ -12996,7 +12996,7 @@
     ],
     "chargedMoves": [
       "Lanzamugre",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Frustración",
       "Retribución"
     ],
@@ -13016,7 +13016,7 @@
       "Bomba Ácida",
       "Golpe de Cuerpo",
       "Lanzamugre",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Frustración",
       "Retribución"
     ],
@@ -13352,7 +13352,7 @@
     ],
     "chargedMoves": [
       "Bola de Energía",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Abrecaminos",
       "Carga Salvaje"
     ],
@@ -13371,7 +13371,7 @@
     ],
     "chargedMoves": [
       "Bola de Energía",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Abrecaminos",
       "Carga Salvaje"
     ],
@@ -13390,7 +13390,7 @@
     ],
     "chargedMoves": [
       "Bola de Energía",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Abrecaminos",
       "Carga Salvaje"
     ],
@@ -13409,7 +13409,7 @@
     ],
     "chargedMoves": [
       "Bola de Energía",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Abrecaminos",
       "Carga Salvaje"
     ],
@@ -15000,7 +15000,7 @@
     "chargedMoves": [
       "Golpe de Cuerpo",
       "Giro Bola",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Frustración",
       "Retribución"
     ],
@@ -16006,7 +16006,7 @@
     ],
     "chargedMoves": [
       "Karatazo",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/skiddo.png"
   },
@@ -16025,7 +16025,7 @@
       "Karatazo",
       "Hoja Aguda",
       "Avalancha",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gogoat.png"
   },
@@ -16346,7 +16346,7 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/doublade.png"
   },
   {
-    "name": "Aegislash (Shield e)",
+    "name": "Aegislash",
     "baseName": "Aegislash",
     "types": [
       "Acero",
@@ -16362,24 +16362,6 @@
       "Bola Sombra"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/aegislash-shield.png"
-  },
-  {
-    "name": "Aegislash (Blade e)",
-    "baseName": "Aegislash",
-    "types": [
-      "Acero",
-      "Fantasma"
-    ],
-    "fastMoves": [
-      "Corte Aéreo",
-      "Psicocorte"
-    ],
-    "chargedMoves": [
-      "Cañón Destello",
-      "Giro Bola",
-      "Bola Sombra"
-    ],
-    "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/aegislash-blade.png"
   },
   {
     "name": "Spritzee",
@@ -16898,7 +16880,7 @@
     ],
     "chargedMoves": [
       "Juego Sucio",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Bola Sombra",
       "Frustración",
       "Retribución"
@@ -16918,7 +16900,7 @@
     ],
     "chargedMoves": [
       "Juego Sucio",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Bola Sombra",
       "Frustración",
       "Retribución"
@@ -17013,7 +16995,7 @@
       "Llamarada",
       "Juego Sucio",
       "Poltergeist",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Bola Sombra"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gourgeist-average.png"
@@ -17034,7 +17016,7 @@
       "Llamarada",
       "Juego Sucio",
       "Poltergeist",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Bola Sombra"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gourgeist-small.png"
@@ -17055,7 +17037,7 @@
       "Llamarada",
       "Juego Sucio",
       "Poltergeist",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Bola Sombra"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gourgeist-large.png"
@@ -17076,7 +17058,7 @@
       "Llamarada",
       "Juego Sucio",
       "Poltergeist",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Bola Sombra"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gourgeist-super.png"
@@ -17371,7 +17353,7 @@
     ],
     "chargedMoves": [
       "Bola de Energía",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rowlet.png"
   },
@@ -17391,7 +17373,7 @@
     "chargedMoves": [
       "Ave Brava",
       "Bola de Energía",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dartrix.png"
   },
@@ -17921,7 +17903,7 @@
     ],
     "chargedMoves": [
       "Triturar",
-      "Colmillo Psíquico",
+      "Psicocolmillo",
       "Roca Afilada",
       "Abrecaminos"
     ],
@@ -18105,7 +18087,7 @@
     ],
     "chargedMoves": [
       "Brillo Mágico",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/morelull.png"
   },
@@ -18121,7 +18103,7 @@
     ],
     "chargedMoves": [
       "Fuerza Lunar",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Bomba Lodo"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shiinotic.png"
@@ -18481,7 +18463,7 @@
     "chargedMoves": [
       "Cola de Agua",
       "Triturar",
-      "Colmillo Psíquico",
+      "Psicocolmillo",
       "Psicocarga"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/bruxish.png"
@@ -18708,7 +18690,7 @@
     "chargedMoves": [
       "Lanzallamas",
       "Cabeza de Hierro",
-      "Colmillo Psíquico",
+      "Psicocolmillo",
       "Rayo Solar"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/solgaleo.png"
@@ -19512,7 +19494,7 @@
       "Pulso Dragón",
       "Vuelo",
       "Enfado",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/flapple.png"
   },
@@ -19531,7 +19513,7 @@
       "Pulso Dragón",
       "Bola de Energía",
       "Enfado",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/appletun.png"
   },
@@ -20070,7 +20052,7 @@
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/indeedee-female.png"
   },
   {
-    "name": "Morpeko (Full Belly Mode)",
+    "name": "Morpeko",
     "baseName": "Morpeko",
     "types": [
       "Eléctrico",
@@ -20082,32 +20064,12 @@
       "Impactrueno"
     ],
     "chargedMoves": [
-      "Aura Wheel - Electric",
+      "Rueda Aural",
       "Enfado",
-      "Colmillo Psíquico",
-      "Bomba Germen"
+      "Psicocolmillo",
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/morpeko-full-belly.png"
-  },
-  {
-    "name": "Morpeko (Hangry Mode)",
-    "baseName": "Morpeko",
-    "types": [
-      "Eléctrico",
-      "Siniestro"
-    ],
-    "fastMoves": [
-      "Mordida",
-      "Rayo Carga",
-      "Impactrueno"
-    ],
-    "chargedMoves": [
-      "Aura Wheel - Dark",
-      "Enfado",
-      "Colmillo Psíquico",
-      "Bomba Germen"
-    ],
-    "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/morpeko-hangry.png"
   },
   {
     "name": "Duraludon",
@@ -20957,7 +20919,7 @@
     "chargedMoves": [
       "Golpe de Cuerpo",
       "Juego Rudo",
-      "Colmillo Psíquico"
+      "Psicocolmillo"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/fidough.png"
   },
@@ -20975,7 +20937,7 @@
     "chargedMoves": [
       "Golpe de Cuerpo",
       "Juego Rudo",
-      "Colmillo Psíquico"
+      "Psicocolmillo"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dachsbun.png"
   },
@@ -20993,7 +20955,7 @@
     "chargedMoves": [
       "Poder Terrestre",
       "Bola de Energía",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Abrecaminos"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/smoliv.png"
@@ -21013,7 +20975,7 @@
     "chargedMoves": [
       "Poder Terrestre",
       "Bola de Energía",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Abrecaminos"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dolliv.png"
@@ -21033,7 +20995,7 @@
     "chargedMoves": [
       "Poder Terrestre",
       "Bola de Energía",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Abrecaminos"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/arboliva.png"
@@ -21264,7 +21226,7 @@
     ],
     "chargedMoves": [
       "Poder Terrestre",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Constricción"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/toedscool.png"
@@ -21283,7 +21245,7 @@
     "chargedMoves": [
       "Bomba Ácida",
       "Poder Terrestre",
-      "Bomba Germen",
+      "Bomba Semilla",
       "Constricción"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/toedscruel.png"
@@ -21500,7 +21462,7 @@
     ],
     "chargedMoves": [
       "Excavar",
-      "Colmillo Psíquico",
+      "Psicocolmillo",
       "Bola Sombra"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/greavard.png"
@@ -21518,7 +21480,7 @@
     "chargedMoves": [
       "Excavar",
       "Juego Rudo",
-      "Colmillo Psíquico",
+      "Psicocolmillo",
       "Bola Sombra"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/houndstone.png"
@@ -21867,7 +21829,7 @@
     "chargedMoves": [
       "Pulso Dragón",
       "Enfado",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dipplin.png"
   },
@@ -21958,7 +21920,7 @@
     "chargedMoves": [
       "Pulso Dragón",
       "Enfado",
-      "Bomba Germen"
+      "Bomba Semilla"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/hydrapple.png"
   }
