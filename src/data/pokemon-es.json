@@ -907,7 +907,7 @@
       "Golpe de Cuerpo",
       "Voz Encantadora",
       "Fuerza Lunar",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/clefairy.png"
   },
@@ -930,7 +930,7 @@
       "Puño Meteoro",
       "Fuerza Lunar",
       "Fuerza Psíquica",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/clefable.png"
   },
@@ -1039,7 +1039,7 @@
       "Brillo Mágico",
       "Voz Encantadora",
       "Giro Bola",
-      "Rapidez",
+      "Meteoros",
       "Golpe de Cuerpo",
       "Juego Rudo"
     ],
@@ -1064,7 +1064,7 @@
       "Rayo Hielo",
       "Viento Hielo",
       "Juego Rudo",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wigglytuff.png"
   },
@@ -1082,7 +1082,7 @@
     "chargedMoves": [
       "Aire Cortante",
       "Colmillo Veneno",
-      "Rapidez",
+      "Meteoros",
       "Bomba Lodo",
       "Frustración",
       "Retribución"
@@ -2063,7 +2063,7 @@
     "chargedMoves": [
       "Juego Rudo",
       "Psicorrayo",
-      "Rapidez",
+      "Meteoros",
       "Frustración",
       "Retribución"
     ],
@@ -2304,7 +2304,7 @@
       "As Aéreo",
       "Ave Brava",
       "Pico Taladro",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/doduo.png"
   },
@@ -2711,7 +2711,7 @@
     ],
     "chargedMoves": [
       "Bola de Energía",
-      "Rapidez",
+      "Meteoros",
       "Rayo",
       "Frustración",
       "Retribución"
@@ -2752,7 +2752,7 @@
     ],
     "chargedMoves": [
       "Bola de Energía",
-      "Rapidez",
+      "Meteoros",
       "Carga Salvaje",
       "Frustración",
       "Retribución"
@@ -3201,7 +3201,7 @@
     "chargedMoves": [
       "Rayo Burbuja",
       "Joya de Luz",
-      "Rapidez",
+      "Meteoros",
       "Frustración",
       "Retribución"
     ],
@@ -3551,7 +3551,7 @@
     ],
     "chargedMoves": [
       "Excavar",
-      "Rapidez",
+      "Meteoros",
       "Golpe de Cuerpo",
       "Última Baza"
     ],
@@ -4140,7 +4140,7 @@
     "chargedMoves": [
       "Carga de Fuego",
       "Lanzallamas",
-      "Rapidez",
+      "Meteoros",
       "Frustración",
       "Retribución"
     ],
@@ -4301,7 +4301,7 @@
       "Karatazo",
       "Excavar",
       "Hiperrayo",
-      "Rapidez",
+      "Meteoros",
       "Abrecaminos"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/furret.png"
@@ -4357,7 +4357,7 @@
     "chargedMoves": [
       "As Aéreo",
       "Viento Plata",
-      "Rapidez",
+      "Meteoros",
       "Frustración",
       "Retribución"
     ],
@@ -4513,7 +4513,7 @@
       "Hierba Lazo",
       "Psicocarga",
       "Doble Rayo",
-      "Rapidez",
+      "Meteoros",
       "Golpe de Cuerpo",
       "Fuerza Psíquica"
     ],
@@ -4533,7 +4533,7 @@
     "chargedMoves": [
       "Fuerza Psíquica",
       "Bola Sombra",
-      "Rapidez",
+      "Meteoros",
       "Carga Salvaje",
       "Golpe de Cuerpo"
     ],
@@ -4865,7 +4865,7 @@
     "chargedMoves": [
       "As Aéreo",
       "Puntapié",
-      "Rapidez",
+      "Meteoros",
       "Frustración",
       "Retribución"
     ],
@@ -5472,7 +5472,7 @@
       "Golpe Cruzado",
       "Triturar",
       "Juego Rudo",
-      "Rapidez",
+      "Meteoros",
       "Abrecaminos",
       "Frustración",
       "Retribución"
@@ -5494,7 +5494,7 @@
       "Cuerpo a Cuerpo",
       "Hiperrayo",
       "Juego Rudo",
-      "Rapidez",
+      "Meteoros",
       "Abrecaminos",
       "Frustración",
       "Retribución"
@@ -5771,7 +5771,7 @@
       "Hidrobomba",
       "Pulpocañón",
       "Enfado",
-      "Rapidez",
+      "Meteoros",
       "Frustración",
       "Retribución"
     ],
@@ -6508,7 +6508,7 @@
     "chargedMoves": [
       "Golpe de Cuerpo",
       "Excavar",
-      "Rapidez",
+      "Meteoros",
       "Frustración",
       "Retribución"
     ],
@@ -6528,7 +6528,7 @@
     "chargedMoves": [
       "Excavar",
       "Hierba Lazo",
-      "Rapidez",
+      "Meteoros",
       "Trueno",
       "Frustración",
       "Retribución"
@@ -7422,7 +7422,7 @@
     ],
     "chargedMoves": [
       "Chispazo",
-      "Rapidez",
+      "Meteoros",
       "Rayo",
       "Frustración",
       "Retribución"
@@ -7464,7 +7464,7 @@
     "chargedMoves": [
       "Chispazo",
       "Hierba Lazo",
-      "Rapidez",
+      "Meteoros",
       "Rayo"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/plusle.png"
@@ -7482,7 +7482,7 @@
     "chargedMoves": [
       "Chispazo",
       "Hierba Lazo",
-      "Rapidez",
+      "Meteoros",
       "Rayo"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/minun.png"
@@ -9088,7 +9088,7 @@
     ],
     "chargedMoves": [
       "Psicoataque",
-      "Rapidez",
+      "Meteoros",
       "Rayo"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/deoxys-speed.png"
@@ -9430,7 +9430,7 @@
     ],
     "chargedMoves": [
       "Chispazo",
-      "Rapidez",
+      "Meteoros",
       "Rayo",
       "Frustración",
       "Retribución"
@@ -9784,7 +9784,7 @@
     ],
     "chargedMoves": [
       "Acuajet",
-      "Rapidez",
+      "Meteoros",
       "Hidropulso"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/buizel.png"
@@ -9803,7 +9803,7 @@
       "Acuajet",
       "Hidrobomba",
       "Hidroariete",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/floatzel.png"
   },
@@ -10003,7 +10003,7 @@
     ],
     "chargedMoves": [
       "Puño Fuego",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/buneary.png"
   },
@@ -11156,7 +11156,7 @@
     ],
     "chargedMoves": [
       "Premonición",
-      "Rapidez",
+      "Meteoros",
       "Trueno"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/uxie.png"
@@ -11174,7 +11174,7 @@
     "chargedMoves": [
       "Ventisca",
       "Premonición",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/mesprit.png"
   },
@@ -11191,7 +11191,7 @@
     "chargedMoves": [
       "Llamarada",
       "Premonición",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/azelf.png"
   },
@@ -13108,7 +13108,7 @@
     ],
     "chargedMoves": [
       "Cola de Agua",
-      "Rapidez",
+      "Meteoros",
       "Rayo"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/minccino.png"
@@ -15229,7 +15229,7 @@
       "As Aéreo",
       "Vuelo",
       "Onda Ígnea",
-      "Rapidez",
+      "Meteoros",
       "Frustración",
       "Retribución"
     ],
@@ -18448,6 +18448,24 @@
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/togedemaru.png"
   },
+    {
+    "name": "Mimikyu",
+    "baseName": "Mimikyu",
+    "types": [
+      "Fantasma",
+      "Hada"
+    ],
+    "fastMoves": [
+      "Infortunio",
+      "Gara de Sombra"
+    ],
+    "chargedMoves": [
+      "Sombra Vil",
+      "Juego Rudo",
+      "Trueno"
+    ],
+    "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/mimikyu.png"
+  },
   {
     "name": "Bruxish",
     "baseName": "Bruxish",
@@ -18483,7 +18501,7 @@
       "Pulso Dragón",
       "Vuelo",
       "Enfado",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/drampa.png"
   },
@@ -20430,7 +20448,7 @@
       "Puño Fuego",
       "Puño Hielo",
       "Juego Rudo",
-      "Rapidez",
+      "Meteoros",
       "Puño Trueno",
       "Abrecaminos",
       "Fuerza Equina",
@@ -20886,7 +20904,7 @@
     "chargedMoves": [
       "Triturar",
       "Juego Rudo",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tandemaus.png"
   },
@@ -20904,7 +20922,7 @@
     "chargedMoves": [
       "Triturar",
       "Juego Rudo",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/maushold-family4.png"
   },
@@ -20922,7 +20940,7 @@
     "chargedMoves": [
       "Triturar",
       "Juego Rudo",
-      "Rapidez"
+      "Meteoros"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/maushold-family3.png"
   },
