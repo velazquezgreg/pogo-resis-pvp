@@ -9,6 +9,8 @@ import { collection, addDoc } from "firebase/firestore";
 
 const allowedTypes = ["Hada", "Dragón", "Acero"];
 
+const bannedPokemon = ["Mimikyu"];
+
 export default function Page() {
   const [trainerName, setTrainerName] = useState("");
   const [trainerCode, setTrainerCode] = useState("");
@@ -64,6 +66,11 @@ export default function Page() {
       return;
     }
 
+    if (bannedPokemon.includes(pokemon.baseName)) {
+    setErrors([`❌ ${pokemon.name} está prohibido en esta copa`]);
+    return;
+  }
+
     const newTeam = [...team];
 
     newTeam[index] = {
@@ -106,6 +113,9 @@ export default function Page() {
           `❌ Pokémon ${i + 1} debe tener PC entre 1 y 1500`
         );
       }
+      if (bannedPokemon.includes(p.baseName)) {
+  newErrors.push(`❌ ${p.name} está prohibido`);
+}
     });
 
     if (newErrors.length > 0) {
