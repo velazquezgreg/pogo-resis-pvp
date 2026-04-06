@@ -18429,7 +18429,7 @@
       "Carga Salvaje"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/togedemaru.png"
-  },
+  },/*
     {
     "name": "Mimikyu",
     "baseName": "Mimikyu",
@@ -18447,7 +18447,7 @@
       "Trueno"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/mimikyu.png"
-  },
+  },*/
   {
     "name": "Bruxish",
     "baseName": "Bruxish",
