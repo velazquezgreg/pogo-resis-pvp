@@ -221,6 +221,25 @@ export default function Page() {
     );
   }
 
+const closeDate = new Date("2026-04-12T00:00:00-03:00");
+const now = new Date();
+
+if (now >= closeDate) {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-black text-white p-6 text-center">
+      <div>
+        <h1 className="text-3xl font-bold mb-4">
+          Inscripciones cerradas
+        </h1>
+
+        <p className="text-zinc-400">
+          El torneo arranca a las 15:00 hs.
+        </p>
+      </div>
+    </div>
+  );
+}
+
   // 🧩 FORM
   return (
     <div className="min-h-screen bg-black text-white p-6">

@@ -40,7 +40,7 @@ export default function CopaFantasiaPage() {
       </div>
     );
   }
-  const unlockDate = new Date("2026-04-12T00:00:00-03:00"); // Argentina
+ /* const unlockDate = new Date("2026-04-12T00:00:00-03:00"); // Argentina
 
 const now = new Date();
 
@@ -63,6 +63,13 @@ if (now < unlockDate) {
     </div>
   );
 }
+*/
+const [search, setSearch] = useState("");
+const filteredPlayers = players.filter(p =>
+  p.trainerName.toLowerCase().includes(search.toLowerCase())
+);
+
+
   return (
     <div className="p-6 text-white bg-black min-h-screen">
       <h1 className="text-3xl font-bold mb-6">
@@ -73,8 +80,16 @@ if (now < unlockDate) {
         <div>No hay inscripciones todavía</div>
       )}
 
+      <input
+  type="text"
+  placeholder="Buscar entrenador..."
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+  className="w-full md:w-1/2 p-2 mb-6 bg-zinc-900 rounded border border-zinc-700"
+/>
+
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {players.map((player, idx) => (
+        {filteredPlayers.map((player, idx) => (
           <div
             key={idx}
             className="bg-zinc-900 p-5 rounded border border-zinc-700"
