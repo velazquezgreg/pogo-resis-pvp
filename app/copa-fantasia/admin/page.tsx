@@ -2,12 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { db } from "@/src/lib/firebase";
-import {
-  collection,
-  getDocs,
-  query,
-  orderBy
-} from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 
 type Player = {
   id: string;
@@ -20,41 +15,60 @@ export default function Page() {
   const [players, setPlayers] = useState<Player[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // 🔥 cargar datos
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [password, setPassword] = useState("");
+
+  // 🔥 fetch
   const fetchPlayers = async () => {
-    const q = query(
-      collection(db, "torneos", "copa-fantasia", "inscripciones"),
-      orderBy("createdAt", "asc")
-    );
+    try {
+      const querySnapshot = await getDocs(
+        collection(db, "torneos", "copa-fantasia", "inscripciones")
+      );
 
-    const snapshot = await getDocs(q);
-
-    const data: Player[] = [];
-
-    snapshot.forEach((doc) => {
-      data.push({
+      const data: Player[] = querySnapshot.docs.map((doc) => ({
         id: doc.id,
         ...(doc.data() as Omit<Player, "id">)
-      });
-    });
+      }));
 
-    setPlayers(data);
-    setLoading(false);
+      setPlayers(data);
+    } catch (error) {
+      console.error("🔥 ERROR FIREBASE:", error);
+      alert("Error cargando datos");
+    } finally {
+      setLoading(false);
+    }
   };
 
   useEffect(() => {
     fetchPlayers();
   }, []);
 
-  // 📋 export challonge
-  const exportNames = () => {
-    const names = players.map(p => p.trainerName);
-    const text = names.join(", ");
+  // 🔐 LOGIN
+  if (!isAdmin) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="space-y-3 text-center">
+          <input
+            type="password"
+            placeholder="Admin password"
+            onChange={(e) => setPassword(e.target.value)}
+            className="p-2 rounded bg-zinc-800 text-white"
+          />
 
-    navigator.clipboard.writeText(text);
-    alert("Lista copiada para Challonge 🚀");
-  };
+          <button
+            onClick={() => {
+              if (password === "impidimp") setIsAdmin(true);
+            }}
+            className="bg-green-600 px-4 py-2 rounded"
+          >
+            Entrar
+          </button>
+        </div>
+      </div>
+    );
+  }
 
+  // ⏳ LOADING
   if (loading) {
     return (
       <div className="min-h-screen bg-black text-white flex items-center justify-center">
@@ -62,32 +76,16 @@ export default function Page() {
       </div>
     );
   }
-const [isAdmin, setIsAdmin] = useState(false);
-const [password, setPassword] = useState("");
 
-if (!isAdmin) {
-  return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
-      <div className="space-y-3">
-        <input
-          type="password"
-          placeholder="Admin password"
-          onChange={(e) => setPassword(e.target.value)}
-          className="p-2 rounded bg-zinc-800 text-white"
-        />
+  // 📋 export challonge
+  const exportNames = () => {
+    const names = players.map((p) => p.trainerName);
+    const text = names.join(", ");
 
-        <button
-          onClick={() => {
-            if (password === "impidimp") setIsAdmin(true);
-          }}
-          className="bg-green-600 px-4 py-2 rounded"
-        >
-          Entrar
-        </button>
-      </div>
-    </div>
-  );
-}
+    navigator.clipboard.writeText(text);
+    alert("Lista copiada para Challonge 🚀");
+  };
+
   return (
     <div className="min-h-screen bg-black text-white p-6">
 
@@ -109,7 +107,7 @@ if (!isAdmin) {
           </p>
         </div>
 
-        {/* BOTÓN EXPORT */}
+        {/* EXPORT */}
         <button
           onClick={exportNames}
           className="bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded font-bold"
@@ -119,28 +117,23 @@ if (!isAdmin) {
 
         {/* LISTA */}
         <div className="grid gap-4">
-
           {players.map((player) => (
             <div
               key={player.id}
               className="bg-zinc-900 border border-zinc-700 rounded p-4"
             >
-              <div className="flex justify-between items-center mb-3">
-                <div>
-                  <div className="font-bold text-lg">
-                    {player.trainerName}
-                  </div>
+              <div className="mb-3">
+                <div className="font-bold text-lg">
+                  {player.trainerName}
+                </div>
 
-                  <div className="text-zinc-400 text-sm">
-                    {player.trainerCode}
-                  </div>
+                <div className="text-zinc-400 text-sm">
+                  {player.trainerCode}
                 </div>
               </div>
 
-              {/* TEAM */}
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-
-                {player.team.map((p, i) => (
+                {player.team?.map((p, i) => (
                   <div
                     key={i}
                     className="bg-zinc-800 p-2 rounded text-xs"
@@ -167,11 +160,9 @@ if (!isAdmin) {
                     )}
                   </div>
                 ))}
-
               </div>
             </div>
           ))}
-
         </div>
 
       </div>
