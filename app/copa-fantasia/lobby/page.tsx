@@ -1,45 +1,4 @@
-"use client";
 
-import { useEffect, useState } from "react";
-import { db } from "@/src/lib/firebase";
-import { collection, getDocs, query, orderBy } from "firebase/firestore";
-import pokemonData from "@/src/data/pokemon-es.json";
-
-export default function CopaFantasiaPage() {
-  const [players, setPlayers] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  const getPokemonData = (name: string) =>
-    pokemonData.find(p => p.name === name);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      const q = query(
-        collection(db, "torneos", "copa-fantasia", "inscripciones"),
-        orderBy("createdAt", "desc")
-      );
-
-      const snapshot = await getDocs(q);
-
-      const data = snapshot.docs.map(doc => ({
-        id: doc.id,
-        ...doc.data()
-      }));
-
-      setPlayers(data);
-      setLoading(false);
-    };
-
-    fetchData();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="p-6 text-white bg-black min-h-screen">
-        Cargando inscripciones...
-      </div>
-    );
-  }
  /* const unlockDate = new Date("2026-04-12T00:00:00-03:00"); // Argentina
 
 const now = new Date();
@@ -64,14 +23,65 @@ if (now < unlockDate) {
   );
 }
 */
-const [search, setSearch] = useState("");
-const filteredPlayers = players.filter(p =>
-  p.trainerName.toLowerCase().includes(search.toLowerCase())
-);
 
+"use client";
+
+import { useEffect, useState } from "react";
+import { db } from "@/src/lib/firebase";
+import { collection, getDocs, query, orderBy } from "firebase/firestore";
+import pokemonData from "@/src/data/pokemon-es.json";
+
+export default function CopaFantasiaPage() {
+  const [players, setPlayers] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [search, setSearch] = useState(""); // ✅ hook arriba
+
+  const getPokemonData = (name: string) =>
+    pokemonData.find(p => p.name === name);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const q = query(
+          collection(db, "torneos", "copa-fantasia", "inscripciones"),
+          orderBy("createdAt", "desc")
+        );
+
+        const snapshot = await getDocs(q);
+
+        const data = snapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data()
+        }));
+
+        setPlayers(data);
+      } catch (error) {
+        console.error("Error cargando datos:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  // 🔎 filtro seguro
+  const filteredPlayers = players.filter(p =>
+    p.trainerName?.toLowerCase().includes(search.toLowerCase())
+  );
+
+  // ⛔ loading
+  if (loading) {
+    return (
+      <div className="p-6 text-white bg-black min-h-screen">
+        Cargando inscripciones...
+      </div>
+    );
+  }
 
   return (
     <div className="p-6 text-white bg-black min-h-screen">
+
       <h1 className="text-3xl font-bold mb-6">
         🏆 Copa Fantasía - Participantes
       </h1>
@@ -80,14 +90,20 @@ const filteredPlayers = players.filter(p =>
         <div>No hay inscripciones todavía</div>
       )}
 
+      {/* 🔍 BUSCADOR */}
       <input
-  type="text"
-  placeholder="Buscar entrenador..."
-  value={search}
-  onChange={(e) => setSearch(e.target.value)}
-  className="w-full md:w-1/2 p-2 mb-6 bg-zinc-900 rounded border border-zinc-700"
-/>
+        type="text"
+        placeholder="Buscar entrenador..."
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+        className="w-full md:w-1/2 p-2 mb-2 bg-zinc-900 rounded border border-zinc-700"
+      />
 
+      <p className="text-zinc-400 mb-6 text-sm">
+        {filteredPlayers.length} resultado(s)
+      </p>
+
+      {/* 🧩 GRID */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredPlayers.map((player, idx) => (
           <div
@@ -155,6 +171,7 @@ const filteredPlayers = players.filter(p =>
           </div>
         ))}
       </div>
+
     </div>
   );
 }
