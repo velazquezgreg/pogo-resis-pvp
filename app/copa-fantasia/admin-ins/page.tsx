@@ -32,9 +32,9 @@ export default function Page() {
     }))
   );
 
-  const [errors, setErrors] = useState<string[]>([]);
+  const [errors, setErrors] = useState<string[]>([])
 
-  // 🔒 LOGIN ADMIN
+  // 🔒 LOGIN
   if (!isAdmin) {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center text-white">
@@ -68,13 +68,14 @@ export default function Page() {
     );
   }
 
-  // ✅ validaciones
+  // ✅ VALIDACIONES
   const isValidType = (pokemon: Pokemon) =>
     pokemon.types.some(t => allowedTypes.includes(t));
 
   const isDuplicateSpecies = (pokemon: Pokemon, index: number) =>
     team.some((p, i) => i !== index && p.baseName === pokemon.baseName);
 
+  // 🔄 MOVES
   const updateMove = (
     index: number,
     field: "fastMove" | "chargedMove1" | "chargedMove2",
@@ -89,6 +90,7 @@ export default function Page() {
     setTeam(newTeam);
   };
 
+  // 🧩 SELECT POKEMON
   const updatePokemon = (index: number, pokemon: Pokemon) => {
     if (!isValidType(pokemon)) {
       setErrors([`❌ ${pokemon.name} no es válido`]);
@@ -128,6 +130,7 @@ export default function Page() {
     setTeam(newTeam);
   };
 
+  // 🚀 SUBMIT
   const handleSubmit = async () => {
     const newErrors: string[] = [];
 
@@ -220,6 +223,7 @@ export default function Page() {
           </h1>
         </div>
 
+        {/* DATOS */}
         <input
           placeholder="Nombre"
           value={trainerName}
@@ -237,6 +241,7 @@ export default function Page() {
           className="w-full p-2 bg-zinc-900 rounded"
         />
 
+        {/* ERRORES */}
         {errors.length > 0 && (
           <div className="bg-red-900 p-3 rounded">
             {errors.map((e, i) => (
@@ -245,6 +250,7 @@ export default function Page() {
           </div>
         )}
 
+        {/* TEAM */}
         <div className="space-y-4">
           {team.map((p, index) => {
             const selectedPokemon = pokemonData.find(
@@ -269,7 +275,7 @@ export default function Page() {
                   <div className="mt-3 space-y-2">
 
                     <input
-                      placeholder="PC"
+                      placeholder="PC (≤1500)"
                       value={p.cp}
                       onChange={(e) => {
                         const value = e.target.value.replace(/\D/g, "");
@@ -283,6 +289,7 @@ export default function Page() {
                       className="w-full p-2 bg-zinc-800 rounded"
                     />
 
+                    {/* MOVES */}
                     <select
                       value={p.fastMove}
                       onChange={(e) =>
@@ -308,6 +315,33 @@ export default function Page() {
                         <option key={i}>{m}</option>
                       ))}
                     </select>
+
+                    <select
+                      value={p.chargedMove2}
+                      onChange={(e) =>
+                        updateMove(index, "chargedMove2", e.target.value)
+                      }
+                      className="w-full p-2 bg-zinc-800 rounded"
+                    >
+                      <option value="">Segundo cargado</option>
+                      {selectedPokemon.chargedMoves
+                        .filter(m => m !== p.chargedMove1)
+                        .map((m, i) => (
+                          <option key={i}>{m}</option>
+                        ))}
+                    </select>
+
+                    {/* SHADOW */}
+                    <label className="text-sm flex items-center gap-2">
+                      <input
+                        type="checkbox"
+                        checked={p.isShadow}
+                        onChange={(e) =>
+                          toggleShadow(index, e.target.checked)
+                        }
+                      />
+                      Oscuro
+                    </label>
 
                   </div>
                 )}
