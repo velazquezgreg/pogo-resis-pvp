@@ -10,15 +10,15 @@ export default function Page() {
 
         {/* Logo */}
         <img
-          src="https://i.ibb.co/DPSWzghL/fantasy-cup-icon.png"
-          alt="Copa Fantasía"
-          className="w-32 mx-auto drop-shadow-[0_0_25px_rgba(168,85,247,0.6)]"
+          src="https://raw.githubusercontent.com/PokeMiners/pogo_assets/refs/heads/master/Images/Combat/sunshine_cup_icon.png"
+          alt="Copa Solar"
+          className="w-32 mx-auto drop-shadow-[0_0_25px_rgba(255,174,62,0.6)]"
         />
 
         {/* Título */}
         <div>
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight">
-            Copa Fantasía
+            Copa Solar
           </h1>
           <p className="text-purple-400 text-lg mt-2">
             Torneo PvP • PoGo Resis
@@ -52,7 +52,7 @@ export default function Page() {
             Casa de las Culturas (Marcelo T. de Alvear 90)
           </p>
           <p className="text-purple-400 font-semibold text-lg mt-2">
-            📅 12 de Abril - 15:00 HS
+            📅 21 de Junio - 16:00 HS
           </p>
         </div>
 
@@ -61,7 +61,8 @@ export default function Page() {
           <h2 className="font-bold text-lg">Reglas</h2>
 
           <ul className="list-disc list-inside text-sm text-zinc-300 space-y-1">
-            <li>Solo tipos: Hada, Dragón y Acero</li>
+            <li>Solo tipos: Tierra, Normal, Fuego y Planta</li>
+            <li>Pokémon no permitidos: Charizard</li>
             <li>Máximo 1500 PC</li>
             <li>No se pueden cambiar ataques luego de inscribirse</li>
             <li>Megaevoluciones prohibidas</li>
@@ -74,14 +75,14 @@ export default function Page() {
         <div className="flex flex-col md:flex-row gap-4 justify-center">
 
           <Link
-            href="/copa-fantasia/inscripcion"
+            href="/copa-solar/inscripcion"
             className="bg-purple-600 hover:bg-purple-700 transition px-6 py-3 rounded-xl font-bold shadow-lg"
           >
             Inscribirse
           </Link>
 
           <Link
-            href="/copa-fantasia/lobby"
+            href="/copa-solar/lobby"
             className="bg-zinc-800 hover:bg-zinc-700 transition px-6 py-3 rounded-xl font-bold border border-zinc-600"
           >
             Ver participantes
