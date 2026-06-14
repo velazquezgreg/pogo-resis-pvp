@@ -171,7 +171,7 @@ export default function Page() {
   </h1>
 </div>
           <p className="text-zinc-400">
-            ¡Nos vemos el 12 de Abril!
+            ¡Nos vemos el 21 de Junio!
           </p>
 
           <div className="bg-zinc-900 p-4 rounded border border-zinc-700">
@@ -221,7 +221,7 @@ export default function Page() {
     );
   }
 
-const closeDate = new Date("2026-04-12T00:00:00-03:00");
+const closeDate = new Date("2026-06-21T00:00:00-03:00");
 const now = new Date();
 
 if (now >= closeDate) {
