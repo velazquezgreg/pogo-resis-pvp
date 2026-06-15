@@ -52,7 +52,7 @@ export default function Page() {
             Casa de las Culturas (Marcelo T. de Alvear 90)
           </p>
           <p className="text-purple-400 font-semibold text-lg mt-2">
-            📅 21 de Junio - 16:00 HS
+            📅 21 de Junio - 15:00 HS
           </p>
         </div>
 
