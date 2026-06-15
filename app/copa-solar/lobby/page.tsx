@@ -57,8 +57,7 @@ export default function CopaSolarPage() {
     );
   }
 
-const unlockDate = new Date("2026-04-12T00:00:00-03:00"); // Argentina
-
+const unlockDate = new Date("2026-06-21T15:00:00-03:00");
 const now = new Date();
 
 if (now < unlockDate) {
@@ -74,7 +73,7 @@ if (now < unlockDate) {
         </p>
 
         <p className="mt-2 text-zinc-500">
-          Disponible el 21 de junio
+          Disponible el 21 de junio a las 15:00 HS
         </p>
       </div>
     </div>

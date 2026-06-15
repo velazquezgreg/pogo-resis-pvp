@@ -233,7 +233,7 @@ if (now >= closeDate) {
         </h1>
 
         <p className="text-zinc-400">
-          El torneo arranca a las 16:00 hs.
+          El torneo arranca a las 15:00 hs.
         </p>
       </div>
     </div>

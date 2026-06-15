@@ -361,6 +361,7 @@
       "Onda Ígnea",
       "Huracán",
       "Aire Cortante",
+      "Ciclón",
       "Frustración",
       "Retribución"
     ],
@@ -814,7 +815,7 @@
     ],
     "fastMoves": [
       "Mordida",
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Puya Nociva",
       "Picotazo Veneno"
     ],
@@ -1259,7 +1260,7 @@
     ],
     "fastMoves": [
       "Disparo Lodo",
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Arañazo"
     ],
     "chargedMoves": [
@@ -1280,7 +1281,7 @@
     ],
     "fastMoves": [
       "Garra Metal",
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Ataque Arena"
     ],
     "chargedMoves": [
@@ -1300,7 +1301,7 @@
     ],
     "fastMoves": [
       "Disparo Lodo",
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Golpe Bajo"
     ],
     "chargedMoves": [
@@ -1321,7 +1322,7 @@
     ],
     "fastMoves": [
       "Garra Metal",
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Ataque Arena"
     ],
     "chargedMoves": [
@@ -1954,7 +1955,7 @@
     ],
     "fastMoves": [
       "Disparo Lodo",
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Lanzarrocas"
     ],
     "chargedMoves": [
@@ -1996,7 +1997,7 @@
     ],
     "fastMoves": [
       "Disparo Lodo",
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Lanzarrocas"
     ],
     "chargedMoves": [
@@ -2378,7 +2379,7 @@
       "Veneno"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Puya Nociva"
     ],
     "chargedMoves": [
@@ -2829,7 +2830,7 @@
       "Tierra"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Golpe Roca"
     ],
     "chargedMoves": [
@@ -2848,7 +2849,7 @@
       "Tierra"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Golpe Roca"
     ],
     "chargedMoves": [
@@ -3019,7 +3020,7 @@
       "Roca"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Golpe Roca"
     ],
     "chargedMoves": [
@@ -3039,7 +3040,7 @@
       "Roca"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Golpe Roca"
     ],
     "chargedMoves": [
@@ -3098,7 +3099,7 @@
     ],
     "fastMoves": [
       "Patada Baja",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Triturar",
@@ -3228,6 +3229,7 @@
       "Fuerza Psíquica",
       "Surf",
       "Trueno",
+      "Acuajet",
       "Frustración",
       "Retribución"
     ],
@@ -3720,6 +3722,7 @@
       "Poder Antiguo",
       "Roca Afilada",
       "Hidropulso",
+      "Acuajet",
       "Frustración",
       "Retribución"
     ],
@@ -3849,7 +3852,8 @@
       "Volador"
     ],
     "fastMoves": [
-      "Contraataque"
+      "Contraataque",
+      "Patada Baja"
     ],
     "chargedMoves": [
       "Poder Antiguo",
@@ -4373,13 +4377,15 @@
     "fastMoves": [
       "Picadura",
       "Contraataque",
-      "Estoicismo"
+      "Estoicismo",
+      "Rodada"
     ],
     "chargedMoves": [
       "As Aéreo",
       "Zumbido",
       "Puño Dinámico",
       "Viento Plata",
+      "Acrobacia",
       "Frustración",
       "Retribución"
     ],
@@ -4618,6 +4624,7 @@
       "Premonición",
       "Viento Aciago",
       "Psicocarga",
+      "Bola Sombra",
       "Frustración",
       "Retribución"
     ],
@@ -5327,6 +5334,7 @@
       "Rayo Hielo",
       "Escaldar",
       "Onda Tóxica",
+      "Bola Sombra",
       "Frustración",
       "Retribución"
     ],
@@ -5639,7 +5647,7 @@
       "Agua"
     ],
     "fastMoves": [
-      "Lock-On",
+      "Fijar Blanco",
       "Disparo Lodo",
       "Pistola de Agua"
     ],
@@ -5689,6 +5697,7 @@
       "As Aéreo",
       "Rayo Burbuja",
       "Rayo Hielo",
+      "Ciclón",
       "Hidropulso"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/mantine.png"
@@ -5772,6 +5781,7 @@
       "Pulpocañón",
       "Enfado",
       "Meteoros",
+      "Surf",
       "Frustración",
       "Retribución"
     ],
@@ -5806,7 +5816,7 @@
     "fastMoves": [
       "Encanto",
       "Contraataque",
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Placaje"
     ],
     "chargedMoves": [
@@ -5829,7 +5839,7 @@
     "fastMoves": [
       "Rayo Carga",
       "Poder Oculto",
-      "Lock-On"
+      "Fijar Blanco"
     ],
     "chargedMoves": [
       "Hiperrayo",
@@ -8124,7 +8134,7 @@
     "fastMoves": [
       "Confusión",
       "Extrasensorial",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Poder Terrestre",
@@ -8348,7 +8358,9 @@
       "Juego Sucio",
       "Rayo Hielo",
       "Sombra Vil",
-      "Trueno"
+      "Trueno",
+      "Puño Trueno",
+      "Puño Dinámico"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kecleon.png"
   },
@@ -8821,7 +8833,7 @@
       "Roca"
     ],
     "fastMoves": [
-      "Lock-On",
+      "Fijar Blanco",
       "Golpe Roca",
       "Lanzarrocas"
     ],
@@ -8843,7 +8855,7 @@
     ],
     "fastMoves": [
       "Vaho Helado",
-      "Lock-On",
+      "Fijar Blanco",
       "Golpe Roca"
     ],
     "chargedMoves": [
@@ -8863,7 +8875,7 @@
       "Acero"
     ],
     "fastMoves": [
-      "Lock-On",
+      "Fijar Blanco",
       "Garra Metal",
       "Golpe Roca"
     ],
@@ -9140,7 +9152,7 @@
     ],
     "fastMoves": [
       "Mordida",
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Hoja Afilada"
     ],
     "chargedMoves": [
@@ -9867,7 +9879,7 @@
     ],
     "fastMoves": [
       "Poder Oculto",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Golpe de Cuerpo",
@@ -9884,7 +9896,7 @@
     ],
     "fastMoves": [
       "Poder Oculto",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Golpe de Cuerpo",
@@ -9902,7 +9914,7 @@
     ],
     "fastMoves": [
       "Poder Oculto",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Golpe de Cuerpo",
@@ -9921,7 +9933,7 @@
     ],
     "fastMoves": [
       "Poder Oculto",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Golpe de Cuerpo",
@@ -10022,7 +10034,9 @@
       "Puño Fuego",
       "Ataque Centrado",
       "Hiperrayo",
-      "Triple Axel"
+      "Triple Axel",
+      "Puño Trueno",
+      "Bola Sombra"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lopunny.png"
   },
@@ -10593,7 +10607,8 @@
     ],
     "fastMoves": [
       "Pistola de Agua",
-      "Cascada"
+      "Cascada",
+      "Tornado"
     ],
     "chargedMoves": [
       "Cola de Agua",
@@ -10738,7 +10753,7 @@
       "Roca"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Antiaéreo"
     ],
     "chargedMoves": [
@@ -10749,6 +10764,7 @@
       "Fuerza Bruta",
       "Surf",
       "Romperrocas",
+      "Taladradora",
       "Frustración",
       "Retribución"
     ],
@@ -10928,7 +10944,7 @@
       "Tierra"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Polvo de Nieve"
     ],
     "chargedMoves": [
@@ -10952,7 +10968,7 @@
     "fastMoves": [
       "Rayo Carga",
       "Poder Oculto",
-      "Lock-On"
+      "Fijar Blanco"
     ],
     "chargedMoves": [
       "Ventisca",
@@ -12055,7 +12071,7 @@
       "Roca"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Antiaéreo"
     ],
     "chargedMoves": [
@@ -12074,8 +12090,9 @@
       "Roca"
     ],
     "fastMoves": [
-      "Mud-Slap",
-      "Antiaéreo"
+      "Bofetón Lodo",
+      "Antiaéreo",
+      "Fijar Blanco"
     ],
     "chargedMoves": [
       "Cuerpo Pesado",
@@ -12133,7 +12150,7 @@
       "Tierra"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Arañazo"
     ],
     "chargedMoves": [
@@ -12155,7 +12172,7 @@
     "fastMoves": [
       "Garra Metal",
       "Disparo Lodo",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Taladradora",
@@ -12232,7 +12249,8 @@
     ],
     "fastMoves": [
       "Contraataque",
-      "Puya Nociva"
+      "Puya Nociva",
+      "Fuerza de Palma"
     ],
     "chargedMoves": [
       "Puño Dinámico",
@@ -12293,7 +12311,8 @@
     "chargedMoves": [
       "Poder Terrestre",
       "Agua Lodosa",
-      "Bomba Lodo"
+      "Bomba Lodo",
+      "Viento Hielo"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/seismitoad.png"
   },
@@ -12607,7 +12626,7 @@
     ],
     "fastMoves": [
       "Mordida",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Terratemblor",
@@ -12625,7 +12644,7 @@
     ],
     "fastMoves": [
       "Mordida",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Terratemblor",
@@ -12642,7 +12661,7 @@
       "Siniestro"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Alarido"
     ],
     "chargedMoves": [
@@ -13275,13 +13294,15 @@
     ],
     "fastMoves": [
       "Corte Aéreo",
-      "Pistola de Agua"
+      "Pistola de Agua",
+      "Tornado"
     ],
     "chargedMoves": [
       "Rayo Burbuja",
       "Vuelo",
       "Huracán",
       "Rayo Hielo",
+      "Acuajet",
       "Frustración",
       "Retribución"
     ],
@@ -14232,7 +14253,7 @@
     ],
     "fastMoves": [
       "Impresionar",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Karatazo",
@@ -14252,7 +14273,7 @@
     ],
     "fastMoves": [
       "Impresionar",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Puño Dinámico",
@@ -15180,7 +15201,7 @@
       "Normal"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Ataque Rápido"
     ],
     "chargedMoves": [
@@ -16387,7 +16408,8 @@
     ],
     "fastMoves": [
       "Rayo Carga",
-      "Encanto"
+      "Encanto",
+      "Viento Feérico"
     ],
     "chargedMoves": [
       "Beso Drenaje",
@@ -16482,7 +16504,7 @@
       "Agua"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Arañazo"
     ],
     "chargedMoves": [
@@ -16501,7 +16523,7 @@
     ],
     "fastMoves": [
       "Corte Furia",
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Pistola de Agua"
     ],
     "chargedMoves": [
@@ -16615,7 +16637,7 @@
       "Normal"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Ataque Rápido",
       "Voltiocambio"
     ],
@@ -16726,14 +16748,16 @@
     ],
     "fastMoves": [
       "Encanto",
-      "Ataque Rápido"
+      "Ataque Rápido",
+      "Viento Feérico"
     ],
     "chargedMoves": [
       "Brillo Mágico",
       "Beso Drenaje",
       "Fuerza Lunar",
       "Última Baza",
-      "Psicocarga"
+      "Psicocarga",
+      "Bola Sombra"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sylveon.png"
   },
@@ -16818,13 +16842,15 @@
     ],
     "fastMoves": [
       "Placaje",
-      "Pistola de Agua"
+      "Pistola de Agua",
+      "Dragoaliento"
     ],
     "chargedMoves": [
       "Pulso Dragón",
       "Agua Lodosa",
       "Onda Tóxica",
-      "Hidropulso"
+      "Hidropulso",
+      "Golpe de Cuerpo"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sliggoo.png"
   },
@@ -17677,7 +17703,7 @@
     ],
     "fastMoves": [
       "Picadura",
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Chispa",
       "Voltiocambio"
     ],
@@ -17971,7 +17997,7 @@
       "Tierra"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Golpe Roca"
     ],
     "chargedMoves": [
@@ -17988,7 +18014,7 @@
       "Tierra"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Golpe Roca"
     ],
     "chargedMoves": [
@@ -19035,7 +19061,8 @@
       "Avalancha",
       "Fuerza Bruta",
       "Rayo",
-      "Ferropuño Doble"
+      "Ferropuño Doble",
+      "Puño Dinámico"
     ],
     "sprite": "https://img.pokemondb.net/sprites/scarlet-violet/icon/melmetal.png"
   },
@@ -20321,7 +20348,7 @@
       "Eléctrico"
     ],
     "fastMoves": [
-      "Lock-On",
+      "Fijar Blanco",
       "Impactrueno",
       "Voltiocambio"
     ],
@@ -20655,7 +20682,8 @@
     ],
     "fastMoves": [
       "Pistola de Agua",
-      "Ataque Ala"
+      "Ataque Ala",
+      "Patada Baja"
     ],
     "chargedMoves": [
       "As Aéreo",
@@ -21185,7 +21213,7 @@
       "Normal"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Puya Nociva"
     ],
     "chargedMoves": [
@@ -21203,7 +21231,7 @@
       "Normal"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Puya Nociva"
     ],
     "chargedMoves": [
@@ -21222,7 +21250,7 @@
     ],
     "fastMoves": [
       "Disparo Lodo",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Poder Terrestre",
@@ -21240,7 +21268,7 @@
     ],
     "fastMoves": [
       "Disparo Lodo",
-      "Mud-Slap"
+      "Bofetón Lodo"
     ],
     "chargedMoves": [
       "Bomba Ácida",
@@ -21257,7 +21285,7 @@
       "Roca"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Lanzarrocas"
     ],
     "chargedMoves": [
@@ -21328,7 +21356,7 @@
       "Agua"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Pistola de Agua"
     ],
     "chargedMoves": [
@@ -21345,7 +21373,7 @@
       "Agua"
     ],
     "fastMoves": [
-      "Mud-Slap",
+      "Bofetón Lodo",
       "Pistola de Agua"
     ],
     "chargedMoves": [
